@@ -49,7 +49,9 @@ function parseMaybe(v) {
 }
 
 function normalize(f) {
-  const p = f.properties || {};
+  const raw = f.properties || {};
+  // The crawl flattens happy hour fields with an hh_ prefix; accept either form.
+  const p = new Proxy(raw, { get: (o, k) => o[`hh_${String(k)}`] ?? o[k] });
   const windows = parseMaybe(p.windows) || [];
   const deals = parseMaybe(p.deals) || [];
   const coords = f.geometry && f.geometry.coordinates;
@@ -65,6 +67,7 @@ function normalize(f) {
     deals,
     sourceUrl: p.source_url || '',
     verified: p.last_verified || '',
+    sourceDate: p.source_date || '',
     sample: !!p.sample
   };
   v.lines = linesFor(v);
@@ -190,11 +193,12 @@ function renderStation(list) {
   });
   let host = '';
   try { host = v.sourceUrl ? new URL(v.sourceUrl).hostname.replace(/^www\./, '') : ''; } catch { host = ''; }
+  const sourceDated = v.sourceDate ? `, dated ${esc(fmtDate(v.sourceDate))}` : '';
   const source = v.sample
     ? 'Sample data: this is not a real bar.'
-    : (host ? `Source: <a href="${esc(v.sourceUrl)}" target="_blank" rel="noopener">${esc(host)}</a>` : 'Source unknown');
+    : (host ? `Source: <a href="${esc(v.sourceUrl)}" target="_blank" rel="noopener">${esc(host)}</a>` : 'Source unknown') + sourceDated;
   const age = v.verified ? daysSince(v.verified) : null;
-  const stale = age === null || age > STALE_DAYS;
+  const stale = isStale(v);
   const checked = v.verified
     ? `Deals last checked <strong>${esc(fmtDate(v.verified))}</strong> (${fmtAge(age)})`
     : 'We don\'t know when these deals were last checked';
@@ -226,6 +230,11 @@ function renderStation(list) {
 
 let map;
 let mapReady = false;
+
+function isStale(v) {
+  const age = v.verified ? daysSince(v.verified) : null;
+  return age === null || age > STALE_DAYS;
+}
 
 function iconName(v) {
   return `stop:${v.lines.join('.') || 'none'}:${v.st.status === 'live' ? 'live' : 'idle'}`;
@@ -290,6 +299,7 @@ function stationGeoJSON(list) {
         // Higher keys draw on top, so pouring-now stops sit above the rest.
         order: 4 - RANK[v.st.status],
         rank: RANK[v.st.status],
+        stale: isStale(v),
         label: v.st.status === 'live' && v.price != null ? `${v.name}  ${money(v.price)}` : v.name
       }
     }))
@@ -335,7 +345,9 @@ function setupMap() {
         'icon-size': size,
         'icon-allow-overlap': true,
         'symbol-sort-key': ['get', 'order']
-      }
+      },
+      // Faded when the deals haven't been checked in a while.
+      paint: { 'icon-opacity': ['case', ['get', 'stale'], 0.45, 1] }
     });
     map.addLayer({
       id: 'station-label',
