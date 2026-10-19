@@ -1,10 +1,11 @@
-import { DAYS, DAY_LABELS, statusAt, nowInDC, fmtClock, fmtDuration, fmtDays, fmtWindowTime, toMin } from './time.js';
-import { LINES, LINE_ORDER, linesFor, lineFeatures } from './lines.js';
+import { DAYS, DAY_LABELS, statusAt, nowInDC, fmtClock, fmtDuration, fmtDays, fmtWindowTime, toMin, fmtDate, daysSince, fmtAge } from './time.js';
+import { LINES, LINE_ORDER, linesFor } from './lines.js';
 
 const REPO = 'tobinjstone/dc-happy-hour-map';
 const DRINKS = new Set(['beer', 'wine', 'cocktail', 'spirits']);
 const CAT_LABEL = { beer: 'Beer', wine: 'Wine', cocktail: 'Cocktail', spirits: 'Rail', food: 'Food', other: 'Other' };
 const STATUS_LABEL = { live: 'Pouring now', soon: 'Arriving', later: 'Later today', ended: 'Done today', off: 'Not today' };
+const STALE_DAYS = 60;
 const RANK = { live: 0, soon: 1, later: 2, ended: 3, off: 4 };
 const TYPE_LABEL = { bar: 'Bar', nightclub: 'Nightclub', restaurant: 'Restaurant', hotel: 'Hotel bar', multipurpose: 'Venue', arena: 'Arena' };
 
@@ -33,7 +34,8 @@ async function loadData() {
       const fc = await res.json();
       const venues = (fc.features || []).map(normalize).filter(Boolean);
       if (!venues.length) continue;
-      return { venues, sample: url.includes('sample') || !!fc.sample };
+      const dates = venues.map((v) => v.verified).filter(Boolean).sort();
+      return { venues, sample: url.includes('sample') || !!fc.sample, updated: fc.updated || dates[dates.length - 1] || '' };
     } catch (e) {
       // Try the next file.
     }
@@ -190,7 +192,12 @@ function renderStation(list) {
   try { host = v.sourceUrl ? new URL(v.sourceUrl).hostname.replace(/^www\./, '') : ''; } catch { host = ''; }
   const source = v.sample
     ? 'Sample data: this is not a real bar.'
-    : `${host ? `From <a href="${esc(v.sourceUrl)}" target="_blank" rel="noopener">${esc(host)}</a>` : 'Source unknown'}${v.verified ? `, checked ${esc(v.verified)}` : ''}`;
+    : (host ? `Source: <a href="${esc(v.sourceUrl)}" target="_blank" rel="noopener">${esc(host)}</a>` : 'Source unknown');
+  const age = v.verified ? daysSince(v.verified) : null;
+  const stale = age === null || age > STALE_DAYS;
+  const checked = v.verified
+    ? `Deals last checked <strong>${esc(fmtDate(v.verified))}</strong> (${fmtAge(age)})`
+    : 'We don\'t know when these deals were last checked';
 
   el.innerHTML = `
     <div class="station-head">
@@ -205,6 +212,7 @@ function renderStation(list) {
       <div class="status-row"><span class="pill ${v.st.status}">${STATUS_LABEL[v.st.status]}</span><span class="status-note">${statusNote(v.st)}</span></div>
       <ul class="windows">${v.windows.map((w) => `<li><span class="days">${esc(fmtDays(w.days))}</span><span class="hours">${esc(fmtWindowTime(w))}</span>${w.area ? `<span class="area">${esc(w.area)}</span>` : ''}</li>`).join('')}</ul>
       <ul class="deals">${v.deals.map((d) => `<li><span class="cat">${esc(CAT_LABEL[d.category] || d.category)}</span><span class="what">${esc(d.item || d.text)}</span><span class="price">${esc(dealPrice(d))}</span></li>`).join('')}</ul>
+      <p class="checked${stale ? ' is-stale' : ''}"><span>${checked}</span>${stale ? '<span class="stale-note">May be out of date. Call ahead, and tap "Report a change" if it\'s wrong.</span>' : ''}</p>
       <p class="source">${source}</p>
       <div class="actions">
         <a class="secondary" href="${esc(issue)}" target="_blank" rel="noopener">Report a change</a>
@@ -219,6 +227,57 @@ function renderStation(list) {
 let map;
 let mapReady = false;
 
+function iconName(v) {
+  return `stop:${v.lines.join('.') || 'none'}:${v.st.status === 'live' ? 'live' : 'idle'}`;
+}
+
+// Draws a stop badge: a pill holding one lettered bullet per line, like a
+// transit sign. Pouring-now stops get an amber pill.
+function drawIcon(name) {
+  const [, keys, mode] = name.split(':');
+  const lines = keys === 'none' ? [] : keys.split('.');
+  const scale = 2;
+  const d = 18;
+  const gap = 2;
+  const pad = 3;
+  const h = d + pad * 2;
+  const w = lines.length ? pad * 2 + lines.length * d + (lines.length - 1) * gap : h;
+  const canvas = document.createElement('canvas');
+  canvas.width = (w + 2) * scale;
+  canvas.height = (h + 2) * scale;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(scale, scale);
+  ctx.translate(1, 1);
+  ctx.beginPath();
+  ctx.roundRect(0, 0, w, h, h / 2);
+  ctx.fillStyle = mode === 'live' ? '#FFB000' : '#FFFFFF';
+  ctx.fill();
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = '#111111';
+  ctx.stroke();
+  if (!lines.length) {
+    ctx.beginPath();
+    ctx.arc(h / 2, h / 2, 4, 0, Math.PI * 2);
+    ctx.fillStyle = '#111111';
+    ctx.fill();
+  }
+  ctx.font = '800 11px Inter, system-ui, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  lines.forEach((k, i) => {
+    const l = LINES[k];
+    const cx = pad + d / 2 + i * (d + gap);
+    ctx.beginPath();
+    ctx.arc(cx, h / 2, d / 2, 0, Math.PI * 2);
+    ctx.fillStyle = l.color;
+    ctx.fill();
+    ctx.fillStyle = l.text;
+    ctx.fillText(l.letter, cx, h / 2 + 0.5);
+  });
+  const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  return { width: canvas.width, height: canvas.height, data: img.data };
+}
+
 function stationGeoJSON(list) {
   return {
     type: 'FeatureCollection',
@@ -227,8 +286,9 @@ function stationGeoJSON(list) {
       geometry: { type: 'Point', coordinates: v.coords },
       properties: {
         id: v.id,
-        live: v.st.status === 'live',
-        transfer: v.lines.length > 1,
+        icon: iconName(v),
+        // Higher keys draw on top, so pouring-now stops sit above the rest.
+        order: 4 - RANK[v.st.status],
         rank: RANK[v.st.status],
         label: v.st.status === 'live' && v.price != null ? `${v.name}  ${money(v.price)}` : v.name
       }
@@ -238,11 +298,7 @@ function stationGeoJSON(list) {
 
 function renderMap(list) {
   if (!mapReady) return;
-  const stops = list.filter((v) => v.st.status !== 'off');
-  map.getSource('stations').setData(stationGeoJSON(stops));
-  map.getSource('lines').setData(lineFeatures(stops.map((v) => ({
-    coords: v.coords, lines: v.lines.filter((k) => !state.off.has(k))
-  }))));
+  map.getSource('stations').setData(stationGeoJSON(list.filter((v) => v.st.status !== 'off')));
   map.setFilter('station-halo', ['==', ['get', 'id'], state.selected || '']);
 }
 
@@ -259,37 +315,28 @@ function setupMap() {
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
   map.addControl(new maplibregl.GeolocateControl({ trackUserLocation: false }), 'top-right');
 
+  map.on('styleimagemissing', (e) => {
+    if (e.id.startsWith('stop:') && !map.hasImage(e.id)) map.addImage(e.id, drawIcon(e.id), { pixelRatio: 2 });
+  });
+
   map.on('load', () => {
-    map.addSource('lines', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
     map.addSource('stations', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
 
-    const width = ['interpolate', ['linear'], ['zoom'], 11, 2.5, 14, 5, 16, 8];
-    for (const key of LINE_ORDER) {
-      const l = LINES[key];
-      map.addLayer({
-        id: `line-${key}`,
-        type: 'line',
-        source: 'lines',
-        filter: ['==', ['get', 'line'], key],
-        layout: { 'line-cap': 'round', 'line-join': 'round' },
-        paint: {
-          'line-color': l.color,
-          'line-width': width,
-          'line-offset': ['interpolate', ['linear'], ['zoom'], 11, l.offset * 0.6, 16, l.offset * 1.8],
-          ...(key === 'late' ? { 'line-dasharray': [0.1, 2] } : {})
-        }
-      });
-    }
-
-    const r = (base) => ['interpolate', ['linear'], ['zoom'], 11, ['case', ['get', 'transfer'], base * 0.75, base * 0.6], 15, ['case', ['get', 'transfer'], base * 1.4, base * 1.1]];
+    const size = ['interpolate', ['linear'], ['zoom'], 11, 0.7, 14, 1, 16, 1.2];
     map.addLayer({ id: 'station-halo', type: 'circle', source: 'stations', filter: ['==', ['get', 'id'], ''],
-      paint: { 'circle-radius': r(12), 'circle-color': '#FFB000' } });
-    map.addLayer({ id: 'station-ring', type: 'circle', source: 'stations',
-      paint: { 'circle-radius': r(8), 'circle-color': '#111111' } });
-    map.addLayer({ id: 'station-fill', type: 'circle', source: 'stations',
-      paint: { 'circle-radius': r(5.5), 'circle-color': '#FFFFFF' } });
-    map.addLayer({ id: 'station-live', type: 'circle', source: 'stations', filter: ['get', 'live'],
-      paint: { 'circle-radius': r(3.5), 'circle-color': '#111111' } });
+      paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, 14, 16, 24], 'circle-color': '#FFB000', 'circle-opacity': 0.55,
+        'circle-stroke-width': 2, 'circle-stroke-color': '#111111' } });
+    map.addLayer({
+      id: 'station-badge',
+      type: 'symbol',
+      source: 'stations',
+      layout: {
+        'icon-image': ['get', 'icon'],
+        'icon-size': size,
+        'icon-allow-overlap': true,
+        'symbol-sort-key': ['get', 'order']
+      }
+    });
     map.addLayer({
       id: 'station-label',
       type: 'symbol',
@@ -299,14 +346,14 @@ function setupMap() {
         'text-field': ['get', 'label'],
         'text-font': ['Noto Sans Bold'],
         'text-size': ['interpolate', ['linear'], ['zoom'], 12, 11, 16, 14],
-        'text-offset': [0, 1.1],
+        'text-offset': [0, 1.3],
         'text-anchor': 'top',
         'symbol-sort-key': ['get', 'rank']
       },
       paint: { 'text-color': '#111111', 'text-halo-color': '#F4F2EC', 'text-halo-width': 2 }
     });
 
-    for (const layer of ['station-ring', 'station-fill', 'station-live', 'station-label']) {
+    for (const layer of ['station-badge', 'station-label']) {
       map.on('click', layer, (e) => select(e.features[0].properties.id, false));
       map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer'; });
       map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; });
@@ -376,10 +423,11 @@ async function main() {
   setupControls();
   renderClock();
   setupMap();
-  const { venues, sample } = await loadData();
+  const { venues, sample, updated } = await loadData();
   state.venues = venues;
   state.sample = sample;
   $('sample-badge').hidden = !sample;
+  $('data-updated').textContent = updated ? `Happy hours last updated ${fmtDate(updated)}.` : '';
   render();
 }
 

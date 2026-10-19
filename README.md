@@ -1,8 +1,8 @@
 # Happy Hour Lines · DC
 
-Every happy hour in Washington DC, drawn as a transit map. Each colored line is a
-deal type (Beer, Wine, Cocktails, Late night), each stop is a bar, and bars with
-more than one kind of deal are transfer stations. Filled stops are pouring right now.
+Every happy hour in Washington DC, styled like a transit map. Each colored line is a
+deal type (Beer, Wine, Cocktails, Late night), each stop is a bar wearing the bullets
+of the lines it serves, and amber stops are pouring right now.
 The amber board lists the happy hours ending soonest.
 
 It's a static site: plain HTML, CSS and JavaScript with [MapLibre](https://maplibre.org/)

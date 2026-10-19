@@ -168,3 +168,8 @@ button, input, select { font: inherit; }
 }
 
 .station-hint { margin: 0; padding: 16px; font-size: 14px; color: var(--ink-2); }
+
+.checked { margin: 0; padding: 10px 12px; border-radius: 8px; background: #F4F2EC; font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+.checked.is-stale { background: #FFF1D6; border: 1px solid #E0B24A; }
+.stale-note { font-size: 13px; color: #6B4A00; font-weight: 600; }
+.footnote strong { color: var(--ink); }

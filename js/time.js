@@ -105,3 +105,26 @@ export function nowInDC(date = new Date()) {
   const hour = Number(get('hour')) % 24;
   return { day, min: hour * 60 + Number(get('minute')) };
 }
+
+// '2026-10-12' -> 'Oct 12, 2026'. Dates are calendar days, so format in UTC to avoid shifting.
+export function fmtDate(iso) {
+  const d = new Date(`${iso}T00:00:00Z`);
+  if (Number.isNaN(d.getTime())) return '';
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+}
+
+export function daysSince(iso, now = new Date()) {
+  const d = Date.parse(`${iso}T00:00:00Z`);
+  if (Number.isNaN(d)) return null;
+  const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  return Math.max(0, Math.round((today - d) / 86400000));
+}
+
+export function fmtAge(days) {
+  if (days === null) return '';
+  if (days === 0) return 'today';
+  if (days === 1) return 'yesterday';
+  if (days < 45) return `${days} days ago`;
+  const months = Math.round(days / 30);
+  return months < 12 ? `${months} months ago` : 'over a year ago';
+}

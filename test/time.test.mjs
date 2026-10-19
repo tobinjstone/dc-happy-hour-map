@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { statusAt, fmtDays, fmtWindowTime } from '../js/time.js';
-import { linesFor, mstEdges } from '../js/lines.js';
+import { linesFor } from '../js/lines.js';
 
 const weekday = [{ days: ['mon', 'tue', 'wed', 'thu', 'fri'], start: '16:00', end: '19:00' }];
 
@@ -43,8 +43,12 @@ test('lines come from deal categories and late windows', () => {
   assert.deepEqual(linesFor(v), ['beer', 'cocktail', 'late']);
 });
 
-test('spanning tree joins every stop', () => {
-  const pts = [[0, 0], [1, 0], [2, 0], [0, 1]];
-  assert.equal(mstEdges(pts).length, 3);
-  assert.deepEqual(mstEdges([[0, 0]]), []);
+test('formats last-checked dates and ages', async () => {
+  const { fmtDate, daysSince, fmtAge } = await import('../js/time.js');
+  assert.equal(fmtDate('2026-10-12'), 'Oct 12, 2026');
+  assert.equal(fmtDate('nope'), '');
+  assert.equal(daysSince('2026-10-12', new Date(2026, 9, 19, 18)), 7);
+  assert.equal(fmtAge(0), 'today');
+  assert.equal(fmtAge(7), '7 days ago');
+  assert.equal(fmtAge(90), '3 months ago');
 });
