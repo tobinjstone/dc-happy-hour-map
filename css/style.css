@@ -128,7 +128,7 @@ button, input, select { font: inherit; }
 .pill { padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
 .pill.live { background: var(--amber); color: var(--ink); }
 .pill.soon { background: #E3ECFA; color: #123F7A; }
-.pill.later, .pill.ended, .pill.off { background: #ECE7DC; color: #3A3A3A; }
+.pill.later, .pill.ended, .pill.off, .pill.unknown { background: #ECE7DC; color: #3A3A3A; }
 .status-note { font-size: 15px; font-weight: 700; }
 .windows { display: flex; flex-direction: column; gap: 4px; font-size: 14px; margin: 0; padding: 0; list-style: none; }
 .windows li { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -173,3 +173,6 @@ button, input, select { font: inherit; }
 .checked.is-stale { background: #FFF1D6; border: 1px solid #E0B24A; }
 .stale-note { font-size: 13px; color: #6B4A00; font-weight: 600; }
 .footnote strong { color: var(--ink); }
+
+.summary { margin: 0; font-size: 14px; }
+.confidence { margin: 0; font-size: 13px; color: #6B4A00; }

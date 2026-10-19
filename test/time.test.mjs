@@ -52,3 +52,18 @@ test('formats last-checked dates and ages', async () => {
   assert.equal(fmtAge(7), '7 days ago');
   assert.equal(fmtAge(90), '3 months ago');
 });
+
+test('handles windows with missing or partial times', () => {
+  const allDay = [{ days: ['mon'], start: null, end: null, end_label: 'all day' }];
+  assert.equal(statusAt(allDay, { day: 'mon', min: 9 * 60 }).status, 'live');
+  const noEnd = [{ days: ['mon'], start: '16:00', end: null, end_label: null }];
+  const s = statusAt(noEnd, { day: 'mon', min: 17 * 60 });
+  assert.equal(s.status, 'live');
+  assert.equal(s.endKnown, false);
+  assert.equal(fmtWindowTime(noEnd[0]), 'From 4 pm');
+  assert.equal(statusAt([{ days: ['mon'], start: null, end: null, end_label: null }], { day: 'mon', min: 600 }).status, 'unknown');
+  assert.equal(statusAt([], { day: 'mon', min: 600 }).status, 'unknown');
+  assert.equal(statusAt([{ days: [], start: '16:00', end: '19:00' }], { day: 'mon', min: 1000 }).status, 'unknown');
+  const overnight = [{ days: ['fri'], start: '22:00', end: '01:00' }];
+  assert.equal(statusAt(overnight, { day: 'sat', min: 30 }).status, 'live');
+});

@@ -4,9 +4,9 @@ import { LINES, LINE_ORDER, linesFor } from './lines.js';
 const REPO = 'tobinjstone/dc-happy-hour-map';
 const DRINKS = new Set(['beer', 'wine', 'cocktail', 'spirits']);
 const CAT_LABEL = { beer: 'Beer', wine: 'Wine', cocktail: 'Cocktail', spirits: 'Rail', food: 'Food', other: 'Other' };
-const STATUS_LABEL = { live: 'Pouring now', soon: 'Arriving', later: 'Later today', ended: 'Done today', off: 'Not today' };
+const STATUS_LABEL = { live: 'Pouring now', soon: 'Arriving', later: 'Later today', ended: 'Done today', off: 'Not today', unknown: 'Times not listed' };
 const STALE_DAYS = 60;
-const RANK = { live: 0, soon: 1, later: 2, ended: 3, off: 4 };
+const RANK = { live: 0, soon: 1, later: 2, ended: 3, unknown: 3, off: 4 };
 const TYPE_LABEL = { bar: 'Bar', nightclub: 'Nightclub', restaurant: 'Restaurant', hotel: 'Hotel bar', multipurpose: 'Venue', arena: 'Arena' };
 
 const state = {
@@ -55,7 +55,7 @@ function normalize(f) {
   const windows = parseMaybe(p.windows) || [];
   const deals = parseMaybe(p.deals) || [];
   const coords = f.geometry && f.geometry.coordinates;
-  if (!coords || !windows.length) return null;
+  if (!coords) return null;
   if (p.status && p.status !== 'has_happy_hour') return null;
   const v = {
     id: String(p.venue_id || p.id),
@@ -66,6 +66,8 @@ function normalize(f) {
     windows,
     deals,
     sourceUrl: p.source_url || '',
+    summary: p.summary || '',
+    confidence: p.confidence || '',
     verified: p.last_verified || '',
     sourceDate: p.source_date || '',
     sample: !!p.sample
@@ -120,16 +122,17 @@ function windowEnd(w) {
 
 function statusNote(st) {
   switch (st.status) {
-    case 'live': return `Ends ${windowEnd(st.window)}, ${fmtDuration(st.minsLeft)} left`;
+    case 'live': return st.endKnown === false ? `Started ${fmtClock(toMin(st.window.start))}, end time not listed` : `Ends ${windowEnd(st.window)}, ${fmtDuration(st.minsLeft)} left`;
     case 'soon': return `Starts ${fmtClock(toMin(st.window.start))}, in ${fmtDuration(st.minsUntil)}`;
     case 'later': return `Starts ${fmtClock(toMin(st.window.start))}`;
     case 'ended': return 'Done for today';
+    case 'unknown': return 'Check with the bar for times';
     default: return `No happy hour on ${DAY_LABELS[state.moment.day]}`;
   }
 }
 
 function boardTime(st) {
-  if (st.status === 'live') return `${st.minsLeft} LEFT`;
+  if (st.status === 'live') return st.endKnown === false ? 'ON NOW' : `${st.minsLeft} LEFT`;
   if (st.status === 'soon') return `ARR ${st.minsUntil}`;
   if (st.status === 'later') return fmtClock(toMin(st.window.start)).replace(' ', '').toUpperCase();
   return 'DONE';
@@ -153,7 +156,7 @@ function renderClock() {
 
 function renderBoard(list) {
   const rows = list
-    .filter((v) => v.st.status !== 'off')
+    .filter((v) => v.st.status !== 'off' && v.st.status !== 'unknown')
     .sort((a, b) => RANK[a.st.status] - RANK[b.st.status] ||
       (a.st.minsLeft ?? a.st.minsUntil ?? 0) - (b.st.minsLeft ?? b.st.minsUntil ?? 0))
     .slice(0, 8);
@@ -214,8 +217,11 @@ function renderStation(list) {
     </div>
     <div class="station-body">
       <div class="status-row"><span class="pill ${v.st.status}">${STATUS_LABEL[v.st.status]}</span><span class="status-note">${statusNote(v.st)}</span></div>
+      ${v.windows.length ? '' : '<p class="summary">Days and times not listed.</p>'}
       <ul class="windows">${v.windows.map((w) => `<li><span class="days">${esc(fmtDays(w.days))}</span><span class="hours">${esc(fmtWindowTime(w))}</span>${w.area ? `<span class="area">${esc(w.area)}</span>` : ''}</li>`).join('')}</ul>
       <ul class="deals">${v.deals.map((d) => `<li><span class="cat">${esc(CAT_LABEL[d.category] || d.category)}</span><span class="what">${esc(d.item || d.text)}</span><span class="price">${esc(dealPrice(d))}</span></li>`).join('')}</ul>
+      ${!v.deals.length && v.summary ? `<p class="summary">${esc(v.summary)}</p>` : ''}
+      ${v.confidence === 'low' ? '<p class="confidence">From a third-party listing, so double-check with the bar.</p>' : ''}
       <p class="checked${stale ? ' is-stale' : ''}"><span>${checked}</span>${stale ? '<span class="stale-note">May be out of date. Call ahead, and tap "Report a change" if it\'s wrong.</span>' : ''}</p>
       <p class="source">${source}</p>
       <div class="actions">

@@ -6,41 +6,55 @@ export const DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 export const DAY_LABELS = { sun: 'Sun', mon: 'Mon', tue: 'Tue', wed: 'Wed', thu: 'Thu', fri: 'Fri', sat: 'Sat' };
 const CLOSE = 26 * 60;
 const SOON = 60;
+// When a source gives a start but no end, assume a typical three-hour happy hour
+// for the "is it on now" check, and say the end time isn't listed.
+const ASSUMED_LENGTH = 3 * 60;
 
 export function toMin(hhmm) {
   const [h, m] = String(hhmm).split(':').map(Number);
   return h * 60 + (m || 0);
 }
 
-function span(w) {
+// Returns null when the window's times or days aren't known.
+export function span(w) {
+  if (!w || !Array.isArray(w.days) || !w.days.length) return null;
+  if (!w.start) {
+    if (w.end_label === 'all day') return { start: 0, end: 24 * 60, endKnown: true };
+    if (w.end_label === 'close') return { start: 0, end: CLOSE, endKnown: true };
+    return null;
+  }
   const start = toMin(w.start);
+  if (!w.end && !w.end_label) return { start, end: start + ASSUMED_LENGTH, endKnown: false };
   let end = w.end ? toMin(w.end) : CLOSE;
   if (end <= start) end += 24 * 60;
-  return { start, end };
+  return { start, end, endKnown: true };
 }
 
 // moment: { day: 'mon', min: 1092 }
-// Returns { status: 'live'|'soon'|'later'|'ended'|'off', minsLeft, minsUntil, window }
+// Returns { status: 'live'|'soon'|'later'|'ended'|'off'|'unknown', minsLeft, minsUntil, window, endKnown }
 export function statusAt(windows, moment) {
   const dayIdx = DAYS.indexOf(moment.day);
   const prev = DAYS[(dayIdx + 6) % 7];
   let best = null;
   let hadToday = false;
+  let usable = 0;
 
   for (const w of windows || []) {
-    if (!w || !w.start || !Array.isArray(w.days)) continue;
-    const { start, end } = span(w);
+    const sp = span(w);
+    if (!sp) continue;
+    usable++;
+    const { start, end, endKnown } = sp;
 
     // Yesterday's window running past midnight.
     if (w.days.includes(prev) && end > 24 * 60 && moment.min < end - 24 * 60) {
       const left = end - 24 * 60 - moment.min;
-      if (!best || best.status !== 'live' || left < best.minsLeft) best = { status: 'live', minsLeft: left, window: w };
+      if (!best || best.status !== 'live' || left < best.minsLeft) best = { status: 'live', minsLeft: left, window: w, endKnown };
     }
     if (!w.days.includes(moment.day)) continue;
     hadToday = true;
     if (moment.min >= start && moment.min < end) {
       const left = end - moment.min;
-      if (!best || best.status !== 'live' || left < best.minsLeft) best = { status: 'live', minsLeft: left, window: w };
+      if (!best || best.status !== 'live' || left < best.minsLeft) best = { status: 'live', minsLeft: left, window: w, endKnown };
     } else if (start > moment.min && (!best || best.status !== 'live')) {
       const until = start - moment.min;
       if (!best || best.minsUntil === undefined || until < best.minsUntil) {
@@ -49,6 +63,7 @@ export function statusAt(windows, moment) {
     }
   }
   if (best) return best;
+  if (!usable) return { status: 'unknown' };
   return { status: hadToday ? 'ended' : 'off' };
 }
 
@@ -69,14 +84,20 @@ export function fmtDuration(mins) {
 }
 
 export function fmtWindowTime(w) {
+  if (!w.start) {
+    if (w.end_label === 'all day') return 'All day';
+    if (w.end_label === 'close') return 'Until close';
+    return 'Times not listed';
+  }
   const start = toMin(w.start);
+  if (!w.end && !w.end_label) return `From ${fmtClock(start)}`;
   const end = w.end ? fmtClock(toMin(w.end)) : (w.end_label || 'close');
   return `${fmtClock(start)}–${end}`;
 }
 
 // ['mon','tue','wed','thu','fri'] -> 'Mon–Fri'
 export function fmtDays(days) {
-  if (!days || !days.length) return '';
+  if (!days || !days.length) return 'Days not listed';
   if (days.length === 7) return 'Every day';
   // Order Monday-first so weekday runs read naturally.
   const order = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
