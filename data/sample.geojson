@@ -1,0 +1,677 @@
+{
+ "type": "FeatureCollection",
+ "sample": true,
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.0219,
+     38.9128
+    ]
+   },
+   "properties": {
+    "id": "sample-copper",
+    "name": "The Copper Tap",
+    "neighborhood": "Cardozo/Shaw",
+    "lat": 38.9128,
+    "lng": -77.0219,
+    "venue_type": "bar",
+    "windows": [
+     {
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "start": "16:00",
+      "end": "19:00",
+      "area": "bar and patio"
+     }
+    ],
+    "deals": [
+     {
+      "category": "beer",
+      "item": "Drafts",
+      "price": 5,
+      "text": "$5 drafts",
+      "kind": "flat_price"
+     },
+     {
+      "category": "cocktail",
+      "item": "House cocktails",
+      "price": 7,
+      "text": "$7 house cocktails",
+      "kind": "flat_price"
+     },
+     {
+      "category": "food",
+      "item": "Wings",
+      "price": null,
+      "text": "Half-off wings",
+      "kind": "half_off"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$5 drafts, $7 house cocktails, Half-off wings",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.0316,
+     38.917
+    ]
+   },
+   "properties": {
+    "id": "sample-rooftop",
+    "name": "Rooftop Fourteen",
+    "neighborhood": "U Street",
+    "lat": 38.917,
+    "lng": -77.0316,
+    "venue_type": "bar",
+    "windows": [
+     {
+      "days": [
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat",
+       "sun"
+      ],
+      "start": "17:00",
+      "end": "20:00",
+      "area": "rooftop only"
+     }
+    ],
+    "deals": [
+     {
+      "category": "wine",
+      "item": "Wine by the glass",
+      "price": 6,
+      "text": "$6 wine",
+      "kind": "flat_price"
+     },
+     {
+      "category": "cocktail",
+      "item": "Spritzes",
+      "price": 8,
+      "text": "$8 spritzes",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$6 wine, $8 spritzes",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.0035,
+     38.8762
+    ]
+   },
+   "properties": {
+    "id": "sample-anacostia",
+    "name": "Anacostia Ale Works",
+    "neighborhood": "Navy Yard",
+    "lat": 38.8762,
+    "lng": -77.0035,
+    "venue_type": "restaurant",
+    "windows": [
+     {
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "start": "15:00",
+      "end": "18:30",
+      "area": null
+     }
+    ],
+    "deals": [
+     {
+      "category": "beer",
+      "item": "House pints",
+      "price": 4,
+      "text": "$4 house pints",
+      "kind": "flat_price"
+     },
+     {
+      "category": "beer",
+      "item": "Flights",
+      "price": 2,
+      "text": "$2 off flights",
+      "kind": "dollars_off"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$4 house pints, $2 off flights",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.044,
+     38.9105
+    ]
+   },
+   "properties": {
+    "id": "sample-dupont",
+    "name": "Dupont Wine Room",
+    "neighborhood": "Dupont Circle",
+    "lat": 38.9105,
+    "lng": -77.044,
+    "venue_type": "bar",
+    "windows": [
+     {
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "start": "17:00",
+      "end": "19:00",
+      "area": "bar only"
+     }
+    ],
+    "deals": [
+     {
+      "category": "wine",
+      "item": "Selected pours",
+      "price": 7,
+      "text": "$7 pours",
+      "kind": "flat_price"
+     },
+     {
+      "category": "food",
+      "item": "Cheese board",
+      "price": 12,
+      "text": "$12 cheese board",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$7 pours, $12 cheese board",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.9905,
+     38.8893
+    ]
+   },
+   "properties": {
+    "id": "sample-lincoln",
+    "name": "Lincoln Park Tavern",
+    "neighborhood": "Capitol Hill",
+    "lat": 38.8893,
+    "lng": -76.9905,
+    "venue_type": "bar",
+    "windows": [
+     {
+      "days": [
+       "sun",
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat"
+      ],
+      "start": "16:00",
+      "end": "19:00",
+      "area": null
+     },
+     {
+      "days": [
+       "sun",
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "start": "22:00",
+      "end": null,
+      "end_label": "close",
+      "area": null
+     }
+    ],
+    "deals": [
+     {
+      "category": "beer",
+      "item": "Domestic cans",
+      "price": 3,
+      "text": "$3 cans",
+      "kind": "flat_price"
+     },
+     {
+      "category": "spirits",
+      "item": "Rail drinks",
+      "price": 5,
+      "text": "$5 rail drinks",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$3 cans, $5 rail drinks",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.0425,
+     38.9216
+    ]
+   },
+   "properties": {
+    "id": "sample-columbia",
+    "name": "Columbia Road Social",
+    "neighborhood": "Adams Morgan",
+    "lat": 38.9216,
+    "lng": -77.0425,
+    "venue_type": "bar",
+    "windows": [
+     {
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu"
+      ],
+      "start": "19:00",
+      "end": "21:00",
+      "area": "bar only"
+     }
+    ],
+    "deals": [
+     {
+      "category": "cocktail",
+      "item": "Classic cocktails",
+      "price": 9,
+      "text": "$9 classics",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$9 classics",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.023,
+     38.897
+    ]
+   },
+   "properties": {
+    "id": "sample-penn",
+    "name": "Penn Quarter Taproom",
+    "neighborhood": "Penn Quarter",
+    "lat": 38.897,
+    "lng": -77.023,
+    "venue_type": "bar",
+    "windows": [
+     {
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "start": "16:00",
+      "end": "19:00",
+      "area": null
+     }
+    ],
+    "deals": [
+     {
+      "category": "beer",
+      "item": "Local drafts",
+      "price": 5,
+      "text": "$5 local drafts",
+      "kind": "flat_price"
+     },
+     {
+      "category": "food",
+      "item": "Sliders",
+      "price": 6,
+      "text": "$6 sliders",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$5 local drafts, $6 sliders",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.988,
+     38.9002
+    ]
+   },
+   "properties": {
+    "id": "sample-hstreet",
+    "name": "H Street Hideaway",
+    "neighborhood": "Near Northeast",
+    "lat": 38.9002,
+    "lng": -76.988,
+    "venue_type": "bar",
+    "windows": [
+     {
+      "days": [
+       "wed",
+       "thu",
+       "fri",
+       "sat"
+      ],
+      "start": "22:00",
+      "end": null,
+      "end_label": "close",
+      "area": null
+     }
+    ],
+    "deals": [
+     {
+      "category": "spirits",
+      "item": "Well drinks",
+      "price": 6,
+      "text": "$6 well drinks",
+      "kind": "flat_price"
+     },
+     {
+      "category": "cocktail",
+      "item": "Frozen drink",
+      "price": 8,
+      "text": "$8 frozen drink",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$6 well drinks, $8 frozen drink",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.024,
+     38.879
+    ]
+   },
+   "properties": {
+    "id": "sample-pier",
+    "name": "Pier Seven Oyster Bar",
+    "neighborhood": "Southwest Waterfront",
+    "lat": 38.879,
+    "lng": -77.024,
+    "venue_type": "restaurant",
+    "windows": [
+     {
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "area": "bar and patio"
+     }
+    ],
+    "deals": [
+     {
+      "category": "food",
+      "item": "Raw oysters",
+      "price": 1,
+      "text": "$1 oysters",
+      "kind": "flat_price"
+     },
+     {
+      "category": "wine",
+      "item": "Sparkling",
+      "price": 6,
+      "text": "$6 sparkling",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$1 oysters, $6 sparkling",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.063,
+     38.905
+    ]
+   },
+   "properties": {
+    "id": "sample-canal",
+    "name": "Canal House",
+    "neighborhood": "Georgetown",
+    "lat": 38.905,
+    "lng": -77.063,
+    "venue_type": "restaurant",
+    "windows": [
+     {
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "start": "17:00",
+      "end": "19:00",
+      "area": "bar only"
+     }
+    ],
+    "deals": [
+     {
+      "category": "beer",
+      "item": "Pints",
+      "price": 6,
+      "text": "$6 pints",
+      "kind": "flat_price"
+     },
+     {
+      "category": "wine",
+      "item": "House wine",
+      "price": 6,
+      "text": "$6 house wine",
+      "kind": "flat_price"
+     },
+     {
+      "category": "food",
+      "item": "Flatbreads",
+      "price": 8,
+      "text": "$8 flatbreads",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$6 pints, $6 house wine, $8 flatbreads",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.03,
+     38.9093
+    ]
+   },
+   "properties": {
+    "id": "sample-logan",
+    "name": "Logan Lounge",
+    "neighborhood": "Logan Circle/Shaw",
+    "lat": 38.9093,
+    "lng": -77.03,
+    "venue_type": "bar",
+    "windows": [
+     {
+      "days": [
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri"
+      ],
+      "start": "16:30",
+      "end": "19:30",
+      "area": null
+     }
+    ],
+    "deals": [
+     {
+      "category": "cocktail",
+      "item": "Martinis",
+      "price": null,
+      "text": "Half-price martinis",
+      "kind": "half_off"
+     },
+     {
+      "category": "wine",
+      "item": "Prosecco",
+      "price": 7,
+      "text": "$7 prosecco",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "Half-price martinis, $7 prosecco",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.0215,
+     38.899
+    ]
+   },
+   "properties": {
+    "id": "sample-chinatown",
+    "name": "Gallery Place Pub",
+    "neighborhood": "Chinatown",
+    "lat": 38.899,
+    "lng": -77.0215,
+    "venue_type": "bar",
+    "windows": [
+     {
+      "days": [
+       "sun",
+       "mon",
+       "tue",
+       "wed",
+       "thu",
+       "fri",
+       "sat"
+      ],
+      "start": "21:00",
+      "end": "23:00",
+      "area": null
+     }
+    ],
+    "deals": [
+     {
+      "category": "beer",
+      "item": "Drafts",
+      "price": 4,
+      "text": "$4 drafts",
+      "kind": "flat_price"
+     },
+     {
+      "category": "spirits",
+      "item": "Shots",
+      "price": 4,
+      "text": "$4 shots",
+      "kind": "flat_price"
+     }
+    ],
+    "status": "has_happy_hour",
+    "summary": "$4 drafts, $4 shots",
+    "source_url": null,
+    "last_verified": "2026-10-19",
+    "confidence": "low",
+    "sample": true
+   }
+  }
+ ]
+}

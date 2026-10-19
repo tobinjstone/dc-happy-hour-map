@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Hour Lines · DC</title>
+  <meta name="description" content="Every happy hour in Washington DC, drawn as a transit map. See what's pouring right now.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true">HH</span>
+      <span class="brand-name">Happy Hour Lines</span>
+      <span class="brand-city">Washington DC</span>
+    </a>
+    <label class="visually-hidden" for="search">Search bars or neighborhoods</label>
+    <input id="search" type="search" placeholder="Search a bar or neighborhood" autocomplete="off">
+    <div class="when">
+      <label class="visually-hidden" for="day">Day</label>
+      <select id="day"></select>
+      <label class="visually-hidden" for="time">Time</label>
+      <input id="time" type="time" step="900">
+      <button id="now" type="button" class="now-btn" aria-pressed="true">Now</button>
+    </div>
+    <span id="sample-badge" class="sample-badge" hidden>Sample data</span>
+  </header>
+
+  <div class="layout">
+    <aside class="panel">
+      <section class="board" aria-labelledby="board-title">
+        <div class="board-head">
+          <h2 id="board-title">Next happy hours</h2>
+          <span id="clock" class="board-clock"></span>
+        </div>
+        <div class="board-cols" aria-hidden="true"><span>Lines</span><span>Bar</span><span>Min</span></div>
+        <ol id="board" class="board-rows"></ol>
+      </section>
+
+      <section class="filters" aria-label="Filters">
+        <div class="toggles">
+          <button id="live-only" type="button" class="toggle" aria-pressed="false">Pouring now only</button>
+          <button id="food-only" type="button" class="toggle" aria-pressed="false">Food specials</button>
+        </div>
+        <div id="line-chips" class="line-chips"></div>
+      </section>
+
+      <p id="station-hint" class="station-hint">Tap any stop on the map, or a row on the board, to see its deals.</p>
+
+      <section id="station" class="station" aria-live="polite" hidden></section>
+
+      <p class="footnote">Deals change often. Spot one that's wrong? Every bar has a "Report a change" link. Data from bar websites and menus, DC ABCA licenses and OpenStreetMap.</p>
+    </aside>
+
+    <main id="map" aria-label="Map of DC happy hours"></main>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
