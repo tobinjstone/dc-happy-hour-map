@@ -17,6 +17,7 @@ const state = {
   off: new Set(),
   liveOnly: false,
   foodOnly: false,
+  allDayOnly: false,
   query: '',
   selected: null
 };
@@ -95,6 +96,7 @@ function withStatus() {
 function isVisible(v) {
   if (state.liveOnly && v.st.status !== 'live') return false;
   if (state.foodOnly && !v.hasFood) return false;
+  if (state.allDayOnly && !v.st.allDay) return false;
   if (state.query && !v.search.includes(state.query)) return false;
   if (v.lines.length && v.lines.every((k) => state.off.has(k))) return false;
   return true;
@@ -122,7 +124,8 @@ function windowEnd(w) {
 
 function statusNote(st) {
   switch (st.status) {
-    case 'live': return st.endKnown === false ? `Started ${fmtClock(toMin(st.window.start))}, end time not listed` : `Ends ${windowEnd(st.window)}, ${fmtDuration(st.minsLeft)} left`;
+    case 'live': if (st.allDay) return st.window.end_label === 'close' ? 'Happy hour until close today' : 'All-day happy hour today';
+      return st.endKnown === false ? `Started ${fmtClock(toMin(st.window.start))}, end time not listed` : `Ends ${windowEnd(st.window)}, ${fmtDuration(st.minsLeft)} left`;
     case 'soon': return `Starts ${fmtClock(toMin(st.window.start))}, in ${fmtDuration(st.minsUntil)}`;
     case 'later': return `Starts ${fmtClock(toMin(st.window.start))}`;
     case 'ended': return 'Done for today';
@@ -155,13 +158,22 @@ function renderClock() {
 }
 
 function renderBoard(list) {
+  // All-day happy hours don't count down, so they get one summary row
+  // instead of crowding out the timed ones.
+  const allDay = list.filter((v) => v.st.allDay);
   const rows = list
-    .filter((v) => v.st.status !== 'off' && v.st.status !== 'unknown')
+    .filter((v) => v.st.status !== 'off' && v.st.status !== 'unknown' && !v.st.allDay)
     .sort((a, b) => RANK[a.st.status] - RANK[b.st.status] ||
       (a.st.minsLeft ?? a.st.minsUntil ?? 0) - (b.st.minsLeft ?? b.st.minsUntil ?? 0))
-    .slice(0, 8);
+    .slice(0, allDay.length ? 7 : 8);
   const ol = $('board');
-  if (!rows.length) {
+  const allDayRow = allDay.length ? `
+    <li><button type="button" class="board-row board-allday${state.allDayOnly ? ' is-selected' : ''}" data-allday aria-pressed="${state.allDayOnly}">
+      <span class="dots"><span class="dot-24">24</span></span>
+      <span class="n">${state.allDayOnly ? 'SHOWING ALL-DAY ONLY' : 'ALL-DAY HAPPY HOURS'}</span>
+      <span class="t">${allDay.length} ${allDay.length === 1 ? 'BAR' : 'BARS'}</span>
+    </button></li>` : '';
+  if (!rows.length && !allDayRow) {
     ol.innerHTML = `<li class="board-empty">NO HAPPY HOURS ${state.followNow ? 'TODAY' : 'AT THIS TIME'}</li>`;
     return;
   }
@@ -170,7 +182,7 @@ function renderBoard(list) {
       <span class="dots">${v.lines.map((k) => `<span class="dot" style="background:${LINES[k].color}"></span>`).join('')}</span>
       <span class="n">${esc(v.name.toUpperCase())}</span>
       <span class="t">${boardTime(v.st)}</span>
-    </button></li>`).join('');
+    </button></li>`).join('') + allDayRow;
 }
 
 function renderChips(list) {
@@ -243,7 +255,8 @@ function isStale(v) {
 }
 
 function iconName(v) {
-  return `stop:${v.lines.join('.') || 'none'}:${v.st.status === 'live' ? 'live' : 'idle'}`;
+  const mode = v.st.status !== 'live' ? 'idle' : v.st.allDay ? 'allday' : 'live';
+  return `stop:${v.lines.join('.') || 'none'}:${mode}`;
 }
 
 // Draws a stop badge: a pill holding one lettered bullet per line, like a
@@ -251,6 +264,8 @@ function iconName(v) {
 function drawIcon(name) {
   const [, keys, mode] = name.split(':');
   const lines = keys === 'none' ? [] : keys.split('.');
+  // All-day stops carry an extra black "24" bullet, like 24-hour service.
+  if (mode === 'allday') lines.push('24');
   const scale = 2;
   const d = 18;
   const gap = 2;
@@ -265,7 +280,7 @@ function drawIcon(name) {
   ctx.translate(1, 1);
   ctx.beginPath();
   ctx.roundRect(0, 0, w, h, h / 2);
-  ctx.fillStyle = mode === 'live' ? '#FFB000' : '#FFFFFF';
+  ctx.fillStyle = mode === 'idle' ? '#FFFFFF' : '#FFB000';
   ctx.fill();
   ctx.lineWidth = 2;
   ctx.strokeStyle = '#111111';
@@ -280,13 +295,14 @@ function drawIcon(name) {
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   lines.forEach((k, i) => {
-    const l = LINES[k];
+    const l = LINES[k] || { color: '#111111', text: '#FFFFFF', letter: k };
     const cx = pad + d / 2 + i * (d + gap);
     ctx.beginPath();
     ctx.arc(cx, h / 2, d / 2, 0, Math.PI * 2);
     ctx.fillStyle = l.color;
     ctx.fill();
     ctx.fillStyle = l.text;
+    ctx.font = l.letter.length > 1 ? '800 9px Inter, system-ui, sans-serif' : '800 11px Inter, system-ui, sans-serif';
     ctx.fillText(l.letter, cx, h / 2 + 0.5);
   });
   const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -306,7 +322,7 @@ function stationGeoJSON(list) {
         order: 4 - RANK[v.st.status],
         rank: RANK[v.st.status],
         stale: isStale(v),
-        label: v.st.status === 'live' && v.price != null ? `${v.name}  ${money(v.price)}` : v.name
+        label: v.st.status === 'live' ? [v.name, v.price != null ? money(v.price) : '', v.st.allDay ? 'all day' : ''].filter(Boolean).join('  ') : v.name
       }
     }))
   };
@@ -426,6 +442,7 @@ function setupControls() {
     render();
   });
   $('board').addEventListener('click', (e) => {
+    if (e.target.closest('[data-allday]')) { state.allDayOnly = !state.allDayOnly; render(); return; }
     const b = e.target.closest('[data-id]');
     if (b) select(b.dataset.id);
   });

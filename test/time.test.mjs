@@ -67,3 +67,10 @@ test('handles windows with missing or partial times', () => {
   const overnight = [{ days: ['fri'], start: '22:00', end: '01:00' }];
   assert.equal(statusAt(overnight, { day: 'sat', min: 30 }).status, 'live');
 });
+
+test('all-day windows are flagged and stay off the late-night line', () => {
+  const allDay = [{ days: ['mon'], start: null, end: null, end_label: 'all day' }];
+  assert.equal(statusAt(allDay, { day: 'mon', min: 18 * 60 }).allDay, true);
+  assert.equal(statusAt(weekday, { day: 'mon', min: 17 * 60 }).allDay, false);
+  assert.deepEqual(linesFor({ deals: [{ category: 'beer' }], windows: allDay }), ['beer']);
+});

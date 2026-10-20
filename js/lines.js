@@ -20,7 +20,9 @@ export function linesFor(venue) {
     else if (d.category === 'cocktail' || d.category === 'spirits') set.add('cocktail');
   }
   for (const w of venue.windows || []) {
-    const [h, m] = String(w.start || '0:0').split(':').map(Number);
+    // All-day and untimed windows aren't late-night specials.
+    if (!w.start) continue;
+    const [h, m] = String(w.start).split(':').map(Number);
     if (h * 60 + (m || 0) >= LATE_START || h < 4) set.add('late');
   }
   return LINE_ORDER.filter((k) => set.has(k));

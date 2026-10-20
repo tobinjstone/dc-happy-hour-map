@@ -19,8 +19,8 @@ export function toMin(hhmm) {
 export function span(w) {
   if (!w || !Array.isArray(w.days) || !w.days.length) return null;
   if (!w.start) {
-    if (w.end_label === 'all day') return { start: 0, end: 24 * 60, endKnown: true };
-    if (w.end_label === 'close') return { start: 0, end: CLOSE, endKnown: true };
+    if (w.end_label === 'all day') return { start: 0, end: 24 * 60, endKnown: true, allDay: true };
+    if (w.end_label === 'close') return { start: 0, end: CLOSE, endKnown: true, allDay: true };
     return null;
   }
   const start = toMin(w.start);
@@ -31,7 +31,7 @@ export function span(w) {
 }
 
 // moment: { day: 'mon', min: 1092 }
-// Returns { status: 'live'|'soon'|'later'|'ended'|'off'|'unknown', minsLeft, minsUntil, window, endKnown }
+// Returns { status: 'live'|'soon'|'later'|'ended'|'off'|'unknown', minsLeft, minsUntil, window, endKnown, allDay }
 export function statusAt(windows, moment) {
   const dayIdx = DAYS.indexOf(moment.day);
   const prev = DAYS[(dayIdx + 6) % 7];
@@ -43,18 +43,18 @@ export function statusAt(windows, moment) {
     const sp = span(w);
     if (!sp) continue;
     usable++;
-    const { start, end, endKnown } = sp;
+    const { start, end, endKnown, allDay = false } = sp;
 
     // Yesterday's window running past midnight.
     if (w.days.includes(prev) && end > 24 * 60 && moment.min < end - 24 * 60) {
       const left = end - 24 * 60 - moment.min;
-      if (!best || best.status !== 'live' || left < best.minsLeft) best = { status: 'live', minsLeft: left, window: w, endKnown };
+      if (!best || best.status !== 'live' || left < best.minsLeft) best = { status: 'live', minsLeft: left, window: w, endKnown, allDay };
     }
     if (!w.days.includes(moment.day)) continue;
     hadToday = true;
     if (moment.min >= start && moment.min < end) {
       const left = end - moment.min;
-      if (!best || best.status !== 'live' || left < best.minsLeft) best = { status: 'live', minsLeft: left, window: w, endKnown };
+      if (!best || best.status !== 'live' || left < best.minsLeft) best = { status: 'live', minsLeft: left, window: w, endKnown, allDay };
     } else if (start > moment.min && (!best || best.status !== 'live')) {
       const until = start - moment.min;
       if (!best || best.minsUntil === undefined || until < best.minsUntil) {
