@@ -34,3 +34,19 @@ npm test
 ## Spot a wrong deal?
 
 Use "Report a change" on the bar's card, which opens a GitHub issue.
+
+## Visitor edits
+
+Anyone can fix a bar's happy hour, wiki style: "Edit this bar" on a bar's card opens a form for days, times and deals. Every edit needs a source, either a link or a photo of the menu. Edits show up for everyone right away, every version is kept, and "History" on the card lets anyone put an earlier version back (including the original listing). A visitor edit wins over the crawl data until the crawl checks that bar again.
+
+Edits are saved by a small Cloudflare Worker in `worker/` (D1 for edits, R2 for photos, 30 edits per visitor per day). To set it up:
+
+```sh
+cd worker
+npx wrangler d1 create dc-happy-hour-edits      # paste the id into wrangler.toml
+npx wrangler d1 execute dc-happy-hour-edits --remote --file schema.sql
+npx wrangler r2 bucket create dc-happy-hour-photos
+npx wrangler deploy
+```
+
+Then put the Worker's address in `js/config.js` (`EDITS_API`). While it's empty, cards show a "Report a change" link that opens a GitHub issue instead.

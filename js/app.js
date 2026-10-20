@@ -1,5 +1,7 @@
 import { DAYS, DAY_LABELS, statusAt, nowInDC, fmtClock, fmtDuration, fmtDays, fmtWindowTime, toMin, fmtDate, daysSince, fmtAge } from './time.js';
 import { LINES, LINE_ORDER, linesFor } from './lines.js';
+import { applyEdit } from './edit-model.js';
+import { editsEnabled, fetchEdits, openEditor, openHistory } from './editor.js';
 
 const REPO = 'tobinjstone/dc-happy-hour-map';
 const DRINKS = new Set(['beer', 'wine', 'cocktail', 'spirits']);
@@ -10,6 +12,9 @@ const RANK = { live: 0, soon: 1, later: 2, ended: 3, unknown: 3, off: 4 };
 const TYPE_LABEL = { bar: 'Bar', nightclub: 'Nightclub', restaurant: 'Restaurant', hotel: 'Hotel bar', multipurpose: 'Venue', arena: 'Arena' };
 
 const state = {
+  // Bars as the crawl found them, and the newest visitor edit for each.
+  base: [],
+  edits: new Map(),
   venues: [],
   sample: false,
   followNow: true,
@@ -71,14 +76,26 @@ function normalize(f) {
     summary: p.summary || '',
     confidence: p.confidence || '',
     verified: p.last_verified || '',
+    crawlVerified: p.last_verified || '',
     sourceDate: p.source_date || '',
     sample: !!p.sample
   };
+  return derive(v);
+}
+
+function derive(v) {
   v.lines = linesFor(v);
-  v.hasFood = deals.some((d) => d.category === 'food');
-  v.price = cheapestDrink(deals);
+  v.hasFood = v.deals.some((d) => d.category === 'food');
+  v.price = cheapestDrink(v.deals);
   v.search = `${v.name} ${v.neighborhood}`.toLowerCase();
   return v;
+}
+
+function applyEdits() {
+  state.venues = state.base.map((v) => {
+    const e = state.edits.get(v.id);
+    return e ? derive(applyEdit(v, e)) : v;
+  });
 }
 
 function cheapestDrink(deals) {
@@ -115,7 +132,7 @@ function dealPrice(d) {
     case 'percent_off': return typeof p === 'number' ? `${p}% off` : 'Discount';
     case 'bogo': return 'BOGO';
     case 'free': return 'Free';
-    default: return typeof p === 'number' ? money(p) : '';
+    default: return typeof p === 'number' ? money(p) : (d.price_text || '');
   }
 }
 
@@ -215,9 +232,14 @@ function renderStation(list) {
   let host = '';
   try { host = v.sourceUrl ? new URL(v.sourceUrl).hostname.replace(/^www\./, '') : ''; } catch { host = ''; }
   const sourceDated = v.sourceDate ? `, dated ${esc(fmtDate(v.sourceDate))}` : '';
+  const editedSource = v.edit
+    ? `Edited by ${v.edit.staff ? 'someone who works here' : 'a visitor'} from ${v.edit.photo
+      ? `<a href="${esc(v.edit.photo)}" target="_blank" rel="noopener">a photo of the menu</a>`
+      : `<a href="${esc(v.edit.link)}" target="_blank" rel="noopener">${esc(host || 'a link')}</a>`}`
+    : '';
   const source = v.sample
     ? 'Sample data: this is not a real bar.'
-    : (host ? `Source: <a href="${esc(v.sourceUrl)}" target="_blank" rel="noopener">${esc(host)}</a>` : 'Source unknown') + sourceDated;
+    : editedSource || (host ? `Source: <a href="${esc(v.sourceUrl)}" target="_blank" rel="noopener">${esc(host)}</a>` : 'Source unknown') + sourceDated;
   const age = v.verified ? daysSince(v.verified) : null;
   const stale = isStale(v);
   const checked = v.verified
@@ -234,16 +256,20 @@ function renderStation(list) {
       <span class="sub">${esc([v.neighborhood, v.type].filter(Boolean).join(' · '))}</span>
     </div>
     <div class="station-body">
-      <div class="status-row"><span class="pill ${v.st.status}">${STATUS_LABEL[v.st.status]}</span><span class="status-note">${statusNote(v.st)}</span></div>
-      ${v.windows.length ? '' : '<p class="summary">Days and times not listed.</p>'}
+      ${v.noHappyHour
+        ? '<div class="status-row"><span class="pill off">No happy hour</span><span class="status-note">Someone reported it\'s gone</span></div>'
+        : `<div class="status-row"><span class="pill ${v.st.status}">${STATUS_LABEL[v.st.status]}</span><span class="status-note">${statusNote(v.st)}</span></div>
+      ${v.windows.length ? '' : '<p class="summary">Days and times not listed.</p>'}`}
       <ul class="windows">${v.windows.map((w) => `<li><span class="days">${esc(fmtDays(w.days))}</span><span class="hours">${esc(fmtWindowTime(w))}</span>${w.area ? `<span class="area">${esc(w.area)}</span>` : ''}</li>`).join('')}</ul>
       <ul class="deals">${v.deals.map((d) => `<li><span class="cat">${esc(CAT_LABEL[d.category] || d.category)}</span><span class="what">${esc(d.item || d.text)}</span><span class="price">${esc(dealPrice(d))}</span></li>`).join('')}</ul>
       ${!v.deals.length && v.summary ? `<p class="summary">${esc(v.summary)}</p>` : ''}
       ${v.confidence === 'low' ? '<p class="confidence">From a third-party listing, so double-check with the bar.</p>' : ''}
-      <p class="checked${stale ? ' is-stale' : ''}"><span>${checked}</span>${stale ? '<span class="stale-note">May be out of date. Call ahead, and tap "Report a change" if it\'s wrong.</span>' : ''}</p>
-      <p class="source">${source}</p>
+      <p class="checked${stale ? ' is-stale' : ''}"><span>${checked}</span>${stale ? `<span class="stale-note">May be out of date. Call ahead, and tap "${editsEnabled() ? 'Edit this bar' : 'Report a change'}" if it's wrong.</span>` : ''}</p>
+      <p class="source">${source}${v.edit ? ' · <button type="button" class="link-btn" data-history>History</button>' : ''}</p>
       <div class="actions">
-        <a class="secondary" href="${esc(issue)}" target="_blank" rel="noopener">Report a change</a>
+        ${editsEnabled() && !v.sample
+          ? '<button type="button" class="secondary" data-edit>Edit this bar</button>'
+          : `<a class="secondary" href="${esc(issue)}" target="_blank" rel="noopener">Report a change</a>`}
         <a class="primary" href="https://www.google.com/maps/search/?api=1&query=${lat},${lng}" target="_blank" rel="noopener">Directions</a>
       </div>
     </div>`;
@@ -453,21 +479,36 @@ function setupControls() {
   });
   $('station').addEventListener('click', (e) => {
     if (e.target.closest('.station-close')) { state.selected = null; render(); }
+    const v = state.venues.find((x) => x.id === state.selected);
+    if (v && e.target.closest('[data-edit]')) openEditor(v, saved);
+    if (v && e.target.closest('[data-history]')) openHistory(v, saved);
   });
   setInterval(() => {
     if (state.followNow) { state.moment = nowInDC(); render(); }
   }, 60 * 1000);
 }
 
+// An edit or restore just saved: show it straight away.
+function saved(edit) {
+  state.edits.set(edit.venue_id, edit);
+  applyEdits();
+  render();
+}
+
 async function main() {
   setupControls();
   renderClock();
   setupMap();
-  const { venues, sample, updated } = await loadData();
-  state.venues = venues;
+  const [{ venues, sample, updated }, edits] = await Promise.all([loadData(), fetchEdits()]);
+  state.base = venues;
+  for (const e of edits) state.edits.set(e.venue_id, e);
+  applyEdits();
   state.sample = sample;
   $('sample-badge').hidden = !sample;
-  $('data-updated').textContent = updated ? `Happy hours last updated ${fmtDate(updated)}.` : '';
+  const lastEdit = edits.map((e) => String(e.created_at).slice(0, 10)).sort().pop() || '';
+  const newest = [updated, lastEdit].sort().pop();
+  $('data-updated').textContent = newest ? `Happy hours last updated ${fmtDate(newest)}.` : '';
+  if (editsEnabled()) $('fix-hint').textContent = 'Spot one that\'s wrong? Tap the bar, then "Edit this bar". Changes show up for everyone right away.';
   render();
 }
 
