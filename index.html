@@ -42,8 +42,11 @@
       </section>
 
       <section class="filters" aria-label="Filters">
+        <div class="segmented" role="group" aria-label="Which bars to show">
+          <button id="show-live" type="button" aria-pressed="true">On now</button>
+          <button id="show-all" type="button" aria-pressed="false">All bars</button>
+        </div>
         <div class="toggles">
-          <button id="live-only" type="button" class="toggle" aria-pressed="false">Pouring now only</button>
           <button id="food-only" type="button" class="toggle" aria-pressed="false">Food specials</button>
         </div>
         <div id="line-chips" class="line-chips"></div>

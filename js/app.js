@@ -15,7 +15,8 @@ const state = {
   followNow: true,
   moment: nowInDC(),
   off: new Set(),
-  liveOnly: false,
+  // Show only bars whose happy hour is on at the picked time; "All bars" turns it off.
+  liveOnly: true,
   foodOnly: false,
   allDayOnly: false,
   query: '',
@@ -155,6 +156,11 @@ function renderClock() {
   const m = state.moment.min % 60;
   $('time').value = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
   $('now').setAttribute('aria-pressed', String(state.followNow));
+  $('show-live').textContent = state.followNow
+    ? 'On now'
+    : `On at ${DAY_LABELS[state.moment.day]} ${fmtClock(state.moment.min)}`;
+  $('show-live').setAttribute('aria-pressed', String(state.liveOnly));
+  $('show-all').setAttribute('aria-pressed', String(!state.liveOnly));
 }
 
 function renderBoard(list) {
@@ -174,7 +180,7 @@ function renderBoard(list) {
       <span class="t">${allDay.length} ${allDay.length === 1 ? 'BAR' : 'BARS'}</span>
     </button></li>` : '';
   if (!rows.length && !allDayRow) {
-    ol.innerHTML = `<li class="board-empty">NO HAPPY HOURS ${state.followNow ? 'TODAY' : 'AT THIS TIME'}</li>`;
+    ol.innerHTML = `<li class="board-empty">NO HAPPY HOURS ${state.liveOnly ? 'ON' : ''} ${state.followNow ? (state.liveOnly ? 'RIGHT NOW' : 'TODAY') : 'AT THIS TIME'}</li>`;
     return;
   }
   ol.innerHTML = rows.map((v) => `
@@ -428,9 +434,8 @@ function setupControls() {
   });
   $('now').addEventListener('click', () => { state.followNow = true; state.moment = nowInDC(); render(); });
   $('search').addEventListener('input', (e) => { state.query = e.target.value.trim().toLowerCase(); render(); });
-  $('live-only').addEventListener('click', (e) => {
-    state.liveOnly = !state.liveOnly; e.currentTarget.setAttribute('aria-pressed', String(state.liveOnly)); render();
-  });
+  $('show-live').addEventListener('click', () => { state.liveOnly = true; render(); });
+  $('show-all').addEventListener('click', () => { state.liveOnly = false; render(); });
   $('food-only').addEventListener('click', (e) => {
     state.foodOnly = !state.foodOnly; e.currentTarget.setAttribute('aria-pressed', String(state.foodOnly)); render();
   });
