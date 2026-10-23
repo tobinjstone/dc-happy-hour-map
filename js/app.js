@@ -6,6 +6,7 @@ import { editsEnabled, fetchEdits, openEditor, openHistory } from './editor.js';
 const REPO = 'tobinjstone/dc-happy-hour-map';
 const DRINKS = new Set(['beer', 'wine', 'cocktail', 'spirits']);
 const CAT_LABEL = { beer: 'Beer', wine: 'Wine', cocktail: 'Cocktail', spirits: 'Rail', food: 'Food', other: 'Other' };
+const UNLISTED_LABEL = 'No happy hour listed';
 const STATUS_LABEL = { live: 'Pouring now', soon: 'Arriving', later: 'Later today', ended: 'Done today', off: 'Not today', unknown: 'Times not listed' };
 const STALE_DAYS = 60;
 const RANK = { live: 0, soon: 1, later: 2, ended: 3, unknown: 3, off: 4 };
@@ -48,6 +49,29 @@ async function loadData() {
     }
   }
   return { venues: [], sample: false };
+}
+
+// Bars we know about but haven't found a happy hour for. They show faintly
+// under "All bars" so visitors can add one.
+async function loadUnlisted() {
+  try {
+    const res = await fetch('data/unlisted.geojson', { cache: 'no-cache' });
+    if (!res.ok) return [];
+    const fc = await res.json();
+    return (fc.features || []).map((f) => {
+      const p = f.properties || {};
+      const c = f.geometry && f.geometry.coordinates;
+      if (!c) return null;
+      return derive({
+        id: String(p.id), name: p.name || 'Unnamed bar', neighborhood: p.neighborhood || '',
+        type: TYPE_LABEL[p.venue_type] || p.venue_type || '', coords: [Number(c[0]), Number(c[1])],
+        windows: [], deals: [], website: p.website || '', sourceUrl: '', summary: '', confidence: '',
+        verified: '', crawlVerified: '', sourceDate: '', unlisted: true
+      });
+    }).filter(Boolean);
+  } catch {
+    return [];
+  }
 }
 
 function parseMaybe(v) {
@@ -94,7 +118,11 @@ function derive(v) {
 function applyEdits() {
   state.venues = state.base.map((v) => {
     const e = state.edits.get(v.id);
-    return e ? derive(applyEdit(v, e)) : v;
+    if (!e) return v;
+    const edited = derive(applyEdit(v, e));
+    // A visitor-added happy hour puts an unlisted bar on the map properly.
+    if (edited.unlisted && edited.edit && edited.windows.length) edited.unlisted = false;
+    return edited;
   });
 }
 
@@ -112,6 +140,8 @@ function withStatus() {
 }
 
 function isVisible(v) {
+  // Unlisted bars show under "All bars", or when someone searches for them by name.
+  if (v.unlisted) return (!state.liveOnly || !!state.query) && !state.foodOnly && !state.allDayOnly && (!state.query || v.search.includes(state.query));
   if (state.liveOnly && v.st.status !== 'live') return false;
   if (state.foodOnly && !v.hasFood) return false;
   if (state.allDayOnly && !v.st.allDay) return false;
@@ -183,20 +213,27 @@ function renderClock() {
 function renderBoard(list) {
   // All-day happy hours don't count down, so they get one summary row
   // instead of crowding out the timed ones.
-  const allDay = list.filter((v) => v.st.allDay);
+  const allDay = list.filter((v) => !v.unlisted && v.st.allDay);
   const rows = list
-    .filter((v) => v.st.status !== 'off' && v.st.status !== 'unknown' && !v.st.allDay)
+    .filter((v) => !v.unlisted && v.st.status !== 'off' && v.st.status !== 'unknown' && !v.st.allDay)
     .sort((a, b) => RANK[a.st.status] - RANK[b.st.status] ||
       (a.st.minsLeft ?? a.st.minsUntil ?? 0) - (b.st.minsLeft ?? b.st.minsUntil ?? 0))
     .slice(0, allDay.length ? 7 : 8);
   const ol = $('board');
+  // Searching for a bar with no happy hour listed still finds it.
+  const unlistedRows = state.query ? list.filter((v) => v.unlisted).slice(0, 3).map((v) => `
+    <li><button type="button" class="board-row is-dim${v.id === state.selected ? ' is-selected' : ''}" data-id="${esc(v.id)}">
+      <span class="dots"></span>
+      <span class="n">${esc(v.name.toUpperCase())}</span>
+      <span class="t">NO HH</span>
+    </button></li>`).join('') : '';
   const allDayRow = allDay.length ? `
     <li><button type="button" class="board-row board-allday${state.allDayOnly ? ' is-selected' : ''}" data-allday aria-pressed="${state.allDayOnly}">
       <span class="dots"><span class="dot-24">24</span></span>
       <span class="n">${state.allDayOnly ? 'SHOWING ALL-DAY ONLY' : 'ALL-DAY HAPPY HOURS'}</span>
       <span class="t">${allDay.length} ${allDay.length === 1 ? 'BAR' : 'BARS'}</span>
     </button></li>` : '';
-  if (!rows.length && !allDayRow) {
+  if (!rows.length && !allDayRow && !unlistedRows) {
     ol.innerHTML = `<li class="board-empty">NO HAPPY HOURS ${state.liveOnly ? 'ON' : ''} ${state.followNow ? (state.liveOnly ? 'RIGHT NOW' : 'TODAY') : 'AT THIS TIME'}</li>`;
     return;
   }
@@ -205,7 +242,7 @@ function renderBoard(list) {
       <span class="dots">${v.lines.map((k) => `<span class="dot" style="background:${LINES[k].color}"></span>`).join('')}</span>
       <span class="n">${esc(v.name.toUpperCase())}</span>
       <span class="t">${boardTime(v.st)}</span>
-    </button></li>`).join('') + allDayRow;
+    </button></li>`).join('') + allDayRow + unlistedRows;
 }
 
 function renderChips(list) {
@@ -246,6 +283,7 @@ function renderStation(list) {
     ? `Deals last checked <strong>${esc(fmtDate(v.verified))}</strong> (${fmtAge(age)})`
     : 'We don\'t know when these deals were last checked';
 
+  if (v.unlisted) { renderUnlisted(el, v, issue, lat, lng); return; }
   el.innerHTML = `
     <div class="station-head">
       <button type="button" class="station-close" aria-label="Close">
@@ -270,6 +308,31 @@ function renderStation(list) {
         ${editsEnabled() && !v.sample
           ? '<button type="button" class="secondary" data-edit>Edit this bar</button>'
           : `<a class="secondary" href="${esc(issue)}" target="_blank" rel="noopener">Report a change</a>`}
+        <a class="primary" href="https://www.google.com/maps/search/?api=1&query=${lat},${lng}" target="_blank" rel="noopener">Directions</a>
+      </div>
+    </div>`;
+  el.hidden = false;
+}
+
+function renderUnlisted(el, v, issue, lat, lng) {
+  let host = '';
+  try { host = v.website ? new URL(v.website).hostname.replace(/^www\./, '') : ''; } catch { host = ''; }
+  const add = editsEnabled()
+    ? '<button type="button" class="secondary" data-edit>Add a happy hour</button>'
+    : `<a class="secondary" href="${esc(issue)}" target="_blank" rel="noopener">Add a happy hour</a>`;
+  el.innerHTML = `
+    <div class="station-head">
+      <button type="button" class="station-close" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <h2>${esc(v.name)}</h2>
+      <span class="sub">${esc([v.neighborhood, v.type].filter(Boolean).join(' · '))}</span>
+    </div>
+    <div class="station-body">
+      <div class="status-row"><span class="pill unknown">${UNLISTED_LABEL}</span></div>
+      <p class="summary">We couldn't find a happy hour for this spot${host ? ` on <a href="${esc(v.website)}" target="_blank" rel="noopener">${esc(host)}</a>` : ''}. If you know one, add it with a link or a photo of the menu.</p>
+      <div class="actions">
+        ${add}
         <a class="primary" href="https://www.google.com/maps/search/?api=1&query=${lat},${lng}" target="_blank" rel="noopener">Directions</a>
       </div>
     </div>`;
@@ -354,6 +417,7 @@ function stationGeoJSON(list) {
         order: 4 - RANK[v.st.status],
         rank: RANK[v.st.status],
         stale: isStale(v),
+        unlisted: !!v.unlisted,
         label: v.st.status === 'live' ? [v.name, v.price != null ? money(v.price) : '', v.st.allDay ? 'all day' : ''].filter(Boolean).join('  ') : v.name
       }
     }))
@@ -362,7 +426,7 @@ function stationGeoJSON(list) {
 
 function renderMap(list) {
   if (!mapReady) return;
-  map.getSource('stations').setData(stationGeoJSON(list.filter((v) => v.st.status !== 'off')));
+  map.getSource('stations').setData(stationGeoJSON(list.filter((v) => v.unlisted || v.st.status !== 'off')));
   map.setFilter('station-halo', ['==', ['get', 'id'], state.selected || '']);
 }
 
@@ -390,10 +454,15 @@ function setupMap() {
     map.addLayer({ id: 'station-halo', type: 'circle', source: 'stations', filter: ['==', ['get', 'id'], ''],
       paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, 14, 16, 24], 'circle-color': '#FFB000', 'circle-opacity': 0.55,
         'circle-stroke-width': 2, 'circle-stroke-color': '#111111' } });
+    // Unlisted bars: small hollow dots, under everything else.
+    map.addLayer({ id: 'station-unlisted', type: 'circle', source: 'stations', filter: ['get', 'unlisted'],
+      paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, 2.5, 16, 6], 'circle-color': '#FFFFFF',
+        'circle-stroke-width': 1.5, 'circle-stroke-color': '#8A857A' } });
     map.addLayer({
       id: 'station-badge',
       type: 'symbol',
       source: 'stations',
+      filter: ['!', ['get', 'unlisted']],
       layout: {
         'icon-image': ['get', 'icon'],
         'icon-size': size,
@@ -409,7 +478,8 @@ function setupMap() {
       source: 'stations',
       minzoom: 12,
       layout: {
-        'text-field': ['get', 'label'],
+        // Unlisted bars get a name only once you're zoomed in close.
+        'text-field': ['step', ['zoom'], ['case', ['get', 'unlisted'], '', ['get', 'label']], 15, ['get', 'label']],
         'text-font': ['Noto Sans Bold'],
         'text-size': ['interpolate', ['linear'], ['zoom'], 12, 11, 16, 14],
         'text-offset': [0, 1.3],
@@ -419,7 +489,7 @@ function setupMap() {
       paint: { 'text-color': '#111111', 'text-halo-color': '#F4F2EC', 'text-halo-width': 2 }
     });
 
-    for (const layer of ['station-badge', 'station-label']) {
+    for (const layer of ['station-unlisted', 'station-badge', 'station-label']) {
       map.on('click', layer, (e) => select(e.features[0].properties.id, false));
       map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer'; });
       map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; });
@@ -499,8 +569,8 @@ async function main() {
   setupControls();
   renderClock();
   setupMap();
-  const [{ venues, sample, updated }, edits] = await Promise.all([loadData(), fetchEdits()]);
-  state.base = venues;
+  const [{ venues, sample, updated }, unlisted, edits] = await Promise.all([loadData(), loadUnlisted(), fetchEdits()]);
+  state.base = venues.concat(sample ? [] : unlisted);
   for (const e of edits) state.edits.set(e.venue_id, e);
   applyEdits();
   state.sample = sample;
