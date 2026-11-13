@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fizz Finder · Fountain Diet Coke in the DMV</title>
+  <meta name="description" content="Where to get a fountain Diet Coke in Washington DC, Maryland and Virginia: what's open now, what's closest, and how fizzy it was.">
+  <meta name="theme-color" content="#E2E5E9">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23D7182A'/%3E%3Ccircle cx='11' cy='19' r='3.2' fill='%23fff'/%3E%3Ccircle cx='19' cy='12' r='4.2' fill='%23fff'/%3E%3Ccircle cx='21' cy='21' r='2' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="./">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#D7182A"/><circle cx="11" cy="19" r="3.2" fill="#fff"/><circle cx="19" cy="12" r="4.2" fill="#fff"/><circle cx="21" cy="21" r="2" fill="#fff"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">Fizz Finder</span>
+        <span class="brand-sub">Fountain Diet Coke · DC, MD &amp; VA</span>
+      </span>
+    </a>
+    <label class="visually-hidden" for="search">Search by chain, street, city or ZIP</label>
+    <input id="search" type="search" placeholder="Search a chain, street, city or ZIP" autocomplete="off">
+    <button id="open-log" type="button" class="log-btn">My log <span id="log-count" class="log-count">0</span></button>
+  </header>
+
+  <div class="layout">
+    <aside class="panel">
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="visually-hidden">Find a fountain Diet Coke</h1>
+        <button id="find" type="button" class="find-btn">
+          <span class="find-label">Find the closest one open now</span>
+          <span class="find-sub" id="find-sub">Uses your location</span>
+        </button>
+        <p id="hero-note" class="hero-note"></p>
+      </section>
+
+      <section class="filters" aria-label="Filters">
+        <div class="segmented" role="group" aria-label="Which places to show">
+          <button id="show-open" type="button" aria-pressed="true">Open now</button>
+          <button id="show-all" type="button" aria-pressed="false">Open or closed</button>
+        </div>
+        <div class="toggles" role="group" aria-label="Only show places with">
+          <button type="button" class="toggle" data-filter="drive" aria-pressed="false">Drive-thru</button>
+          <button type="button" class="toggle" data-filter="freestyle" aria-pressed="false">Freestyle</button>
+          <button type="button" class="toggle" data-filter="allnight" aria-pressed="false">24 hours</button>
+          <button type="button" class="toggle" data-filter="confirmed" aria-pressed="false">Confirmed</button>
+        </div>
+        <details class="chains-box">
+          <summary>Chains <span id="chains-summary" class="chains-summary"></span></summary>
+          <div id="chain-chips" class="chain-chips"></div>
+        </details>
+      </section>
+
+      <section id="place" class="place" aria-live="polite" hidden></section>
+
+      <section class="nearby" aria-labelledby="nearby-title">
+        <div class="nearby-head">
+          <h2 id="nearby-title">Closest to the map center</h2>
+          <span id="nearby-count" class="nearby-count"></span>
+        </div>
+        <ol id="nearby" class="nearby-list"></ol>
+        <button id="more" type="button" class="more-btn" hidden>Show more</button>
+      </section>
+
+      <section class="legend" aria-label="Map key">
+        <span><i class="dot dot-confirmed"></i>People say it's pouring</span>
+        <span><i class="dot dot-likely"></i>Chain pours Coca-Cola</span>
+        <span><i class="dot dot-out"></i>Reported out or none</span>
+        <span><i class="dot dot-closed"></i>Closed now</span>
+      </section>
+
+      <div class="add-spot">
+        <button id="add-spot" type="button" class="secondary-btn">Add a spot that's missing</button>
+        <p>Independent pizza place, deli or diner with Diet Coke on the fountain? Drop a pin.</p>
+      </div>
+
+      <footer class="footnote">
+        <p><strong id="data-updated"></strong> Locations and hours come from each chain's own store locator, via <a href="https://www.alltheplaces.xyz" target="_blank" rel="noopener">All The Places</a>. Which chains pour Coca-Cola is from the chains' and bottlers' own announcements; a single store can still differ, so the fizz reports are what to trust.</p>
+        <p id="pepsi-note"></p>
+        <p>Not affiliated with The Coca-Cola Company. <a href="../">Happy Hour Lines</a>, the DC happy hour map, is made by the same people.</p>
+      </footer>
+    </aside>
+
+    <main class="map-wrap">
+      <div id="map" aria-label="Map of places with fountain Diet Coke"></div>
+      <div id="pick-banner" class="pick-banner" hidden>
+        <span>Tap the map where the place is</span>
+        <button id="pick-cancel" type="button">Cancel</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
