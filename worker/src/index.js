@@ -1,6 +1,8 @@
 // Saves visitor edits to happy hours, wiki style: edits go live at once,
 // every version is kept, and anyone can restore an earlier one.
 import { validateEdit } from '../../js/edit-model.js';
+import { json, ipHash } from './util.js';
+import { handleFountain } from './fountain.js';
 
 const MAX_PHOTO = 8 * 1024 * 1024;
 const PHOTO_TYPES = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/heic': 'heic' };
@@ -14,16 +16,6 @@ function cors(req, env) {
     'Access-Control-Allow-Headers': 'Content-Type',
     Vary: 'Origin'
   };
-}
-
-const json = (data, headers, status = 200) =>
-  new Response(JSON.stringify(data), { status, headers: { ...headers, 'Content-Type': 'application/json' } });
-
-async function ipHash(req) {
-  const ip = req.headers.get('CF-Connecting-IP') || 'unknown';
-  const day = new Date().toISOString().slice(0, 10);
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${ip}:${day}`));
-  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 24);
 }
 
 async function overLimit(env, hash) {
@@ -123,6 +115,7 @@ export default {
       }
       if (req.method === 'POST' && url.pathname === '/edits') return createEdit(req, env, base, headers);
       if (req.method === 'POST' && url.pathname === '/restore') return restore(req, env, base, headers);
+      if (url.pathname.startsWith('/fountain/')) return await handleFountain(req, env, url, headers);
       return json({ error: 'Not found' }, headers, 404);
     } catch (e) {
       console.error(e);

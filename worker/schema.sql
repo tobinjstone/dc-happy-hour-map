@@ -11,3 +11,29 @@ CREATE TABLE IF NOT EXISTS edits (
 );
 CREATE INDEX IF NOT EXISTS edits_venue ON edits (venue_id, id);
 CREATE INDEX IF NOT EXISTS edits_ip ON edits (ip_hash, created_at);
+
+-- Fountain Diet Coke reports (fountain/): one row each time someone says how it went.
+CREATE TABLE IF NOT EXISTS fountain_reports (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  place_id TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  status TEXT NOT NULL,
+  fizz INTEGER,
+  body TEXT NOT NULL,
+  ip_hash TEXT
+);
+CREATE INDEX IF NOT EXISTS fountain_reports_place ON fountain_reports (place_id, id);
+CREATE INDEX IF NOT EXISTS fountain_reports_recent ON fountain_reports (created_at);
+CREATE INDEX IF NOT EXISTS fountain_reports_ip ON fountain_reports (ip_hash, created_at);
+
+-- Spots visitors add that the chain data doesn't have.
+CREATE TABLE IF NOT EXISTS fountain_places (
+  id TEXT PRIMARY KEY,
+  created_at TEXT NOT NULL,
+  name TEXT NOT NULL,
+  address TEXT,
+  lat REAL NOT NULL,
+  lng REAL NOT NULL,
+  ip_hash TEXT
+);
+CREATE INDEX IF NOT EXISTS fountain_places_ip ON fountain_places (ip_hash, created_at);

@@ -1,1 +1,1 @@
-{"type":"module","private":true,"scripts":{"test":"node --test test/*.test.mjs"}}
+{"type":"module","private":true,"scripts":{"test":"node --test test/*.test.mjs","fountain-data":"node scripts/fetch-fountains.mjs"}}
