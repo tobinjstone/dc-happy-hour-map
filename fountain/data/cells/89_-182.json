@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-22840","mcdonalds",-90.80084,44.95327,null,"101 W Hill","Thorp","WI","54771","+1 715-669-7323","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/22840.html"],
+["mcdonalds-29210","mcdonalds",-90.93848,44.94972,null,"604 S Broadway","Stanley","WI","54768","+1 715-644-5982","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/29210.html"]]}

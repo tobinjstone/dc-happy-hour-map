@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-12084","mcdonalds",-114.12826,47.69228,null,"51154 Us Hwy 93","Polson","MT","59860-9729","+1 406-883-4125","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/12084.html"],
+["mcdonalds-17806","mcdonalds",-114.09623,47.51885,null,"63880 Us Hwy 93","Ronan","MT","59864","+1 406-676-8585","Mo-Su 06:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/17806.html"]]}

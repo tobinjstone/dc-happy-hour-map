@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-24208","mcdonalds",-90.75727,39.9833,null,"418 E Main St","Mount Sterling","IL","62353","+1 217-773-4727","Mo-Su 05:30-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/24208.html"],
+["mcdonalds-6791","mcdonalds",-90.81363,39.60719,null,"524 W Washington","Pittsfield","IL","62363-1348","+1 217-285-5659","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/6791.html"]]}

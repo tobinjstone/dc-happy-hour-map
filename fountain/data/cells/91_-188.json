@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-14055","mcdonalds",-93.58384,45.55736,null,"701 Northland Dr","Princeton","MN","55371","+1 763-389-5310","Mo-Su 05:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/14055.html"],
+["mcdonalds-32027","mcdonalds",-93.91953,45.66451,null,"139 Highway 23 W","Foley","MN","56329-8533","+1 320-968-7337","Mo-Su 06:30-22:30",null,1,"https://www.mcdonalds.com/us/en-us/location/32027.html"]]}

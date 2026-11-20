@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-5451","mcdonalds",-94.50533,45.12178,null,"1021 E Highway 12","Litchfield","MN","55355-2616","+1 320-593-7182","Mo-Su 05:30-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/5451.html"],
+["seven_eleven-47453_SHOP","seven_eleven",-94.52762,45.12296,null,"325 S. Sibley","Litchfield","MN","55355",null,null,null,null,"https://www.7-eleven.com/locations/mn/litchfield/325-s.-sibley-47453"]]}

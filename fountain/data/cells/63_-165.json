@@ -1,0 +1,4 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-13243","burger_king",-82.34982,31.77664,null,"154 South Main Street","Baxley","GA","31513-0010","+1 912-367-0600","Mo-Su 06:00-22:00","Mo-Su 06:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_7728"],
+["mcdonalds-11323","mcdonalds",-82.34775,31.77977,null,"206 N Main St","Baxley","GA","31513","+1 912-367-9511","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/11323.html"],
+["mcdonalds-28157","mcdonalds",-82.46205,31.53883,null,"401 Pierce St","Alma","GA","31510","+1 912-632-2444","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/28157.html"],
+["zaxbys-174923","zaxbys",-82.3642,31.78419,"Baxley","964 W Parker St","Baxley","GA","31513","+1 912-367-2542",null,null,1,"https://www.zaxbys.com/locations/ga/baxley/964-w-parker-st"]]}

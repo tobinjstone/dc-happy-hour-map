@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["dennys-248572","dennys",-77.5224,41.02843,null,"5609 Nittany Valley Drive","Mill Hall","PA","17751","+1 570-726-2492","Mo-Su 05:00-24:00",null,null,"https://locations.dennys.com/pa/mill-hall/248572"],
+["mcdonalds-12634","mcdonalds",-77.51696,41.03303,null,"5820 Nittany Valley Dr","Lamar","PA","16848","+1 570-726-4128","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/12634.html"]]}

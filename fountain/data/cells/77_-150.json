@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-3798","mcdonalds",-74.82764,38.98595,null,"4900 Park Blvd","Wildwood","NJ","08260","+1 609-522-4470","Mo-Su 06:30-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/3798.html"],
+["mcdonalds-5453","mcdonalds",-74.94195,38.97377,null,"3857 Bayshore Rd","North Cape May","NJ","08204","+1 609-884-0840","Mo-Su 07:00-21:00",null,1,"https://www.mcdonalds.com/us/en-us/location/5453.html"]]}

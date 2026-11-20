@@ -14,8 +14,10 @@ export const TAGS = {
   nugget_ice: 'Nugget ice',
   free_refills: 'Free refills'
 };
-// Where a visitor can add a spot: the same box the chain data covers.
-export const AREA = { west: -77.65, south: 38.6, east: -76.65, north: 39.25 };
+// Where a visitor can add a spot: the 50 states and DC, as boxes around the
+// lower 48, Alaska and Hawaii (the same ones the chain data uses).
+export const US_BOXES = [[-125.0, 24.3, -66.8, 49.5], [-179.2, 51.2, -129.9, 71.5], [-160.6, 18.8, -154.7, 22.3]];
+export const inUS = (lng, lat) => US_BOXES.some(([w, s, e, n]) => lng >= w && lng <= e && lat >= s && lat <= n);
 
 // How long each kind of report keeps saying something about a place.
 // A machine that's out usually gets fixed within a day or two.
@@ -56,9 +58,7 @@ export function validatePlace(input) {
   if (name.length < 2) return { error: 'Give the place a name.' };
   const lat = Number(input.lat);
   const lng = Number(input.lng);
-  if (!(lat >= AREA.south && lat <= AREA.north && lng >= AREA.west && lng <= AREA.east)) {
-    return { error: 'Drop the pin somewhere in DC, Maryland or Virginia near DC.' };
-  }
+  if (!inUS(lng, lat)) return { error: 'Drop the pin somewhere in the US.' };
   return { place: { name, address: text(input.address, 120) || null, lat: Number(lat.toFixed(6)), lng: Number(lng.toFixed(6)) } };
 }
 

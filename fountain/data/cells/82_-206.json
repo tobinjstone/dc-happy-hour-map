@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-6210","arbys",-102.94805,41.11648,null,"829 Old Post Rd","Sidney","NE","69162","+1 308-254-5010","Mo-Su 10:00-22:00","Mo-Su 10:00-21:30",null,"https://www.arbys.com/locations/us/ne/sidney/829-old-post-rd/store-6210/"],
+["mcdonalds-10606","mcdonalds",-102.95037,41.11735,null,"2984 Upland Parkway","Sidney","NE","69162","+1 308-254-3184",null,null,1,"https://www.mcdonalds.com/us/en-us/location/10606.html"]]}

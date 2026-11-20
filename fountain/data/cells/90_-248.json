@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-16043","burger_king",-123.84457,45.4726,null,"2220 North Main","Tillamook","OR","97141-7724","+1 503-994-4155","Mo-Su 06:00-22:00","Mo-Su 06:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_9886"],
+["mcdonalds-12202","mcdonalds",-123.8437,45.46915,null,"1855 N Main St","Tillamook","OR","97141","+1 503-842-1388","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/12202.html"]]}

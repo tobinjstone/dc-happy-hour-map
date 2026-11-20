@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-25700","mcdonalds",-85.25945,45.30435,null,"1440 Bridge St","Charlevoix","MI","49720","+1 231-547-5710","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/25700.html"],
+["mcdonalds-25702","mcdonalds",-85.14042,45.15286,null,"120 South Lake Street","East Jordan","MI","49727","+1 231-536-0303","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/25702.html"]]}

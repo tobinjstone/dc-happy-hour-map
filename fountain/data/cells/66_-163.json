@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-12827","mcdonalds",-81.13263,33.32617,null,"18128 Heritage Hwy","Denmark","SC","29042","+1 803-793-0206",null,null,1,"https://www.mcdonalds.com/us/en-us/location/12827.html"],
+["mcdonalds-43319","mcdonalds",-81.03655,33.29798,null,"3668 E Railroad Ave","Bamberg","SC","29003",null,"Mo-Su 06:00-23:00",null,null,"https://www.mcdonalds.com/us/en-us/location/43319.html"],
+["mcdonalds-4768","mcdonalds",-81.37474,33.24372,null,"1112 Dunbarton Rd","Barnwell","SC","29812","+1 803-259-2144","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/4768.html"]]}

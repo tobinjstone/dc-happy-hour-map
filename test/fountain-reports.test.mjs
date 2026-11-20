@@ -21,7 +21,8 @@ test('reports are checked', () => {
 test('added spots need a name and a pin in the area', () => {
   assert.ok(validatePlace({ name: "Joe's Pizza", lat: 38.9, lng: -77.03 }).place);
   assert.match(validatePlace({ name: 'J', lat: 38.9, lng: -77.03 }).error, /name/);
-  assert.match(validatePlace({ name: 'Faraway', lat: 40.7, lng: -74 }).error, /pin/);
+  assert.ok(validatePlace({ name: 'Anchorage Diner', lat: 61.2, lng: -149.9 }).place, 'anywhere in the US');
+  assert.match(validatePlace({ name: 'Faraway', lat: 51.5, lng: -0.12 }).error, /pin/);
 });
 
 const now = Date.parse('2026-11-13T18:00:00Z');

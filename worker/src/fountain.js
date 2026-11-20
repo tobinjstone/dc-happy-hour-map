@@ -1,4 +1,4 @@
-// Fizz reports for the fountain Diet Coke map (fountain/): anyone can say
+// Fizz reports for Fountain Cig, the fountain Diet Coke map (fountain/): anyone can say
 // they had one somewhere, how fizzy it was, or that it was out. Reports show
 // up for everyone straight away. People can also add a spot the chain data
 // doesn't have, like an independent pizza place.

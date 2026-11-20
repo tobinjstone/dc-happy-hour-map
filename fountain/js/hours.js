@@ -1,6 +1,7 @@
 // Opening hours: reads the OpenStreetMap opening_hours strings that chain
 // store locators publish ("Mo-Th 10:30-22:00; Fr-Sa 10:30-23:00; Su closed",
-// "24/7") and works out whether a place is open at a given DC moment.
+// "24/7") and works out whether a place is open at a given moment of its own
+// local time (see zones.js).
 // Anything it can't read comes back as null, shown as "Hours not listed".
 import { DAYS, DAY_LABELS, fmtClock } from '../../js/time.js';
 

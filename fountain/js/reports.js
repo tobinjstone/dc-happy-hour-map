@@ -2,7 +2,7 @@
 // of the Diet Cokes they've had, kept on their device.
 import { FOUNTAIN_API } from './config.js';
 
-const LOG_KEY = 'fizz-finder:log:v1';
+const LOG_KEY = 'fountain-cig:log:v1';
 
 export const sharing = () => !!FOUNTAIN_API;
 

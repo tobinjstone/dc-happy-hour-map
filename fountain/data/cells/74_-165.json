@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-13834","mcdonalds",-82.10404,37.23538,null,"18607 Riverside Dr","Vansant","VA","24656","+1 276-935-4652","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/13834.html"],
+["mcdonalds-31553","mcdonalds",-82.47404,37.15086,null,"116 Colley Shopping Center Dr","Clintwood","VA","24228","+1 276-926-6983","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/31553.html"]]}

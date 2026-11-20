@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-7387","burger_king",-114.95689,41.10069,null,"1237 Highway 93 No.","Wells","NV","89835","+1 775-752-3095","Mo-Su 06:00-22:00","Mo-Su 06:00-22:00",1,"https://www.bk.com/store-locator/store/restaurant_4249"],
+["mcdonalds-32658","mcdonalds",-114.96006,41.09912,null,"157 Highway 93 South","Wells","NV","89835","+1 775-752-3499",null,null,1,"https://www.mcdonalds.com/us/en-us/location/32658.html"]]}

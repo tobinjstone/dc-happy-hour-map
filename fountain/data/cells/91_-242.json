@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-13854","mcdonalds",-120.80843,45.81247,null,"912 Simcoe Rd","Goldendale","WA","98620","+1 509-773-5631","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/13854.html"],
+["mcdonalds-28762","mcdonalds",-120.83474,45.66945,null,"91485 Biggs-Rufus Hwy","Wasco","OR","97065","+1 541-739-2422","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/28762.html"]]}

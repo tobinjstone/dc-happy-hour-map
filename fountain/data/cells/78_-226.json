@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-14234","mcdonalds",-112.56843,39.35213,null,"290 E Main St","Delta","UT","84624","+1 435-864-3345","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/14234.html"],
+["seven_eleven-25030_SHOP","seven_eleven",-112.57432,39.35283,null,"17 East Main St","Delta","UT","84624-8492","+1 435-864-4017","24/7",null,null,"https://www.7-eleven.com/locations/ut/delta/17-east-main-st-25030"]]}

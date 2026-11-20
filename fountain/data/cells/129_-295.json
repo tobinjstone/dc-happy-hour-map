@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-8007","mcdonalds",-147.35093,64.7576,null,"352 N Santa Claus Ln","North Pole","AK","99705","+1 907-488-7779",null,null,1,"https://www.mcdonalds.com/us/en-us/location/8007.html"],
+["zaxbys-191773","zaxbys",-147.35088,64.75765,"Zaxbys Brink Demo Vendor","11066 Auke Lake Way (TEST LOCATION)","Juneau","AK","99801","+1 505-555-5555",null,null,1,"https://www.zaxbys.com/locations/ak/juneau/zaxbys-brink-demo-vendor"]]}

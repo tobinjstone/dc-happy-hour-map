@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-6867","arbys",-108.67716,32.34141,null,"1050 E Motel Dr","Lordsburg","NM","88045","+1 575-912-1073","Mo-Su 00:00-24:00","Mo-Su 00:00-24:00",null,"https://www.arbys.com/locations/us/nm/lordsburg/1050-e-motel-dr/store-6867/"],
+["mcdonalds-10833","mcdonalds",-108.7129,32.34359,null,"1105 S Main","Lordsburg","NM","88045","+1 575-542-8819","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/10833.html"]]}

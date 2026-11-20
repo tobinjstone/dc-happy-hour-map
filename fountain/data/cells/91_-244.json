@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-12520","mcdonalds",-121.53402,45.7096,null,"2101 Cascade Avenue","Hood River","OR","97031","+1 541-386-9004","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/12520.html"],
+["mcdonalds-7966","mcdonalds",-121.50013,45.71129,null,"1049 Marina Way","Hood River","OR","97031-2378","+1 541-386-2268","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/7966.html"]]}

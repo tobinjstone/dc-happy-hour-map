@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["dennys-247355","dennys",-109.11354,35.65914,null,"392 W Hwy 264","Saint Michaels","AZ","86511","+1 928-871-2067","Mo-Su 05:00-24:00",null,null,"https://locations.dennys.com/az/saint-michaels/247355"],
+["mcdonalds-17571","mcdonalds",-109.06175,35.66202,null,"112 Az-264","Window Rock","AZ","86515","+1 928-871-5565","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/17571.html"]]}

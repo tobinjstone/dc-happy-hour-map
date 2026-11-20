@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-10688","mcdonalds",-73.27591,43.60429,null,"22 Washington Street Ext","Fair Haven","VT","05743","+1 802-265-2028","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/10688.html"],
+["mcdonalds-6825","mcdonalds",-73.43733,43.85815,null,"1148 Wicker St","Ticonderoga","NY","12883","+1 518-585-7714","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/6825.html"]]}

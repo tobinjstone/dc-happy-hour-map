@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-24633","mcdonalds",-90.13337,42.09021,null,"1240 Chicago Ave","Savanna","IL","61074","+1 815-273-7771","Mo-Su 05:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/24633.html"],
+["mcdonalds-7787","mcdonalds",-90.44319,42.42413,null,"957 Gear St","Galena","IL","61036","+1 815-777-2600","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/7787.html"]]}

@@ -8,7 +8,8 @@
 //   or 'some' stores, or 'no'/'unknown'
 // confidence: how sure the chain-wide answer is ('high' or 'medium')
 // spiders: the All The Places scrapers that list the chain's stores
-//   (scripts/fetch-fountains.mjs reads these)
+//   (scripts/fetch-fountains.mjs reads these); brand: keep only stores the
+//   scraper tags with this brand, when one scraper covers sister brands
 
 const DAILY_MEAL = 'https://www.thedailymeal.com/2125011/fast-food-restaurant-diet-cokes-ranked';
 const RBI = 'https://www.rbi.com/English/news/news-details/2023/Burger-King-Popeyes-Firehouse-Subs-and-Tim-Hortons-Renew-Long-Standing-U.S.-Relationship-with-The-Coca-Cola-Company-a9cef0baa/default.aspx';
@@ -46,7 +47,7 @@ export const CHAINS = {
     source: 'https://www.ana.net/magazines/show/id/news-2025-11-03-sonic-coca-cola-your-way'
   },
   seven_eleven: {
-    name: '7-Eleven', short: '7-11', spiders: ['seven_eleven_ca_us'], pours: 'both', freestyle: 'unknown', confidence: 'medium',
+    name: '7-Eleven', short: '7-11', spiders: ['seven_eleven_ca_us'], brand: '7-Eleven', pours: 'both', freestyle: 'unknown', confidence: 'medium',
     note: 'Big Gulp fountains in the area list Diet Coke (sometimes caffeine-free too) next to Diet Pepsi, but each store picks its own lineup.',
     source: 'https://www.yelp.com/menu/7-eleven-gaithersburg'
   },

@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-4758","burger_king",-120.6507,40.41621,null,"1520 Main Street","Susanville","CA","96130-4428","+1 530-433-1858","Mo-Su 06:00-22:00","Mo-Su 06:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_2666"],
+["mcdonalds-7983","mcdonalds",-120.63305,40.40529,null,"3000 Main St","Susanville","CA","96130-4738","+1 530-257-6880",null,null,1,"https://www.mcdonalds.com/us/en-us/location/7983.html"],
+["panda_express-2558","panda_express",-120.63911,40.41228,"Hwy 36 & Riverside","106 Robs Way","Susanville","CA","96130","+1 530-257-8286",null,null,null,"https://www.pandaexpress.com/locations/ca/susanville/2558"]]}

@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-11860","mcdonalds",-73.26335,43.39451,null,"8644 State Hwy 22","Granville","NY","12832","+1 518-642-3449","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/11860.html"],
+["mcdonalds-8031","mcdonalds",-73.0541,43.17491,null,"188 Depot Street","Manchester","VT","05255","+1 802-362-5170","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/8031.html"]]}

@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-6359","arbys",-103.00588,42.83012,null,"440 West 3rd St","Chadron","NE","69337","+1 308-432-3100","Mo-Su 10:00-22:00","Mo-Su 10:00-21:30",null,"https://www.arbys.com/locations/us/ne/chadron/440-west-3rd-st/store-6359/"],
+["mcdonalds-17490","mcdonalds",-103.01609,42.8288,null,"1180 W Hwy 20","Chadron","NE","69337","+1 308-432-3998","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/17490.html"],
+["qdoba-1000-main-street","qdoba",-103.0014,42.8205,null,"1000 Main Street","Chadron","NE","69337",null,"Mo-Fr 11:00-20:00",null,null,"https://locations.qdoba.com/us/ne/chadron/1000-main-street"]]}

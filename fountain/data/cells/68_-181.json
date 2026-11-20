@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-26272","mcdonalds",-90.2742,34.25917,null,"217 Martin Luther King Jr Dr","Marks","MS","38646","+1 662-326-5178","Mo-Su 06:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/26272.html"],
+["mcdonalds-27734","mcdonalds",-90.04784,34.00655,null,"606 E Main St","Charleston","MS","38921","+1 662-647-8797","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/27734.html"]]}

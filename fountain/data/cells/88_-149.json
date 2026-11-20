@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-15688","mcdonalds",-74.11606,44.31292,null,"569 Lake Flower Rd","Saranac Lake","NY","12983","+1 518-891-2566","Mo-Su 07:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/15688.html"],
+["mcdonalds-6545","mcdonalds",-74.46251,44.22834,null,"26 Demars Blvd","Tupper Lake","NY","12986","+1 518-359-7133",null,null,1,"https://www.mcdonalds.com/us/en-us/location/6545.html"]]}
