@@ -1,2 +1,6 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-7224","burger_king",-109.58446,36.162,null,"Highway 191","Chinle","AZ","86503-0000","+1 928-674-3700","Mo-Th 06:00-22:00; Fr 04:00-23:30; Sa-Su 06:00-22:00","Mo-Th 00:00-24:00; Sa-Su 00:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_4150"],
-["dennys-248503","dennys",-109.56339,36.15585,null,"Indian Route 7","Chinle","AZ","86503","+1 928-674-4321","Mo-Su 05:00-24:00",null,null,"https://locations.dennys.com/az/chinle/248503"]]}
+["churchs-indian-route-7","churchs",-109.56339,36.15591,null,"Indian Route 7","Chinle","AZ","86503","+1 928-674-3450","Mo-Su 10:00-22:00",null,null,"https://locations.churchs.com/az/chinle/indian-route-7"],
+["dennys-248503","dennys",-109.56339,36.15585,null,"Indian Route 7","Chinle","AZ","86503","+1 928-674-4321","Mo-Su 05:00-24:00",null,null,"https://locations.dennys.com/az/chinle/248503"],
+["speedway-46244","speedway",-109.61829,36.35341,null,"Us 191 @ Ir 59","Many Farms","AZ","86538","+1 928-781-6348","24/7",null,null,null],
+["speedway-46309","speedway",-109.59185,36.15075,null,"Hwy 191","Chinle","AZ","86503","+1 928-674-5401","24/7",null,null,null],
+["speedway-46310","speedway",-109.58288,36.1612,null,"Us Hwy 191 & Navajo Route 7","Chinle","AZ","86503","+1 928-674-8243","24/7",null,null,null]]}

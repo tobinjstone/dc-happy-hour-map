@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["caseys-1657_fuel","caseys",-92.172,40.45913,"MEMPHIS","110 N Clay St","Memphis","MO","63555","+1 660-631-8257","24/7",null,null,"https://www.caseys.com/general-store/mo-memphis/110-n-clay-st/1657"],
+["caseys-2374_fuel","caseys",-92.48877,40.03274,"LA PLATA","1107 N Brown St","La Plata","MO","63549","+1 660-717-2418","24/7",null,null,"https://www.caseys.com/general-store/mo-laplata/1107-n-brown-st/2374"],
+["caseys-2600_fuel","caseys",-92.17353,40.16722,"EDINA #2","202 E Lafayette","Edina","MO","63537","+1 660-631-8935","Mo-Su 04:00-24:00",null,null,"https://www.caseys.com/general-store/mo-edina/202-e-lafayette/2600"]]}

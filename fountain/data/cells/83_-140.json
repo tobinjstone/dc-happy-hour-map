@@ -1,2 +1,3 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["seven_eleven-37381_SHOP","seven_eleven",-69.97275,41.82813,null,"2360 State Hwy","Eastham","MA","02642","+1 508-240-2371","24/7",null,null,"https://www.7-eleven.com/locations/ma/eastham/2360-state-hwy-37381"],
+["speedway-44171","speedway",-69.9909,41.7533,null,"401 S Orleans Rd","Orleans","MA","02653","+1 508-255-1691","Mo-Su 05:00-23:00",null,null,null],
 ["wendys-2065530364","wendys",-69.98387,41.79715,null,"15 Canal Road","Orleans","MA","02653-2404","+1 508-255-4523","Mo-Su 07:00-24:00","Mo-Su 07:00-24:00",null,"https://locations.wendys.com/united-states/ma/orleans/15-canal-road/kids-meals.html"]]}

@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["caseys-1804_fuel","caseys",-98.00789,41.11174,"CENTRAL CITY #1","902 G St","Central City","NE","68826","+1 308-946-3418","24/7",null,null,"https://www.caseys.com/general-store/ne-centralcity/902-g-st/1804"],
+["caseys-3526_fuel","caseys",-98.45188,41.21592,"ST PAUL #1","1013 2nd St","St Paul","NE","68873","+1 308-270-7287","24/7",null,null,"https://www.caseys.com/general-store/ne-stpaul/1013-2nd-st/3526"]]}

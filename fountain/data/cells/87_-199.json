@@ -1,2 +1,3 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-7940","arbys",-99.3944,43.8032,null,"102 East Highway 16","Oacoma","SD","57365","+1 605-734-0400","Mo-Su 09:00-23:00","Mo-Su 09:00-22:30",null,"https://www.arbys.com/locations/us/sd/oacoma/102-east-highway-16/store-7940/"],
-["mcdonalds-11321","mcdonalds",-99.33183,43.80914,null,"200 S Main","Chamberlain","SD","57325-1520","+1 605-734-5509",null,null,1,"https://www.mcdonalds.com/us/en-us/location/11321.html"]]}
+["mcdonalds-11321","mcdonalds",-99.33183,43.80914,null,"200 S Main","Chamberlain","SD","57325-1520","+1 605-734-5509",null,null,1,"https://www.mcdonalds.com/us/en-us/location/11321.html"],
+["speedway-47440","speedway",-99.31286,43.76825,null,"2001 E. King Street","Chamberlain","SD","57325",null,"Mo-Su 00:00-24:00",null,null,null]]}

@@ -1,2 +1,4 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-14087","burger_king",-94.99388,43.64171,null,"2000 North Highway 71","Jackson","MN","56143-1088","+1 507-847-4647","Mo-Sa 06:00-21:00; Su 07:00-21:00","Mo-Sa 06:00-22:00; Su 07:00-22:00",1,"https://www.bk.com/store-locator/store/restaurant_8329"],
-["mcdonalds-14733","mcdonalds",-94.6315,43.98123,null,"313 1st Ave S","Saint James","MN","56081","+1 507-407-0080",null,null,1,"https://www.mcdonalds.com/us/en-us/location/14733.html"]]}
+["mcdonalds-14733","mcdonalds",-94.6315,43.98123,null,"313 1st Ave S","Saint James","MN","56081","+1 507-407-0080",null,null,1,"https://www.mcdonalds.com/us/en-us/location/14733.html"],
+["speedway-47436","speedway",-94.99608,43.64174,null,"2001 Hwy 71 North","Jackson","MN","56143",null,"Mo-Su 00:00-24:00",null,null,null],
+["speedway-47438","speedway",-94.98831,43.62209,null,"514 Third Street","Jackson","MN","56143",null,"Mo-Su 00:00-24:00",null,null,null]]}

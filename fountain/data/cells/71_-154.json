@@ -1,3 +1,10 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-7193","burger_king",-76.73275,35.8622,null,"764 Us Highway 64 E","Plymouth","NC","27962-9313","+1 252-793-1199","Mo-Su 08:00-20:00","Mo-Sa 06:00-23:00; Su 07:00-23:00",1,"https://www.bk.com/store-locator/store/restaurant_4129"],
+["hardees-1504342","hardees",-76.57708,35.56018,null,"870 Hwy 264 E","Belhaven","NC","27810","+1 252-943-6878","Mo-Su 05:30-20:00",null,null,"https://locations.hardees.com/nc/belhaven/870-hwy-264-east/"],
 ["mcdonalds-7263","mcdonalds",-76.73788,35.86009,null,"432 Us Hwy 64 East","Plymouth","NC","27962","+1 252-793-9304","Mo-Th 05:00-23:00; Fr-Sa 05:00-24:00; Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/7263.html"],
+["speedway-46869","speedway",-76.72757,35.86525,null,"1109 Us Highway 64 East","Plymouth","NC","27962","+1 252-793-4313","24/7",null,null,null],
+["speedway-46871","speedway",-76.6329,35.5477,null,"835 West Main St.","Belhaven","NC","27810","+1 252-943-2483","24/7",null,null,null],
+["speedway-47046","speedway",-76.94343,35.99344,null,"105 E Water St","Windsor","NC","27983","+1 252-794-5280","24/7",null,null,null],
+["speedway-47048","speedway",-76.76542,35.83504,null,"2025 Us Highway 64 W","Plymouth","NC","27962","+1 252-793-4425","24/7",null,null,null],
+["speedway-47054","speedway",-76.6295,35.5497,null,"550 Us Highway 264 Byp","Belhaven","NC","27810","+1 252-944-0300","24/7",null,null,null],
+["speedway-47076","speedway",-76.73485,35.86136,null,"630 Us Hwy 64 East","Plymouth","NC","27962","+1 252-793-2806","Mo-Su 05:00-23:00",null,null,null],
 ["wendys-2065530532","wendys",-76.76419,35.83541,null,"2025 Us 64 W","Plymouth","NC","27962-8833","+1 252-741-1231","Mo-Sa 00:00-02:00,06:30-24:00; Su 00:00-02:00,10:00-24:00","Mo-Sa 00:00-02:00,06:30-24:00; Su 00:00-02:00,10:00-24:00",null,"https://locations.wendys.com/united-states/nc/plymouth/2025-us-64-w/kids-meals.html"]]}

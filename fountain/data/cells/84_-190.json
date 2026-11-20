@@ -1,3 +1,4 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-7758","arbys",-94.84329,42.06519,null,"1515 Plaza Drive","Carroll","IA","51401","+1 712-775-2729","Mo-Su 09:00-23:00","Mo-Su 09:00-22:30",null,"https://www.arbys.com/locations/us/ia/carroll/1515-plaza-drive/store-7758/"],
+["culvers-0460","culvers",-94.872,42.0666,null,null,"Carroll","IA","51401",null,"Mo-Su 10:00-22:00","Mo-Su 10:00-22:00",1,"https://www.culvers.com/restaurants/carroll-ia"],
 ["jimmy_johns-2024084324-FoodEstablishment","jimmy_johns",-94.86173,42.06443,null,"427 E 6th St","Carroll","IA","51401","+1 712-775-2468","Mo-Su 10:30-21:00",null,null,"https://locations.jimmyjohns.com/ia/carroll/sandwiches-2622.html"],
 ["mcdonalds-28727","mcdonalds",-94.87672,42.07149,null,"912 W Us Highway 30","Carroll","IA","51401","+1 712-792-1227",null,null,1,"https://www.mcdonalds.com/us/en-us/location/28727.html"]]}

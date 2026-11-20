@@ -1,4 +1,13 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-10883","burger_king",-107.98801,36.71157,null,"710 West Broadway","Bloomfield","NM","87413-5700","+1 505-632-9506","Mo-Sa 06:00-22:00; Su 07:00-22:00","Mo-Th 06:00-23:00; Fr-Sa 06:00-24:00; Su 07:00-23:00",1,"https://www.bk.com/store-locator/store/restaurant_6192"],
 ["mcdonalds-22258","mcdonalds",-107.99555,36.82536,null,"104 W Aztec Blvd","Aztec","NM","87410","+1 505-334-6824",null,null,1,"https://www.mcdonalds.com/us/en-us/location/22258.html"],
 ["mcdonalds-43914","mcdonalds",-107.99301,36.71156,null,"1200 W Broadway Ave","Bloomfield","NM","87413","+1 505-436-3099","Mo-Su 05:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/43914.html"],
-["sonic-1683","sonic",-107.99443,36.71163,null,"1332 W. Broadway","Bloomfield","NM","87413","+1 505-632-1133","Mo-Su 07:00-24:00","Mo-Su 07:00-23:45",null,"https://www.sonicdrivein.com/locations/us/nm/bloomfield/1332-w.-broadway/store-1683/"]]}
+["sonic-1683","sonic",-107.99443,36.71163,null,"1332 W. Broadway","Bloomfield","NM","87413","+1 505-632-1133","Mo-Su 07:00-24:00","Mo-Su 07:00-23:45",null,"https://www.sonicdrivein.com/locations/us/nm/bloomfield/1332-w.-broadway/store-1683/"],
+["speedway-44827","speedway",-107.99248,36.82584,null,"122 NE Aztec Blvd","Aztec","NM","87410","+1 505-334-8045","Mo-Su 05:00-23:00",null,null,null],
+["speedway-44845","speedway",-107.99392,36.82577,null,"417 N Main Ave","Aztec","NM","87410","+1 505-334-3589","Mo-Su 05:00-23:00",null,null,null],
+["speedway-44851","speedway",-107.97943,36.75887,null,"3301 N 1st St","Bloomfield","NM","87413","+1 505-634-4727","Mo-Su 05:00-23:00",null,null,null],
+["speedway-44852","speedway",-107.87138,36.99389,null,"17401 Us 550","Aztec","NM","87410","+1 505-334-6041","Mo-Su 05:00-24:00",null,null,null],
+["speedway-44856","speedway",-107.98446,36.71002,null,"204 S Bloomfield Blvd","Bloomfield","NM","87413","+1 505-632-8262","24/7",null,null,null],
+["speedway-44858","speedway",-107.98639,36.71168,null,"600 W Broadway Ave","Bloomfield","NM","87413","+1 505-632-2774","Mo-Su 05:00-23:00",null,null,null],
+["speedway-44860","speedway",-107.99318,36.82561,null,"416 N Main Ave","Aztec","NM","87410","+1 505-334-6462","24/7",null,null,null],
+["speedway-44861","speedway",-107.97276,36.54497,null,"13921 Us 550","Bloomfield","NM","87413","+1 505-960-1397","24/7",null,null,null],
+["speedway-47136","speedway",-107.98586,36.70965,null,"121 S Bloomfield Blvd","Bloomfield","NM","87413","+1 505-632-3001","24/7",null,null,null]]}

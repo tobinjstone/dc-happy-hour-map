@@ -1,2 +1,8 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-5659","mcdonalds",-105.57386,36.40466,null,"200 S Santa Fe Rd","Taos","NM","87571","+1 575-758-9762","Mo-Th 08:00-18:00; Fr-Sa 08:00-18:30; Su 08:00-18:00",null,1,"https://www.mcdonalds.com/us/en-us/location/5659.html"],
-["sonic-3018","sonic",-105.5935,36.37349,null,"1357 Paseo Del Pueblo Sur","Taos","NM","87571","+1 575-758-1735","Mo-Su 07:00-23:00","Mo-Su 07:00-22:45",null,"https://www.sonicdrivein.com/locations/us/nm/taos/1357-paseo-del-pueblo-sur/store-3018/"]]}
+["sonic-3018","sonic",-105.5935,36.37349,null,"1357 Paseo Del Pueblo Sur","Taos","NM","87571","+1 575-758-1735","Mo-Su 07:00-23:00","Mo-Su 07:00-22:45",null,"https://www.sonicdrivein.com/locations/us/nm/taos/1357-paseo-del-pueblo-sur/store-3018/"],
+["speedway-44868","speedway",-105.60389,36.36366,null,"5180 Nm-68","Ranchos De Taos","NM","87557","+1 575-751-4480","Mo-Su 05:00-23:00",null,null,null],
+["speedway-47109","speedway",-105.57673,36.43658,null,"1318 Paseo Del Pueblo N","El Prado","NM","87529","+1 575-758-3453","Mo-Su 05:00-24:00",null,null,null],
+["speedway-47125","speedway",-105.595,36.45612,null,"1642 Paseo Del Pueblo Norte","El Prado","NM","87529","+1 575-751-0904","Mo-Su 05:00-23:00",null,null,null],
+["speedway-47126","speedway",-105.58319,36.38863,null,"823 Paseo Del Pueblo Sur","Taos","NM","87571","+1 575-758-2290","Mo-Su 05:00-23:00",null,null,null],
+["speedway-47127","speedway",-105.58906,36.37974,null,"1137 Paseo Del Pueblo S","Taos","NM","87571","+1 575-758-0760","24/7",null,null,null],
+["whataburger-1612","whataburger",-105.58297,36.39258,null,"710 Paseo Del Pueblo Sur Ste W","Taos","NM","87571","+1 575-613-1047","Mo-Fr 07:00-24:00; Sa-Su 00:00-01:00,07:00-24:00",null,null,"https://locations.whataburger.com/nm/taos/710-paseo-del-pueblo-sur-ste-w.html"]]}

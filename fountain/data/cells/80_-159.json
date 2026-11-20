@@ -11,6 +11,7 @@
 ["five_guys-1180-n-central-ave","five_guys",-79.07702,40.0211,"Somerset","1180 N. Central Ave.","Somerset","PA","15501",null,"Mo-Su 10:30-22:00",null,null,"https://restaurants.fiveguys.com/1180-n-central-ave"],
 ["mcdonalds-28718","mcdonalds",-79.3782,40.10704,null,"3612 State Route 31","Donegal","PA","15628","+1 724-593-5500","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/28718.html"],
 ["olive_garden-1334","olive_garden",-79.49927,40.30301,"Greensburg - Westmoreland Mall","5163 Route 30","Greensburg","PA","156016692","+1 724-832-9262","We 11:00-22:00",null,null,null],
+["ruby_tuesday-4411","ruby_tuesday",-79.0785,40.01761,"Somerset, PA","1019 North Center Avenue Somerset Pa 15501","Somerset","PA","15501","+1 814-445-3934",null,null,null,null],
 ["sheetz-173","sheetz",-79.1969,40.2614,null,"3832 State Route 711","Ligonier","PA","156589791","+1 724-441-8867","Mo-Su 00:00-24:00",null,1,"https://orders.sheetz.com/findASheetz/store/173"],
 ["sheetz-179","sheetz",-79.078,40.0214,null,"1189 N Center Ave","Somerset","PA","15501","+1 814-417-0133","Mo-Su 00:00-24:00",null,1,"https://orders.sheetz.com/findASheetz/store/179"],
 ["sheetz-29","sheetz",-79.2644,40.4311,null,"5 E Market St","Blairsville","PA","157171323","+1 724-247-0125","Mo-Su 00:00-24:00",null,null,"https://orders.sheetz.com/findASheetz/store/29"],
@@ -22,5 +23,7 @@
 ["sheetz-661","sheetz",-79.491,40.3005,null,"5064 Route 30 East","Greensburg","PA","15601","+1 878-884-0027","Mo-Su 00:00-24:00",null,null,"https://orders.sheetz.com/findASheetz/store/661"],
 ["sheetz-694","sheetz",-79.3792,40.2868,null,"Theatre St & Us 30","Latrobe","PA","15650","+1 724-804-0676","Mo-Su 00:00-24:00",null,1,"https://orders.sheetz.com/findASheetz/store/694"],
 ["sheetz-751","sheetz",-79.3758,40.1069,null,"3636 Pa 31","Donegal","PA","15628","+1 878-884-0019","Mo-Su 00:00-24:00",null,null,"https://orders.sheetz.com/findASheetz/store/751"],
+["speedway-45748","speedway",-79.44279,40.39605,null,"8064 Route 22","New Alexandria","PA","15670","+1 724-668-8164","24/7",null,null,null],
+["speedway-45749","speedway",-79.46334,40.29076,null,"101 Village Drive","Greensburg","PA","15601","+1 724-834-1042","24/7",null,null,null],
 ["wendys-2065529460","wendys",-79.38506,40.28608,null,"10 Latrobe Thirty Plaza","Latrobe","PA","15650-2850","+1 724-539-5513","Mo-Su 06:30-24:00","Mo-Su 06:30-24:00",null,"https://locations.wendys.com/united-states/pa/latrobe/10-latrobe-thirty-plaza/kids-meals.html"],
 ["wendys-2065531250","wendys",-79.07757,40.01744,null,"1030 N. Center Ave.","Somerset","PA","15501-1032","+1 814-443-2272","Mo-Su 06:00-24:00","Mo-Su 06:00-24:00",null,"https://locations.wendys.com/united-states/pa/somerset/1030-n-center-ave/kids-meals.html"]]}

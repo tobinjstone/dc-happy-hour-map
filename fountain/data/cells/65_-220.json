@@ -1,5 +1,15 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-8251","arbys",-109.72943,32.83543,null,"1720 West Thatcher Blvd","Safford","AZ","85546","+1 928-348-6912","Mo-Fr 08:00-23:00; Sa 08:30-23:00; Su 09:30-22:00","Mo-Fr 08:00-22:30; Sa 08:30-22:30; Su 09:30-21:30",null,"https://www.arbys.com/locations/us/az/safford/1720-west-thatcher-blvd/store-8251/"],
 ["burger_king-2982","burger_king",-109.73524,32.83676,null,"2103 W Highway 70","Thatcher","AZ","85552-5446","+1 928-428-6171","Mo-Sa 06:00-23:00; Su 07:00-23:00","Mo-Sa 06:00-24:00; Su 07:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_1636"],
+["carls_jr-1101875","carls_jr",-109.7324,32.83477,null,"455 S 20th Ave","Safford","AZ","85546","+1 480-386-9773","Mo-Th,Su 06:00-22:00; Fr-Sa 06:00-23:00",null,1,"https://locations.carlsjr.com/az/safford/455-s-20th-ave"],
+["culvers-1086","culvers",-109.75585,32.84863,null,null,"Thatcher","AZ","85552",null,"Mo-Su 10:00-22:00","Mo-Su 10:00-22:00",1,"https://www.culvers.com/restaurants/thatcher-az-w-main-st"],
 ["dennys-248048","dennys",-109.74749,32.84722,null,"2875 W Highway 70","Thatcher","AZ","85552","+1 928-428-0184","Mo-We 06:00-23:00; Th-Sa 00:00-24:00; Su 06:01-23:00",null,null,"https://locations.dennys.com/az/thatcher/248048"],
 ["mcdonalds-4440","mcdonalds",-109.73042,32.83559,null,"1830 Thatcher Blvd","Safford","AZ","85546","+1 928-428-1619","Mo-Su 04:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/4440.html"],
-["sonic-2885","sonic",-109.73722,32.83866,null,"2241 W. Us Highway 70","Thatcher","AZ","85552","+1 928-428-6333","Mo-Su 06:00-24:00","Mo-Su 06:00-23:45",null,"https://www.sonicdrivein.com/locations/us/az/thatcher/2241-w.-us-highway-70/store-2885/"]]}
+["sonic-2885","sonic",-109.73722,32.83866,null,"2241 W. Us Highway 70","Thatcher","AZ","85552","+1 928-428-6333","Mo-Su 06:00-24:00","Mo-Su 06:00-23:45",null,"https://www.sonicdrivein.com/locations/us/az/thatcher/2241-w.-us-highway-70/store-2885/"],
+["speedway-43034","speedway",-109.74924,32.84879,null,"2946 W Us Highway 70","Thatcher","AZ","85552","+1 928-428-2553","Mo-Su 05:00-24:00",null,null,null],
+["speedway-43035","speedway",-109.70405,32.83427,null,"300 E Us Highway 70","Safford","AZ","85546","+1 928-428-4011","Mo-Su 05:00-24:00",null,null,null],
+["speedway-46269","speedway",-109.73649,32.83918,null,"2211 W Us Highway 70","Thatcher","AZ","85552","+1 928-428-3131","24/7",null,null,null],
+["speedway-46281","speedway",-109.72987,32.83557,null,"1780 W Thatcher Blvd","Safford","AZ","85546","+1 928-428-2853","24/7",null,null,null],
+["speedway-46291","speedway",-109.76254,32.84898,null,"3775 W Main St","Thatcher","AZ","85552","+1 928-428-3280","24/7",null,null,null],
+["speedway-46301","speedway",-109.82039,32.8928,null,"325 Us-70","Pima","AZ","85543","+1 928-485-3040","24/7",null,null,null],
+["speedway-46302","speedway",-109.70721,32.83405,null,"105 E Us Highway 70","Safford","AZ","85546","+1 928-428-0255","24/7",null,null,null],
+["speedway-46304","speedway",-109.71651,32.83168,null,"750 S 8th Ave","Safford","AZ","85546","+1 928-428-5550","24/7",null,null,null]]}

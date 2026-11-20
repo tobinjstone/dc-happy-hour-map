@@ -28,6 +28,7 @@
 ["popeyes-restaurant_878612","popeyes",-74.2693,39.69747,null,"297 Rt 72 W","Stafford Township","NJ","08050","+1 609-812-2679","Mo-Su 10:30-21:00",null,1,"https://www.popeyes.com/store-locator/store/restaurant_878612"],
 ["seven_eleven-26514_SHOP","seven_eleven",-74.23494,39.57028,null,"1001 N Bay Ave","Beach Haven","NJ","08008","+1 609-492-3501","24/7",null,null,"https://www.7-eleven.com/locations/nj/beach haven/1001-n-bay-ave-26514"],
 ["seven_eleven-36055_SHOP","seven_eleven",-74.36682,39.57613,null,"800 Radio Rd","Little Egg Harbor","NJ","08087","+1 609-296-7160","24/7",null,null,"https://www.7-eleven.com/locations/nj/little egg harbor/800-radio-rd-36055"],
+["tgi_fridays-601-washington-ave.html","tgi_fridays",-74.27688,39.70607,"Manahawkin","601 Washington Ave","Manahawkin","NJ","08050","+1 609-489-0950","Mo-Sa 11:00-24:00; Su 10:00-24:00",null,null,"https://locations.tgifridays.com/nj/manahawkin/601-washington-ave.html"],
 ["wawa-0429","wawa",-74.22824,39.9678,null,"254 Rte 37 W","Toms River","NJ","08755",null,"24/7",null,null,"https://www.wawa.com/locations/0429"],
 ["wawa-0441","wawa",-74.21285,39.76752,null,"550 N Main St","Barnegat","NJ","08005",null,"24/7",null,null,"https://www.wawa.com/locations/0441"],
 ["wawa-0700","wawa",-74.17684,39.64938,null,"902 Central Ave Unit 1","Ship Bottom","NJ","08008",null,"24/7",null,null,"https://www.wawa.com/locations/0700"],
@@ -52,4 +53,5 @@
 ["wendys-2065531549","wendys",-74.16441,39.95562,null,"444 Rt. 37 East","Toms River","NJ","08753-6858","+1 732-929-9251","Mo-Su 00:00-01:00,08:00-24:00","Mo-Su 00:00-01:00,08:00-24:00",null,"https://locations.wendys.com/united-states/nj/toms-river/444-rt-37-east/kids-meals.html"],
 ["wendys-2065531559","wendys",-74.24711,39.97689,null,"51 Bananier Drive","Toms River","NJ","08755-4812","+1 732-341-2936","Mo-Su 08:00-24:00","Mo-Su 08:00-24:00",null,"https://locations.wendys.com/united-states/nj/toms-river/51-bananier-drive/kids-meals.html"],
 ["wendys-2065532009","wendys",-74.39005,39.95705,null,"450 Lacey Road","Whiting","NJ","08759-1305","+1 732-941-4567","Mo-Su 10:00-24:00","Mo-Su 10:00-24:00",null,"https://locations.wendys.com/united-states/nj/whiting/450-lacey-road/kids-meals.html"],
+["white_castle-312","white_castle",-74.18959,39.96386,null,"132 Route 37 East","Toms River","NJ","08753","+1 732-505-9463","Mo-Su 00:00-04:00,09:00-24:00",null,null,"https://www.whitecastle.com/locations/312"],
 ["wingstop-2030","wingstop",-74.20381,39.96201,"Toms River RT 37 West","1 Route 37 West","Toms River","NJ","08753","+1 732-691-4424","Mo-Su 10:30-24:00",null,null,"https://www.wingstop.com/location/wingstop-2030-toms-river-nj-08753/menu"]]}

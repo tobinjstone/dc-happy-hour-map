@@ -1,3 +1,5 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-18029","mcdonalds",-74.96389,42.65066,null,"60 Commons Dr","Cooperstown","NY","13326","+1 607-547-1110","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/18029.html"],
 ["mcdonalds-26334","mcdonalds",-74.9987,42.85898,null,"3155 Us Hwy 20","Richfield Springs","NY","13439","+1 315-858-0532","Mo-Su 06:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/26334.html"],
-["mcdonalds-6313","mcdonalds",-74.57032,42.91232,null,"22 Dutchtown Plz","Palatine Bridge","NY","13428","+1 518-673-3046","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/6313.html"]]}
+["mcdonalds-6313","mcdonalds",-74.57032,42.91232,null,"22 Dutchtown Plz","Palatine Bridge","NY","13428","+1 518-673-3046","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/6313.html"],
+["speedway-44958","speedway",-74.5033,42.6682,null,"1723 State Route 7","Cobleskill","NY","12043","+1 518-234-4435","24/7",null,null,null],
+["speedway-45099","speedway",-74.99864,42.85897,null,"3155 Us Hwy Route 20","Richfield Springs","NY","13439","+1 315-858-0623","24/7",null,null,null]]}

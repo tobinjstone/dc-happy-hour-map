@@ -1,3 +1,4 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-24294","burger_king",-88.58743,47.11299,null,"997 W Sharon Ave","Houghton","MI","49931","+1 906-523-5627","Mo-Su 06:00-22:00","Mo-Su 06:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_80479"],
+["culvers-0467","culvers",-88.58987,47.1129,null,null,"Houghton","MI","49931",null,"Mo-Su 10:00-23:00","Mo-Su 10:00-23:00",1,"https://www.culvers.com/restaurants/houghton-mi"],
 ["jimmy_johns-2024084642-FoodEstablishment","jimmy_johns",-88.56361,47.12166,null,"811 Shelden Ave","Houghton","MI","49931","+1 906-483-0768","Mo-Su 10:30-22:00",null,null,"https://locations.jimmyjohns.com/mi/houghton/sandwiches-1352.html"],
 ["mcdonalds-27820","mcdonalds",-88.59075,47.11037,null,"1300 W Memorial Dr","Houghton","MI","49931","+1 906-482-3350",null,null,1,"https://www.mcdonalds.com/us/en-us/location/27820.html"]]}

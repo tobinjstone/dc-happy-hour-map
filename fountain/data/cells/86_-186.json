@@ -1,0 +1,4 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["caseys-1799_fuel","caseys",-92.81783,43.28427,"OSAGE #1","309 Main St","Osage","IA","50461","+1 641-255-0248","24/7",null,null,"https://www.caseys.com/general-store/ia-osage/309-main-st/1799"],
+["caseys-1985_fuel","caseys",-92.91822,43.37896,"ST ANSGAR","110 N Hwy 218","St Ansgar","IA","50472","+1 641-255-0040","24/7",null,null,"https://www.caseys.com/general-store/ia-stansgar/110-n-hwy-218/1985"],
+["caseys-2229_fuel","caseys",-92.79753,43.28392,"OSAGE #2","1430 Main St","Osage","IA","50461","+1 641-255-0244","24/7",null,null,"https://www.caseys.com/general-store/ia-osage/1430-main-st/2229"],
+["caseys-2874_fuel","caseys",-92.55637,43.36398,"RICEVILLE","208 W Main St","Riceville","IA","50466","+1 641-255-0080","Mo-Su 05:00-23:00",null,null,"https://www.caseys.com/general-store/ia-riceville/208-w-main-st/2874"]]}

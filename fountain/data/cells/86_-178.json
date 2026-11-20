@@ -3,6 +3,13 @@
 ["arbys-7687","arbys",-88.7327,43.16013,null,"1910 Market Way","Watertown","WI","53094-7427","+1 920-261-9380","Mo-Su 10:00-23:00","Mo-Su 10:00-22:30",null,"https://www.arbys.com/locations/us/wi/watertown/1910-market-way/store-7687/"],
 ["arbys-8239","arbys",-88.80881,43.48736,null,"111 Frances Ln","Beaver Dam","WI","53916","+1 920-356-0855","Mo-Su 09:30-23:00","Mo-Su 09:30-22:30",null,"https://www.arbys.com/locations/us/wi/beaver-dam/111-frances-ln/store-8239/"],
 ["burger_king-25896","burger_king",-88.80875,43.48729,null,"109 Frances Ln","Beaver Dam","WI","53916","+1 920-219-9161","Mo-Su 11:00-18:00","Mo-Su 11:00-19:00",1,"https://www.bk.com/store-locator/store/restaurant_88142"],
+["caseys-2005_fuel","caseys",-88.82989,43.4655,"BEAVER DAM","906 N University Ave","Beaver Dam","WI","53916","+1 920-245-5073","24/7",null,null,"https://www.caseys.com/general-store/wi-beaverdam/906-n-university-ave/2005"],
+["caseys-3713_fuel","caseys",-88.80791,43.0013,"JEFFERSON","507 S Main St","Jefferson","WI","53549","+1 920-245-5237","Mo-Su 00:00-24:00",null,null,"https://www.caseys.com/general-store/wi-jefferson/507-s-main-st/3713"],
+["culvers-0020","culvers",-88.82548,43.47276,null,null,"Beaver Dam","WI","53916",null,"Mo-Su 10:00-23:00","Mo-Th,Su 10:00-23:00; Fr-Sa 10:00-24:00",1,"https://www.culvers.com/restaurants/beaver-dam"],
+["culvers-0021","culvers",-88.73293,43.17194,null,null,"Watertown","WI","53094",null,"Mo-Th,Su 10:00-23:00; Fr-Sa 10:00-24:00","Mo-Th,Su 10:00-23:00; Fr-Sa 10:00-24:00",1,"https://www.culvers.com/restaurants/watertown"],
+["culvers-0090","culvers",-88.76392,43.08326,null,null,"Johnson Creek","WI","53038",null,"Mo-Su 10:00-22:00","Mo-Su 10:00-22:00",1,"https://www.culvers.com/restaurants/johnson-creek"],
+["culvers-0579","culvers",-88.91101,43.08986,null,null,"Lake Mills","WI","53551",null,"Mo-Su 10:00-22:00","Mo-Su 10:00-22:00",1,"https://www.culvers.com/restaurants/lake-mills-wi-tyranena-rd"],
+["hardees-1501194","hardees",-88.71733,43.19309,null,"715 East Main Street","Watertown","WI","53094","+1 920-262-9640","Mo-Sa 06:00-22:00; Su 07:00-22:00",null,null,"https://locations.hardees.com/wi/watertown/715-east-main-street/"],
 ["jimmy_johns-2024083147-FoodEstablishment","jimmy_johns",-88.72821,43.1951,null,"103 N Church St","Watertown","WI","53094","+1 920-262-8380","Mo-Su 10:00-21:00",null,null,"https://locations.jimmyjohns.com/wi/watertown/sandwiches-0678.html"],
 ["jimmy_johns-2024083194-FoodEstablishment","jimmy_johns",-88.90777,43.08936,null,"148 E Tyranena Park Rd","Lake Mills","WI","53551","+1 920-945-0432","Mo-Su 10:30-21:00",null,null,"https://locations.jimmyjohns.com/wi/lake-mills/sandwiches-0052.html"],
 ["jimmy_johns-2024085397-FoodEstablishment","jimmy_johns",-88.8193,43.45601,null,"803 Park Ave","Beaver Dam","WI","53916","+1 920-887-7822","Mo-Su 10:00-21:00",null,null,"https://locations.jimmyjohns.com/wi/beaver-dam/sandwiches-0087.html"],
@@ -13,4 +20,5 @@
 ["mcdonalds-3578","mcdonalds",-88.72901,43.18731,null,"625 S Church St","Watertown","WI","53094-6298","+1 920-261-1108","Mo-Fr 05:00-24:00; Sa-Su 00:00-02:00,05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/3578.html"],
 ["mcdonalds-6934","mcdonalds",-88.90861,43.09021,null,"111 E Tyranena Park Rd","Lake Mills","WI","53551-0048","+1 920-648-3464",null,null,1,"https://www.mcdonalds.com/us/en-us/location/6934.html"],
 ["noodles-100-frances-ln","noodles",-88.81079,43.48649,"Beaver Dam","100 Frances Ln","Beaver Dam","WI","53916","+1 920-319-3450","Mo-Th,Su 10:30-21:00; Fr-Sa 10:30-22:00",null,null,"https://locations.noodles.com/wi/beaver-dam/100-frances-ln"],
-["qdoba-485-wright-rd","qdoba",-88.76222,43.08325,null,"485 Wright Rd","Johnson Creek","WI","53038",null,"Mo-Su 10:30-22:00",null,null,"https://locations.qdoba.com/us/wi/johnson-creek/485-wright-rd"]]}
+["qdoba-485-wright-rd","qdoba",-88.76222,43.08325,null,"485 Wright Rd","Johnson Creek","WI","53038",null,"Mo-Su 10:30-22:00",null,null,"https://locations.qdoba.com/us/wi/johnson-creek/485-wright-rd"],
+["speedway-46053","speedway",-88.729,43.195,null,"104 North Church Street","Watertown","WI","53094","+1 920-261-4733","24/7",null,null,null]]}
