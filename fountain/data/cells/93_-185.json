@@ -11,7 +11,10 @@
 ["chick_fil_a-1064105422","chick_fil_a",-92.15832,46.80587,"Duluth (MN)","1530 Miller Trunk Hwy","Duluth","MN","55811-5640","+1 218-206-8930","Mo-Sa 06:30-22:00; Su closed",null,1,"https://www.chick-fil-a.com/locations/mn/duluth-mn"],
 ["chipotle-1600-miller-trunk-hwy","chipotle",-92.15942,46.80395,"Chipotle Mexican Grill","1600 Miller Trunk Hwy","Duluth","MN","55811","+1 218-213-9925","Mo-Su 10:45-22:00",null,null,"https://locations.chipotle.com/mn/duluth/1600-miller-trunk-hwy"],
 ["costco-1422","costco",-92.17318,46.82334,"Duluth","4611 W Arrowhead Rd.","Duluth","MN","55811-4030","+1 218-600-5978","Mo-Fr 10:00-20:30; Sa 09:30-19:00; Su 10:00-18:00",null,null,"https://www.costco.com/warehouse-locations/duluth-mn-1422.html"],
+["culvers-0127","culvers",-92.04832,46.70702,null,null,"Superior","WI","54880",null,"Mo-Su 10:00-23:00","Mo-Su 10:00-23:00",1,"https://www.culvers.com/restaurants/superior"],
+["culvers-0420","culvers",-92.15607,46.80215,null,null,"Duluth","MN","55806",null,"Mo-Su 10:00-23:00","Mo-Su 10:00-23:00",1,"https://www.culvers.com/restaurants/duluth"],
 ["five_guys-1600-miller-trunk-highway","five_guys",-92.16018,46.80492,"Miller Hill Mall","1600 Miller Trunk Highway","Duluth","MN","55811",null,"Mo-Su 10:00-23:00",null,null,"https://restaurants.fiveguys.com/1600-miller-trunk-highway"],
+["hardees-1503654","hardees",-92.10036,46.72028,null,"1510 Belknap Ave","Superior","WI","54880","+1 715-392-1300","Mo-Sa 06:00-22:00; Su 07:00-22:00",null,null,"https://locations.hardees.com/wi/superior/1510-belknap-ave/"],
 ["jimmy_johns-2024082886-FoodEstablishment","jimmy_johns",-92.0912,46.72098,null,"823 Belknap St","Superior","WI","54880","+1 715-395-4669","Mo-Su 10:30-22:00",null,null,"https://locations.jimmyjohns.com/wi/superior/sandwiches-0555.html"],
 ["jimmy_johns-2024083078-FoodEstablishment","jimmy_johns",-92.08263,46.79859,null,"5 S 13th Ave E","Duluth","MN","55802","+1 218-724-7000","Mo-Su 10:30-21:00",null,null,"https://locations.jimmyjohns.com/mn/duluth/sandwiches-0625.html"],
 ["jimmy_johns-2024083447-FoodEstablishment","jimmy_johns",-92.07785,46.81672,null,"952 Woodland Ave","Duluth","MN","55803","+1 218-522-4506","Mo-Su 10:30-22:00",null,null,"https://locations.jimmyjohns.com/mn/duluth/sandwiches-2764.html"],
@@ -30,4 +33,7 @@
 ["outback-15502615","outback",-92.17529,46.81793,"Hermantown off Haines Road","4255 Haines Road","Hermantown","MN","55811","+1 218-722-2471","Mo-Th 11:00-21:30; Fr-Sa 11:00-22:00; Su 11:00-21:00",null,null,"https://locations.outback.com/minnesota/hermantown/4255-haines-road"],
 ["popeyes-restaurant_241580","popeyes",-92.14546,46.8009,null,"604 West Central Entrance","Duluth","MN","55811","+1 218-514-9686","Mo-Th 10:00-20:00; Fr-Su 10:00-21:00",null,1,"https://www.popeyes.com/store-locator/store/restaurant_241580"],
 ["qdoba-1020-woodland-ave","qdoba",-92.07755,46.81762,null,"1020 Woodland Ave","Duluth","MN","55803",null,"Mo-Su 10:30-23:00",null,null,"https://locations.qdoba.com/us/mn/duluth/1020-woodland-ave"],
+["speedway-44610","speedway",-92.27092,46.84988,null,"5601 Miller Trunk Highway","Hermantown","MN","55811","+1 218-729-5084","Mo-Fr 05:00-22:00; Sa-Su 06:00-22:00",null,null,null],
+["speedway-44612","speedway",-92.2102,46.69183,null,"1002 88th Avenue W","Duluth","MN","55808","+1 218-626-3392","Mo-Su 05:00-24:00",null,null,null],
+["speedway-44618","speedway",-92.09453,46.79531,null,"602 E 4th Street","Duluth","MN","55805","+1 218-529-1650","24/7",null,null,null],
 ["wendys-2065528140","wendys",-92.16314,46.80703,null,"1720 Miller Trunk Hwy","Duluth","MN","55811-5608","+1 218-996-3387","Mo-Su 10:00-24:00","Mo-Su 10:00-24:00",null,"https://locations.wendys.com/united-states/mn/duluth/1720-miller-trunk-hwy/kids-meals.html"]]}

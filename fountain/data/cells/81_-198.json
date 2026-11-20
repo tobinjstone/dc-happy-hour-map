@@ -1,0 +1,4 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["caseys-1801_fuel","caseys",-98.95204,40.50085,"MINDEN","653 N Brown Ave","Minden","NE","68959","+1 308-832-0870","24/7",null,null,"https://www.caseys.com/general-store/ne-minden/653-n-brown-ave/1801"],
+["caseys-2603_fuel","caseys",-98.50681,40.59678,"JUNIATA","107 W 14th St","Juniata","NE","68955","+1 402-395-4796","24/7",null,null,"https://www.caseys.com/general-store/ne-juniata/107-w-14th-st/2603"],
+["caseys-2606_fuel","caseys",-98.60265,40.81994,"WOOD RIVER #1","108 W 8th St","Wood River","NE","68883","+1 308-583-2072","Mo-Su 04:00-23:00",null,null,"https://www.caseys.com/general-store/ne-woodriver/108-w-8th-st/2606"],
+["caseys-3465_fuel","caseys",-98.84512,40.75058,"GIBBON","818 Hwy 30","Gibbon","NE","68840","+1 308-270-0458","24/7",null,null,"https://www.caseys.com/general-store/ne-gibbon/818-hwy-30/3465"]]}

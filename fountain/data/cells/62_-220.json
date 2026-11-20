@@ -1,3 +1,9 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-14184","burger_king",-109.56108,31.33851,null,"99th East 5th Avenue","Douglas","AZ","85607-2871","+1 520-805-0597","Mo-Sa 06:00-23:00; Su 07:00-23:00","Mo-Sa 06:00-24:00; Su 07:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_8394"],
 ["burger_king-6315","burger_king",-109.91892,31.40063,null,"1121 S Naco Hwy","Bisbee","AZ","85603","+1 520-432-3007","Mo-Sa 06:00-22:00; Su 07:00-22:00","Mo-Sa 06:00-23:00; Su 07:00-23:00",1,"https://www.bk.com/store-locator/store/restaurant_3584"],
-["mcdonalds-13037","mcdonalds",-109.55991,31.33956,null,"104 5th St","Douglas","AZ","85607","+1 520-364-8388","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/13037.html"]]}
+["carls_jr-1101816","carls_jr",-109.55981,31.33889,null,"105 E 5th St","Douglas","AZ","85607","+1 520-364-3691","Mo-Su 06:00-24:00",null,1,"https://locations.carlsjr.com/az/douglas/105-e-5th-st"],
+["churchs-94-5th-street","churchs",-109.56135,31.33953,null,"94 5th Street","Douglas","AZ","85607","+1 520-364-1449","Mo-Th,Su 10:00-21:00; Fr-Sa 10:00-21:30",null,null,"https://locations.churchs.com/az/douglas/94-5th-street"],
+["mcdonalds-13037","mcdonalds",-109.55991,31.33956,null,"104 5th St","Douglas","AZ","85607","+1 520-364-8388","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/13037.html"],
+["speedway-43036","speedway",-109.53331,31.34415,null,"1807 E 10th St","Douglas","AZ","85607","+1 520-364-7003","24/7",null,null,null],
+["speedway-46295","speedway",-109.91841,31.40229,null,"906 W Highway 92","Bisbee","AZ","85603","+1 520-432-3113","24/7",null,null,null],
+["speedway-46296","speedway",-109.56024,31.35035,null,"101 E 16th St","Douglas","AZ","85607","+1 520-364-5662","24/7",null,null,null],
+["speedway-46297","speedway",-109.54582,31.35298,null,"1060 E 18th St","Douglas","AZ","85607","+1 520-364-7431","24/7",null,null,null]]}

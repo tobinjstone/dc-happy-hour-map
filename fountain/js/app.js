@@ -779,7 +779,10 @@ function setupControls() {
 }
 
 function renderStatic() {
-  $('pepsi-note').innerHTML = `Not on the map, because there's no fountain Diet Coke: ${NOT_HERE.map((c) => `<a href="${esc(c.source)}" target="_blank" rel="noopener">${esc(c.name)}</a> (${esc(c.why)})`).join(', ')}.`;
+  const link = (c) => `<a href="${esc(c.source)}" target="_blank" rel="noopener">${esc(c.name)}</a>${c.why ? ` (${esc(c.why)})` : ''}`;
+  const pepsi = NOT_HERE.filter((c) => !c.none);
+  const none = NOT_HERE.filter((c) => c.none);
+  $('pepsi-note').innerHTML = `Not on the map because they pour Pepsi: ${pepsi.map(link).join(', ')}. No fountain soda at all: ${none.map((c) => `${link(c)} (${esc(c.none)})`).join(', ')}.`;
   $('data-updated').textContent = state.index.updated ? `Locations checked ${fmtDate(state.index.updated)}.` : '';
 }
 

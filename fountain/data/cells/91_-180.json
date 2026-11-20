@@ -1,3 +1,4 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-8233","arbys",-89.70319,45.88265,null,"8630 Us Hwy 51","Minocqua","WI","54548","+1 715-358-9744","Mo-Su 09:30-22:00","Mo-Su 09:30-21:30",null,"https://www.arbys.com/locations/us/wi/minocqua/8630-us-hwy-51/store-8233/"],
+["culvers-0094","culvers",-89.69826,45.89917,null,null,"Arbor Vitae","WI","54568",null,"Mo-Su 10:00-22:00","Mo-Su 10:00-22:00",1,"https://www.culvers.com/restaurants/minocqua"],
 ["mcdonalds-6460","mcdonalds",-89.70478,45.88645,null,"8689 Hwy 51","Minocqua","WI","54548","+1 715-356-4004",null,null,1,"https://www.mcdonalds.com/us/en-us/location/6460.html"],
 ["popeyes-restaurant_887292","popeyes",-89.70321,45.88913,null,"8733 US Hwy 51","Minocqua","WI","54538","+1 715-388-7200","Mo-Su 10:30-21:00",null,1,"https://www.popeyes.com/store-locator/store/restaurant_887292"]]}

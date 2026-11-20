@@ -2,4 +2,8 @@
 ["burger_king-2019","burger_king",-75.52246,42.51295,null,"5616 State Highway 12","Norwich","NY","13815-0000","+1 607-334-8570","Mo-Sa 06:00-23:00; Su 07:00-23:00","Mo-Fr 06:00-24:00; Sa 00:00-01:00,06:00-24:00; Su 00:00-01:00,07:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_1060"],
 ["mcdonalds-15109","mcdonalds",-75.54962,42.83436,null,"168 Utica St (Ny-12b)","Hamilton","NY","13346","+1 315-824-4001","Mo-Th 06:00-23:00; Fr 06:00-23:30; Sa-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/15109.html"],
 ["mcdonalds-3266","mcdonalds",-75.52229,42.52004,null,"165 S Broad St","Norwich","NY","13815","+1 607-334-6020","Mo-Fr 05:00-24:00; Sa 00:00-01:00,04:00-24:00; Su 00:00-01:00,05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/3266.html"],
-["mcdonalds-5519","mcdonalds",-75.84057,42.92613,null,"2300 Town & Country Plaza","Cazenovia","NY","13035","+1 315-655-3581","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/5519.html"]]}
+["mcdonalds-5519","mcdonalds",-75.84057,42.92613,null,"2300 Town & Country Plaza","Cazenovia","NY","13035","+1 315-655-3581","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/5519.html"],
+["speedway-44943","speedway",-75.52604,42.55179,null,"6157 State Highway 12","Norwich","NY","13815","+1 607-336-6825","24/7",null,null,null],
+["speedway-44952","speedway",-75.5226,42.515,null,"5644 State Highway 12","Norwich","NY","13815","+1 607-334-9557","Mo-Su 06:00-24:00",null,null,null],
+["speedway-45105","speedway",-75.548,42.82968,null,"59 Utica St","Hamilton","NY","13346","+1 315-824-5414","24/7",null,null,null],
+["speedway-45125","speedway",-75.64428,42.89925,null,"45 Main St","Morrisville","NY","13408","+1 315-684-3330","24/7",null,null,null]]}

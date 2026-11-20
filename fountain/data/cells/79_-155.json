@@ -3,6 +3,7 @@
 ["burger_king-13565","burger_king",-77.01223,39.58683,null,"454 WMC Drive","Westminster","MD","21158-4336","+1 410-840-9975","Mo-Su 06:00-22:00","Mo-Su 06:00-23:00",1,"https://www.bk.com/store-locator/store/restaurant_7947"],
 ["burger_king-17183","burger_king",-77.02932,39.87081,null,"6090 York Rd","New Oxford","PA","17350","+1 717-624-4600","Mo-Su 06:30-22:00","Mo-Th 06:30-23:00; Fr-Sa 06:30-23:30; Su 06:30-23:00",1,"https://www.bk.com/store-locator/store/restaurant_10875"],
 ["burger_king-9864","burger_king",-77.20242,39.84306,null,"1275-I York Road","Gettysburg","PA","17325","+1 717-337-0899","Mo-Su 06:30-22:00","Mo-Su 06:30-24:00",1,"https://www.bk.com/store-locator/store/restaurant_5571"],
+["hardees-1502928","hardees",-77.01113,39.80708,null,"646 Main Street","Mcsherrystown","PA","17344","+1 717-632-7810","Mo-Su 05:00-23:00",null,null,"https://locations.hardees.com/pa/mcsherrystown/646-main-street/"],
 ["mcdonalds-10713","mcdonalds",-77.15749,39.64882,null,"520 E Baltimore St","Taneytown","MD","21787","+1 410-756-1326","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/10713.html"],
 ["mcdonalds-13648","mcdonalds",-77.31681,39.7034,null,"517 E Main Street","Emmitsburg","MD","21727","+1 301-447-3663","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/13648.html"],
 ["mcdonalds-16260","mcdonalds",-77.09377,39.74974,null,"430 N Queen St","Littlestown","PA","17340","+1 717-345-2623",null,null,1,"https://www.mcdonalds.com/us/en-us/location/16260.html"],
@@ -10,6 +11,7 @@
 ["mcdonalds-2924","mcdonalds",-77.23591,39.818,null,"517 Steinwehr Ave","Gettysburg","PA","17325","+1 717-640-5552","Mo-Su 06:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/2924.html"],
 ["mcdonalds-5787","mcdonalds",-77.41872,39.61351,null,"200 Frederick Road","Thurmont","MD","21788","+1 301-271-3003","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/5787.html"],
 ["mcdonalds-7306","mcdonalds",-77.02969,39.87072,null,"6040 York Rd","New Oxford","PA","17350","+1 717-353-8996","Mo-Su 00:00-01:00,05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/7306.html"],
+["ruby_tuesday-4650","ruby_tuesday",-77.2005,39.84373,null,"25 Camp Letterman Drive Gettysburg Pa 17325","Gettysburg","PA","17325","+1 717-974-1058",null,null,null,null],
 ["seven_eleven-19021_SHOP","seven_eleven",-77.23308,39.83126,null,"69 Chambersburg St","Gettysburg","PA","17325-1102","+1 717-334-9423","24/7",null,null,"https://www.7-eleven.com/locations/pa/gettysburg/69-chambersburg-st-19021"],
 ["seven_eleven-28214_SHOP","seven_eleven",-77.0642,39.86186,null,"403 Lincoln Way W","New Oxford","PA","17350-1005","+1 717-624-3173","24/7",null,null,"https://www.7-eleven.com/locations/pa/new oxford/403-lincoln-way-w-28214"],
 ["seven_eleven-28228_SHOP","seven_eleven",-77.24797,39.92811,null,"110 S Main St","Biglerville","PA","17307-9418","+1 717-677-6742","24/7",null,null,"https://www.7-eleven.com/locations/pa/biglerville/110-s-main-st-28228"],
@@ -22,6 +24,7 @@
 ["sheetz-326","sheetz",-77.1994,39.8442,null,"30 Camp Letterman Dr","Gettysburg","PA","173258376","+1 223-255-0182","Mo-Su 00:00-24:00",null,1,"https://orders.sheetz.com/findASheetz/store/326"],
 ["sheetz-560","sheetz",-77.1994,39.7993,null,"1978 Baltimore Pike","Gettysburg","PA","17325","+1 223-255-0123","Mo-Su 00:00-24:00",null,null,"https://orders.sheetz.com/findASheetz/store/560"],
 ["sheetz-644","sheetz",-77.028,39.8711,null,"6100 York Road","New Oxford","PA","17350","+1 223-230-3024","Mo-Su 00:00-24:00",null,null,"https://orders.sheetz.com/findASheetz/store/644"],
+["tgi_fridays-1861-gettysburg-village-dr.html","tgi_fridays",-77.20103,39.7969,null,"1861 Gettysburg Village Drive","Gettysburg","PA","17325","+1 717-334-3133","Mo-Th,Su 10:30-23:00; Fr-Sa 10:30-24:00",null,null,"https://locations.tgifridays.com/pa/gettysburg/1861-gettysburg-village-dr.html"],
 ["wendys-2055356394","wendys",-77.42067,39.61559,null,"303 Tippin Drive","Thurmont","MD","21788","+1 301-293-6641",null,null,null,"https://locations.wendys.com/united-states/md/thurmont/303-tippin-drive/breakfast-menu.html"],
 ["wendys-2065528471","wendys",-77.20286,39.84357,null,"1268 York Road","Gettysburg","PA","17325-7562","+1 717-334-3100","Mo-Su 00:00-02:00,06:30-24:00","Mo-Su 00:00-02:00,06:30-24:00",null,"https://locations.wendys.com/united-states/pa/gettysburg/1268-york-road/kids-meals.html"],
 ["wendys-2065530180","wendys",-77.02491,39.87144,null,"6167 York Road","New Oxford","PA","17350-9311","+1 717-624-2400","Mo-Su 10:00-23:00","Mo-Su 10:00-23:00",null,"https://locations.wendys.com/united-states/pa/new-oxford/6167-york-road/kids-meals.html"]]}

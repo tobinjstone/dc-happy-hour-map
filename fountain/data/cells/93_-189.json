@@ -1,1 +1,4 @@
-{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["seven_eleven-47497_SHOP","seven_eleven",-94.32491,46.63268,null,"33117 Old Hwy 371","Pequot Lakes","MN","56472",null,null,null,null,"https://www.7-eleven.com/locations/mn/pequot lakes/33117-old-hwy-371-47497"]]}
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["seven_eleven-47497_SHOP","seven_eleven",-94.32491,46.63268,null,"33117 Old Hwy 371","Pequot Lakes","MN","56472",null,null,null,null,"https://www.7-eleven.com/locations/mn/pequot lakes/33117-old-hwy-371-47497"],
+["speedway-46510","speedway",-94.33654,46.64934,null,"34230 State Hwy 371","Jenkins","MN","56474","+1 218-821-4340","Mo-Su 06:00-22:00",null,null,null],
+["speedway-46514","speedway",-94.31303,46.5987,null,"30813 Patriot Avenue","Pequot Lakes","MN","56472","+1 218-822-1492","24/7",null,null,null],
+["speedway-47461","speedway",-94.31414,46.60169,null,"30923 1st Street","Pequot Lakes","MN","56472",null,null,null,null,null]]}

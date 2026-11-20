@@ -14,5 +14,9 @@
 ["mcdonalds-4314","mcdonalds",-80.76399,41.87539,null,"2424 E Prospect","Ashtabula","OH","44004-6358","+1 440-998-7400","Mo-Fr 05:00-24:00; Sa 06:00-24:00; Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/4314.html"],
 ["mcdonalds-5021","mcdonalds",-80.55784,41.94428,null,"312 State St","Conneaut","OH","44030-2572","+1 440-593-6360","Mo-Sa 05:45-23:00; Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/5021.html"],
 ["sheetz-274","sheetz",-80.7642,41.8758,null,"2411 N Ridge Rd E","Ashtabula","OH","44004","+1 440-998-1009","Mo-Su 00:00-24:00",null,null,"https://orders.sheetz.com/findASheetz/store/274"],
+["speedway-45300","speedway",-80.7696,41.7422,null,"149 North Chestnut St","Jefferson","OH","44047","+1 440-576-9595","24/7",null,null,null],
+["speedway-45304","speedway",-80.76563,41.87607,null,"2309 North Ridge Rd E","Ashtabula","OH","44004","+1 440-993-6117","24/7",null,null,null],
+["steak_n_shake-472","steak_n_shake",-80.74759,41.88184,null,"3615 N Ridge East","Ashtabula","OH","44004","+1 440-992-5280","Mo-Su 10:00-24:00",null,null,"https://www.steaknshake.com/locations/oh-ashtabula-n-ridge-east/"],
+["waffle_house-1830","waffle_house",-80.85536,41.78403,null,"2850 G. H. Drive","Austinburg","OH","44010","+1 440-275-3181","Mo-Su 00:00-24:00",null,null,"https://locations.wafflehouse.com/austinburg-oh-1830/"],
 ["wendys-2065527118","wendys",-80.79582,41.86359,null,"1040 Prospect Road","Ashtabula","OH","44004-6764","+1 440-687-5588","Mo-Su 10:00-24:00","Mo-Su 10:00-24:00",null,"https://locations.wendys.com/united-states/oh/ashtabula/1040-prospect-road/kids-meals.html"],
 ["wendys-2065528965","wendys",-80.94609,41.77221,null,"1782 South Broadway","Geneva","OH","44041-9173","+1 440-859-0897","Mo-Su 10:00-24:00","Mo-Su 10:00-24:00",null,"https://locations.wendys.com/united-states/oh/geneva/1782-south-broadway/kids-meals.html"]]}

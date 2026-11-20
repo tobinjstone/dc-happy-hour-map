@@ -1,3 +1,4 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-7991","arbys",-89.14905,45.16067,null,"2120 Neva Rd","Antigo","WI","54409","+1 715-623-2828","Mo-Su 09:30-22:00","Mo-Su 09:30-21:30",null,"https://www.arbys.com/locations/us/wi/antigo/2120-neva-rd/store-7991/"],
 ["burger_king-8477","burger_king",-89.14867,45.16351,null,"2250 Neva Road","Antigo","WI","54409-2910","+1 715-333-9845","Mo-Su 07:00-20:00","Mo-Su 07:00-22:00",1,"https://www.bk.com/store-locator/store/restaurant_4784"],
+["culvers-0231","culvers",-89.14742,45.16021,null,null,"Antigo","WI","54409",null,"Mo-Su 10:00-22:00","Mo-Su 10:00-22:00",1,"https://www.culvers.com/restaurants/antigo"],
 ["mcdonalds-35245","mcdonalds",-89.14761,45.16091,null,"2115 Neva Road","Antigo","WI","54409","+1 715-627-4666","Mo-Th 05:00-24:00; Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/35245.html"]]}

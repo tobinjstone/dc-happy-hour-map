@@ -1,4 +1,5 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["checkers-4000","checkers",-115.49598,32.69365,null,"200 East Cole Road","Calexico","CA","92231",null,null,null,null,null],
+["churchs-344-imperial-avenue","churchs",-115.49833,32.66849,null,"344 Imperial Avenue","Calexico","CA","92231","+1 442-252-8006","Mo-Su 09:00-22:00",null,null,"https://locations.churchs.com/ca/calexico/344-imperial-avenue"],
 ["mcdonalds-3936","mcdonalds",-115.49835,32.67272,null,"720 Imperial Ave","Calexico","CA","92231-3153","+1 760-357-6309",null,null,1,"https://www.mcdonalds.com/us/en-us/location/3936.html"],
 ["panda_express-2587","panda_express",-115.49821,32.69692,"Rockwood & Cole","2530 Rockwood Ave","Calexico","CA","92231","+1 760-768-1006",null,null,null,"https://www.pandaexpress.com/locations/ca/calexico/2587"],
 ["seven_eleven-22906_SHOP","seven_eleven",-115.38186,32.81118,null,"211 W 5th Street","Holtville","CA","92250-1114","+1 760-356-5232","24/7",null,null,"https://www.7-eleven.com/locations/ca/holtville/211-w-5th-street-22906"],

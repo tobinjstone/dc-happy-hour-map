@@ -3,6 +3,7 @@
 ["burger_king-2509","burger_king",-83.31967,43.04289,null,"727 South Main Street","Lapeer","MI","48446-3031","+1 810-245-5604","Mo-Sa 06:00-23:00; Su 07:00-23:00","Mo-Su 00:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_1348"],
 ["burger_king-7386","burger_king",-83.07107,43.00914,null,"1923 South Cedar","Imlay City","MI","48444","+1 810-724-2248","Mo-Sa 06:00-22:00; Su 07:00-22:00","Mo-Sa 06:00-24:00; Su 07:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_4248"],
 ["checkers-3272","checkers",-83.32194,43.03916,null,"880 South Main Street","Lapeer","MI","48446",null,null,null,null,null],
+["culvers-0765","culvers",-83.3227,43.0401,null,null,"Lapeer","MI","48446",null,"Mo-Su 10:00-23:00","Mo-Su 10:00-23:00",1,"https://www.culvers.com/restaurants/lapeer-mi-west-st"],
 ["jimmy_johns-2024083145-FoodEstablishment","jimmy_johns",-83.06975,43.01234,null,"1809 South Cedar Street","Imlay City","MI","48444","+1 810-790-7022","Mo-Su 10:30-21:00",null,null,"https://locations.jimmyjohns.com/mi/imlay-city/sandwiches-4341.html"],
 ["jimmy_johns-2024083789-FoodEstablishment","jimmy_johns",-83.32163,43.0431,null,"1247 Demille Rd","Lapeer","MI","48446","+1 810-245-3880","Mo-Su 10:30-21:00",null,null,"https://locations.jimmyjohns.com/mi/lapeer/sandwiches-1211.html"],
 ["mcdonalds-12131","mcdonalds",-83.08029,43.31945,null,"3430 Main St","Marlette","MI","48453-1239","+1 989-635-3877","Mo-Th 05:30-23:00; Fr-Sa 05:30-23:30; Su 06:30-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/12131.html"],
@@ -13,5 +14,10 @@
 ["mcdonalds-4892","mcdonalds",-83.07121,43.0162,null,"635 South Cedar","Imlay City","MI","48444-1343","+1 810-721-7122","Mo-Th 05:00-23:00; Fr 05:00-24:00; Sa 06:00-24:00; Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/4892.html"],
 ["popeyes-restaurant_882379","popeyes",-83.32341,43.03503,null,"1040 S. Main","Lapeer","MI","48446","+1 810-356-3135","Mo-Su 09:30-22:00",null,1,"https://www.popeyes.com/store-locator/store/restaurant_882379"],
 ["sonic-6137","sonic",-83.32179,43.03637,null,"983 South Main Street","Lapeer","MI","48446","+1 810-660-8450","Mo-Su 10:00-22:00","Mo-Su 10:00-21:45",null,"https://www.sonicdrivein.com/locations/us/mi/lapeer/983-south-main-street/store-6137/"],
+["speedway-44436","speedway",-83.0723,43.0212,null,"310 S Cedar St","Imlay City","MI","48444","+1 810-724-6600","24/7",null,null,null],
+["speedway-44440","speedway",-83.3872,43.4958,null,"1004 E Caro Rd","Caro","MI","48723","+1 989-673-7823","24/7",null,null,null],
+["speedway-44441","speedway",-83.4071,43.4807,null,"1001 W Caro Rd","Caro","MI","48723","+1 989-673-6527","24/7",null,null,null],
+["speedway-44442","speedway",-83.0797,43.3228,null,"3269 Main St","Marlette","MI","48453","+1 989-635-7043","24/7",null,null,null],
+["speedway-44492","speedway",-83.07222,43.00727,null,"1988 South Cedar Street","Imlay City","MI","48444","+1 810-724-1897","24/7",null,null,null],
 ["wendys-2065527368","wendys",-83.40486,43.48214,null,"847 S. State St.","Caro","MI","48723-1702","+1 989-673-0600","Mo-Su 06:00-24:00","Mo-Su 06:00-24:00",null,"https://locations.wendys.com/united-states/mi/caro/847-s-state-st/kids-meals.html"],
 ["wendys-2065529337","wendys",-83.07231,43.00793,null,"1950 S Cedar Street","Imlay City","MI","48444-9779","+1 810-724-2443","Mo-Su 00:00-01:00,06:00-24:00","Mo-Su 00:00-01:00,06:00-24:00",null,"https://locations.wendys.com/united-states/mi/imlay-city/1950-s-cedar-street/kids-meals.html"]]}

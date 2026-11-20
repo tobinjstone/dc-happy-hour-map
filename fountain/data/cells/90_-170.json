@@ -4,6 +4,8 @@
 ["burger_king-10758","burger_king",-84.97461,45.37046,null,"920 Charlevoix Avenue","Petoskey","MI","49770-8430","+1 231-439-0600","Mo-Th 06:00-21:00; Fr-Sa 06:00-22:00; Su 06:00-21:00","Mo-Th 06:00-22:30; Fr-Sa 06:00-23:00; Su 06:00-22:30",1,"https://www.bk.com/store-locator/store/restaurant_6105"],
 ["burger_king-1614","burger_king",-84.68583,45.02789,null,"832 West Main","Gaylord","MI","49735-1902","+1 989-732-2660","Mo-Su 06:00-21:00","Mo-Th 06:00-22:00; Fr 06:00-23:00; Sa-Su 06:00-22:00",1,"https://www.bk.com/store-locator/store/restaurant_839"],
 ["chick_fil_a-2066522248","chick_fil_a",-84.6962,45.028,"Gaylord (MI)","1354 W. Main Street","Gaylord","MI","49735","+1 989-217-4655","Mo-Sa 06:30-22:00; Su closed",null,1,"https://www.chick-fil-a.com/locations/mi/gaylord-mi"],
+["culvers-0373","culvers",-84.70152,45.02713,null,null,"Gaylord","MI","49735",null,"Mo-Su 10:00-23:00","Mo-Su 10:00-23:00",1,"https://www.culvers.com/restaurants/gaylord"],
+["culvers-0761","culvers",-84.91405,45.38877,null,null,"Petoskey","MI","49770",null,"Mo-Su 10:00-22:00","Mo-Su 10:00-23:00",1,"https://www.culvers.com/restaurants/petoskey-mi-31-n"],
 ["firehouse_subs-TQppOe6LVjIFVE8Y6M35nD","firehouse_subs",-84.69309,45.02789,"Main on Main","1100 West Main St","Gaylord","MI","49735","+1 989-448-8520","Mo-Su 10:00-21:00",null,null,"https://www.firehousesubs.com/store-locator/store/TQppOe6LVjIFVE8Y6M35nD"],
 ["five_guys-1384-w-main-street","five_guys",-84.69857,45.02804,"Gaylord","1384 W Main Street","Gaylord","MI","49735",null,"Mo-Su 11:00-22:00",null,null,"https://restaurants.fiveguys.com/1384-w-main-street"],
 ["jimmy_johns-2034734815-FoodEstablishment","jimmy_johns",-84.70262,45.02808,null,"1482 W Main St.","Gaylord","MI","49735","+1 989-448-2533","Mo-Su 10:30-21:00",null,null,"https://locations.jimmyjohns.com/mi/gaylord/sandwiches-4391.html"],
@@ -15,5 +17,6 @@
 ["mcdonalds-43962","mcdonalds",-84.61495,45.40465,null,"6284 M 68 Hwy","Indian River","MI","49749",null,null,null,1,"https://www.mcdonalds.com/us/en-us/location/43962.html"],
 ["qdoba-832-w-main-st","qdoba",-84.68569,45.02781,null,"832 W Main St","Gaylord","MI","49735",null,"Mo-Su 10:00-21:30",null,null,"https://locations.qdoba.com/us/mi/gaylord/832-w-main-st"],
 ["seven_eleven-36918_SHOP","seven_eleven",-84.67353,45.02858,null,"134 N Center Ave","Gaylord","MI","49735","+1 989-705-2217","24/7",null,null,"https://www.7-eleven.com/locations/mi/gaylord/134-n-center-ave-36918"],
+["speedway-44485","speedway",-84.6834,45.0276,null,"730 West Main Street","Gaylord","MI","49735","+1 989-732-3246","24/7",null,null,null],
 ["wendys-2065528937","wendys",-84.6847,45.02709,null,"811 Main St.","Gaylord","MI","49735-1901","+1 989-732-7359","Mo-Su 07:30-24:00","Mo-Su 07:30-24:00",null,"https://locations.wendys.com/united-states/mi/gaylord/811-main-st/kids-meals.html"],
 ["wendys-2065530705","wendys",-84.97296,45.37033,null,"822 Charlevoix Avenue","Petoskey","MI","49770-2202","+1 231-348-5118","Mo-Sa 05:00-24:00; Su 06:00-24:00","Mo-Sa 05:00-24:00; Su 06:00-24:00",null,"https://locations.wendys.com/united-states/mi/petoskey/822-charlevoix-avenue/kids-meals.html"]]}

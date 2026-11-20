@@ -4,8 +4,10 @@
 ["burger_king-18123","burger_king",-84.4072,41.60563,null,"21738 County Road M-50 Plaza 1 Nort","West Unity","OH","43570-1801","+1 419-924-1076","Mo-Su 07:00-23:00",null,0,"https://www.bk.com/store-locator/store/restaurant_11733"],
 ["burger_king-2237","burger_king",-84.04377,41.87648,null,"1400 South Main","Adrian","MI","49221-4309","+1 517-265-8116","Mo-Sa 06:00-22:00; Su 07:00-22:00","Mo-Sa 06:00-24:00; Su 07:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_1186"],
 ["burger_king-9240","burger_king",-84.13726,41.57384,null,"475 East Airport Highway","Wauseon","OH","43567-9791","+1 419-335-5000","Mo-Sa 06:00-23:00; Su 07:00-23:00","Mo-Sa 05:30-24:00; Su 06:30-24:00",1,"https://www.bk.com/store-locator/store/restaurant_5206"],
+["caseys-5152_fuel","caseys",-84.30714,41.51371,"ARCHBOLD #2","705 S. Defiance St.","Archbold","OH","43502","+1 419-792-7497","Mo-Su 05:00-23:00",null,null,"https://www.caseys.com/general-store/oh-archbold/705-s-defiance-st/5152"],
 ["checkers-4081","checkers",-84.04139,41.8746,null,"1109 U.S. 223","Adrian","MI","49221",null,null,null,null,null],
 ["chipotle-1421-s-main-st","chipotle",-84.04248,41.87575,"Chipotle Mexican Grill","1421 S Main St","Adrian","MI","49221","+1 517-264-1061","Mo-Su 10:45-23:00",null,null,"https://locations.chipotle.com/mi/adrian/1421-s-main-st"],
+["culvers-0321","culvers",-84.04375,41.87901,null,null,"Adrian","MI","49221",null,"Mo-Su 10:00-22:00","Mo-Su 10:00-23:00",1,"https://www.culvers.com/restaurants/adrian"],
 ["jimmy_johns-2024083892-FoodEstablishment","jimmy_johns",-84.06532,41.90485,null,"1502 W Maumee St","Adrian","MI","49221","+1 517-263-6400","Mo-Su 10:30-22:00",null,null,"https://locations.jimmyjohns.com/mi/adrian/sandwiches-0707.html"],
 ["mcdonalds-10227","mcdonalds",-84.30585,41.51145,null,"1100 S Defiance Street","Archbold","OH","43502-1618","+1 419-445-0541","Mo-Sa 04:00-23:00; Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/10227.html"],
 ["mcdonalds-16134","mcdonalds",-84.3613,41.85442,null,"503 S Meridian St","Hudson","MI","49247","+1 517-448-8440","Mo-Su 05:30-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/16134.html"],
@@ -15,5 +17,7 @@
 ["seven_eleven-20862_SHOP","seven_eleven",-84.03335,41.88918,null,"304 E Beecher St","Adrian","MI","49221","+1 517-263-3280","24/7",null,null,"https://www.7-eleven.com/locations/mi/adrian/304-e-beecher-st-20862"],
 ["seven_eleven-40441_SHOP","seven_eleven",-84.40815,41.6034,null,"21747 Co Rd M","West Unity","OH","43570","+1 419-924-9149","24/7",null,null,"https://www.7-eleven.com/locations/oh/west unity/21747-co-rd-m-40441"],
 ["seven_eleven-40442_SHOP","seven_eleven",-84.40727,41.60556,null,"21738 Co Rd M50","West Unity","OH","43570","+1 419-924-2383","24/7",null,null,"https://www.7-eleven.com/locations/oh/west unity/21738-co-rd-m50-40442"],
+["speedway-44360","speedway",-84.0429,41.8777,null,"1367 S Main St","Adrian","MI","49221","+1 517-265-8006","24/7",null,null,null],
+["speedway-45614","speedway",-84.0039,41.5735,null,"420 E Main St","Delta","OH","43515","+1 419-822-9828","Mo-Sa 05:00-23:00; Su 07:00-23:00",null,null,null],
 ["wendys-2065527013","wendys",-84.07216,41.90598,null,"4412 Maumee Street","Adrian","MI","49221-9747","+1 517-266-8827","Mo-Fr 00:00-01:00,07:00-24:00; Sa-Su 00:00-01:00,07:30-24:00","Mo-Fr 00:00-01:00,07:00-24:00; Sa-Su 00:00-01:00,07:30-24:00",null,"https://locations.wendys.com/united-states/mi/adrian/4412-maumee-street/kids-meals.html"],
 ["wendys-2065531859","wendys",-84.13404,41.57191,null,"1442 Shoop Avenue","Wauseon","OH","43567-1855","+1 419-335-7707","Mo-Su 06:30-24:00","Mo-Su 06:30-24:00",null,"https://locations.wendys.com/united-states/oh/wauseon/1442-shoop-avenue/kids-meals.html"]]}

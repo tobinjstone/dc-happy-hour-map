@@ -6,6 +6,9 @@
 ["checkers-3908","checkers",-88.51422,34.92036,null,"806 U.S. 72","Corinth","MS","38834",null,null,null,null,null],
 ["checkers-3944","checkers",-88.56304,34.67144,null,"901 North 2nd Street","Booneville","MS","38829",null,null,null,null,null],
 ["chick_fil_a-27978416","chick_fil_a",-88.50658,34.91612,"Corinth [MS]","1600 Highway 72 E","Corinth","MS","38834-6528","+1 662-284-4688","Mo-Sa 06:00-22:00; Su closed",null,1,"https://www.chick-fil-a.com/locations/ms/corinth-ms"],
+["cracker_barrel-722","cracker_barrel",-88.54275,34.93124,"Corinth","1900 Hwy. 72 West","Corinth","MS",null,"+1 662-287-7410","Mo-Th 07:00-21:00; Fr-Sa 07:00-22:00; Su 07:00-21:00",null,null,"https://www.crackerbarrel.com/locations/states/ms/corinth/722"],
+["hardees-1501572","hardees",-88.55997,34.67921,null,"1202 N 2nd St","Booneville","MS","38829","+1 662-728-1746","Mo-Sa 05:00-22:00; Su 06:00-22:00",null,null,"https://locations.hardees.com/ms/booneville/1202-n-2nd-st/"],
+["krystal-1820-hwy-72-east","krystal",-88.50342,34.91462,null,"1820 Hwy 72 East","Corinth","MS","38834","+1 662-287-5773",null,null,null,"https://www.krystal.com/locations/ms/corinth/1820-hwy-72-east/"],
 ["mcdonalds-10493","mcdonalds",-88.94583,34.73071,null,"202 Hwy 15 N","Ripley","MS","38663","+1 662-837-0233",null,null,1,"https://www.mcdonalds.com/us/en-us/location/10493.html"],
 ["mcdonalds-22494","mcdonalds",-88.65358,34.52478,null,"990 Ripley Rd","Baldwyn","MS","38824-9752","+1 662-365-7500",null,null,1,"https://www.mcdonalds.com/us/en-us/location/22494.html"],
 ["mcdonalds-3606","mcdonalds",-88.51638,34.92239,null,"1108 S Cass Street","Corinth","MS","38834","+1 662-287-2398","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/3606.html"],
@@ -15,6 +18,7 @@
 ["sonic-1740","sonic",-88.51515,34.92209,null,"1107 South Cass","Corinth","MS","38834","+1 662-287-4626","Mo-Th 07:00-22:00; Fr-Sa 07:00-23:00; Su 09:00-22:00",null,null,"https://www.sonicdrivein.com/locations/us/ms/corinth/1107-south-cass/store-1740/"],
 ["sonic-4518","sonic",-88.9475,34.72524,null,"710 City Avenue South","Ripley","MS","38663","+1 662-837-8144","Mo-Th 07:00-22:00; Fr-Sa 07:00-24:00; Su 08:00-22:00",null,null,"https://www.sonicdrivein.com/locations/us/ms/ripley/710-city-avenue-south/store-4518/"],
 ["sonic-5424","sonic",-88.65583,34.5246,null,"701 Highway 45 South","Baldwyn","MS","38824","+1 662-365-3660","Mo-Th 07:00-22:00; Fr-Sa 07:00-24:00; Su 08:00-22:00",null,null,"https://www.sonicdrivein.com/locations/us/ms/baldwyn/701-highway-45-south/store-5424/"],
+["waffle_house-1328","waffle_house",-88.54413,34.93059,null,"2103 Us 72 West","Corinth","MS","38834","+1 662-287-7713","Mo-Su 00:00-24:00",null,null,"https://locations.wafflehouse.com/corinth-ms-1328/"],
 ["wendys-2065527178","wendys",-88.56177,34.67215,null,"906 North 2nd Street","Booneville","MS","38829-1312","+1 662-728-8333","Mo-Th 10:00-23:00; Fr-Sa 10:00-24:00; Su 10:00-23:00","Mo-Th 10:00-23:00; Fr-Sa 10:00-24:00; Su 10:00-23:00",null,"https://locations.wendys.com/united-states/ms/booneville/906-north-2nd-street/kids-meals.html"],
 ["wendys-2065527585","wendys",-88.515,34.92146,null,"801 Highway 72 East","Corinth","MS","38834-6446","+1 662-284-0812","Mo-Su 00:00-01:00,10:00-24:00","Mo-Su 00:00-01:00,10:00-24:00",null,"https://locations.wendys.com/united-states/ms/corinth/801-highway-72-east/kids-meals.html"],
 ["zaxbys-175438","zaxbys",-88.50641,34.91701,"Corinth","1601 Highway 72 E","Corinth","MS","38834","+1 662-594-1072",null,null,1,"https://www.zaxbys.com/locations/ms/corinth/1601-highway-72-e"]]}

@@ -5,6 +5,7 @@
 ["burger_king-13790","burger_king",-84.64087,41.92989,null,"215 West Carleton Road","Hillsdale","MI","49242-5033","+1 517-437-3250","Mo-Sa 06:00-22:00; Su 07:00-22:00","Mo-Sa 06:00-24:00; Su 07:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_8107"],
 ["burger_king-4652","burger_king",-84.9854,41.93758,null,"396 East Chicago Street","Coldwater","MI","49036-2062","+1 517-278-4869","Mo-Sa 06:00-22:00; Su 07:00-22:00","Mo-Sa 00:00-01:00,06:00-24:00; Su 00:00-01:00,07:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_2601"],
 ["burger_king-6485","burger_king",-84.99902,41.6563,null,"1804 N Wayne Street","Angola","IN","46703-2357","+1 260-665-6955","Mo-Sa 06:00-22:00; Su 07:00-22:00","Mo-We 06:00-24:00; Th-Sa 00:00-24:00; Su 04:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_3694"],
+["culvers-0466","culvers",-84.98215,41.93697,null,null,"Coldwater","MI","49036",null,"Mo-Su 10:00-24:00","Mo-Su 10:00-24:00",1,"https://www.culvers.com/restaurants/coldwater-mi"],
 ["jimmy_johns-2024084790-FoodEstablishment","jimmy_johns",-84.98338,41.93731,null,"422 E Chicago St","Coldwater","MI","49036","+1 517-278-5646","Mo-Su 10:00-21:00",null,null,"https://locations.jimmyjohns.com/mi/coldwater/sandwiches-1965.html"],
 ["mcdonalds-11440","mcdonalds",-84.64217,41.93075,null,"220 W Carleton Rd","Hillsdale","MI","49242-5034","+1 517-439-1700",null,null,1,"https://www.mcdonalds.com/us/en-us/location/11440.html"],
 ["mcdonalds-11687","mcdonalds",-84.59369,41.58604,null,"1100 E Main St","Montpelier","OH","43543-1266","+1 419-485-8461","Mo-Sa 04:00-23:00; Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/11687.html"],
@@ -13,5 +14,8 @@
 ["mcdonalds-21245","mcdonalds",-84.66537,41.98195,null,"115 W Chicago St","Jonesville","MI","49250","+1 517-849-2005",null,null,1,"https://www.mcdonalds.com/us/en-us/location/21245.html"],
 ["mcdonalds-2525","mcdonalds",-84.98544,41.9387,null,"381 E Chicago St","Coldwater","MI","49036-2044","+1 517-278-7171",null,null,1,"https://www.mcdonalds.com/us/en-us/location/2525.html"],
 ["moes-3308-n-wayne-street","moes",-84.99823,41.67698,"Burritos, Tacos & Tex Mex Food in Angola at - Mexican Food","3308 N Wayne Street","Angola","IN","46703","+1 260-665-7911","Mo-Su 10:30-22:00",null,null,"https://locations.moes.com/in/angola/3308-n-wayne-street"],
+["speedway-43865","speedway",-84.98885,41.63527,null,"809 E Maumee St","Angola","IN","46703","+1 260-624-2052","24/7",null,null,null],
+["speedway-44378","speedway",-84.9796,41.937,null,"524 E Chicago St","Coldwater","MI","49036","+1 517-278-4916","Mo-Sa 06:00-22:00; Su 08:00-21:00",null,null,null],
+["speedway-44407","speedway",-84.9696,41.9353,null,"750 E Chicago St","Coldwater","MI","49036","+1 517-279-7427","24/7",null,null,null],
 ["wendys-2065528549","wendys",-84.99976,41.74421,null,"6900 N. Old 27","Fremont","IN","46737-9613","+1 260-833-6156","Mo-Su 00:00-24:00","Mo-Su 00:00-24:00",null,"https://locations.wendys.com/united-states/in/fremont/6900-n-old-27/kids-meals.html"],
 ["wendys-2065529125","wendys",-84.64506,41.93882,null,"419 W Carleton","Hillsdale","MI","49242-1354","+1 517-437-2700","Mo-Fr 00:00-01:00,07:00-24:00; Sa-Su 00:00-01:00,07:30-24:00","Mo-Fr 00:00-01:00,07:00-24:00; Sa-Su 00:00-01:00,07:30-24:00",null,"https://locations.wendys.com/united-states/mi/hillsdale/419-w-carleton/kids-meals.html"]]}

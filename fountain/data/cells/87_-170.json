@@ -6,6 +6,8 @@
 ["burger_king-886","burger_king",-84.76812,43.58284,null,"1912 South Mission Road","Mount Pleasant","MI","48858","+1 989-773-5080","Mo-Su 07:00-22:00","Mo-Fr 07:00-24:00; Sa-Su 00:00-02:00,07:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_450"],
 ["checkers-4195","checkers",-84.76692,43.58778,null,"1501 South Mission Street","Mount Pleasant","MI","48858",null,null,null,null,null],
 ["chipotle-1720-s-mission-st","chipotle",-84.76809,43.58494,"Chipotle Mexican Grill","1720 S Mission St","Mt Pleasant","MI","48858","+1 989-772-1475","Mo-Su 10:45-23:00",null,null,"https://locations.chipotle.com/mi/mt-pleasant/1720-s-mission-st"],
+["culvers-0331","culvers",-84.76501,43.61254,null,null,"Mount Pleasant","MI","48858",null,"Mo-Su 10:30-22:00","Mo-Su 10:30-24:00",1,"https://www.culvers.com/restaurants/mt-pleasant"],
+["culvers-0807","culvers",-84.76734,43.83771,null,null,"Clare","MI","48617",null,"Mo-Su 10:30-22:00","Mo-Su 10:30-22:00",1,"https://www.culvers.com/restaurants/clare-mi-clare-ave"],
 ["firehouse_subs-rw0U6z1KBoPH68cJM6jQO4","firehouse_subs",-84.76743,43.5851,"Central Square","1729 South Mission Street","Mt. Pleasant","MI","48858","+1 989-775-8800","Mo-Su 10:00-21:00",null,null,"https://www.firehousesubs.com/store-locator/store/rw0U6z1KBoPH68cJM6jQO4"],
 ["five_guys-1620-s-mission-street","five_guys",-84.76836,43.58602,"Mount Pleasant","1620 S. Mission Street","Mount Pleasant","MI","48858",null,"Mo-Su 11:00-22:00",null,null,"https://restaurants.fiveguys.com/1620-s-mission-street"],
 ["jimmy_johns-2024083467-FoodEstablishment","jimmy_johns",-84.77592,43.60456,null,"117 E Broadway St","Mt. Pleasant","MI","48858","+1 989-773-4444","Mo-Sa 11:00-16:00",null,null,"https://locations.jimmyjohns.com/mi/mt.-pleasant/sandwiches-0658.html"],
@@ -24,6 +26,9 @@
 ["popeyes-restaurant_239888","popeyes",-84.76711,43.59681,null,"807 S Mission St","Mount Pleasant","MI","48858","+1 989-317-3981","Mo-Su 10:30-21:00",null,1,"https://www.popeyes.com/store-locator/store/restaurant_239888"],
 ["qdoba-1529-s-mission-st","qdoba",-84.76676,43.58682,null,"1529 S Mission St","Mount Pleasant","MI","48858",null,"Mo-Su 10:00-21:30",null,null,"https://locations.qdoba.com/us/mi/mount-pleasant/1529-s-mission-st"],
 ["seven_eleven-36940_SHOP","seven_eleven",-84.76665,43.5759,null,"2397 S Mission St","Mount Pleasant","MI","48858","+1 989-824-8355","24/7",null,null,"https://www.7-eleven.com/locations/mi/mount pleasant/2397-s-mission-st-36940"],
+["speedway-44470","speedway",-84.7685,43.8455,null,"9898 South Clare Avenue","Clare","MI","48617","+1 989-386-9581","24/7",null,null,null],
+["speedway-44516","speedway",-84.7675,43.603,null,"201 South Mission Street","Mount Pleasant","MI","48858","+1 989-772-8995","24/7",null,null,null],
+["speedway-44517","speedway",-84.7641,43.6117,null,"1018 East Pickard Street","Mount Pleasant","MI","48858","+1 989-772-0785","24/7",null,null,null],
 ["wendys-2065527874","wendys",-84.7688,43.83933,null,"10332 S. Clare Avenue","Clare","MI","48617-9733","+1 989-386-3311","Mo-Su 07:30-24:00","Mo-Su 07:30-24:00",null,"https://locations.wendys.com/united-states/mi/clare/10332-s-clare-avenue/kids-meals.html"],
 ["wendys-2065530213","wendys",-84.76456,43.61129,null,"1006 Pickard","Mount Pleasant","MI","48858-1063","+1 989-775-3175","Mo-Su 06:00-24:00","Mo-Su 06:00-24:00",null,"https://locations.wendys.com/united-states/mi/mount-pleasant/1006-pickard/kids-meals.html"],
 ["wingstop-3300","wingstop",-84.76809,43.58495,null,"1720 South Mission St.","Mount Pleasant","MI","48858","+1 724-613-7867","Mo-Su 00:00-02:00,10:30-24:00",null,null,"https://www.wingstop.com/location/wingstop-3300-mount-pleasant-mi-48858/menu"]]}

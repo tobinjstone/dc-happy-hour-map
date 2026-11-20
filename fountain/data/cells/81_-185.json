@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["caseys-1609_fuel","caseys",-92.22775,40.92158,"ELDON","811 W Elm St","Eldon","IA","52554","+1 641-450-2316","24/7",null,null,"https://www.caseys.com/general-store/ia-eldon/811-w-elm-st/1609"],
+["caseys-1886_fuel","caseys",-92.42939,40.99453,"OTTUMWA #5","504 W Mary St","Ottumwa","IA","52501","+1 641-255-0236","24/7",null,null,"https://www.caseys.com/general-store/ia-ottumwa/504-w-mary-st/1886"],
+["caseys-2481_fuel","caseys",-92.41412,40.74991,"BLOOMFIELD","206 S Washington","Bloomfield","IA","52537","+1 641-450-2114","24/7",null,null,"https://www.caseys.com/general-store/ia-bloomfield/206-s-washington/2481"]]}

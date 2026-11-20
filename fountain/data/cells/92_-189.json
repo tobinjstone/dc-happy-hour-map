@@ -2,8 +2,10 @@
 ["burger_king-2423","burger_king",-94.22221,46.35644,null,"808 West Washington","Brainerd","MN","56425-2934","+1 218-270-2276","Mo-Su 07:00-21:00","Mo-Su 07:00-22:00",1,"https://www.bk.com/store-locator/store/restaurant_1291"],
 ["chipotle-14203-edgewood-dr","chipotle",-94.24541,46.35806,"Chipotle Mexican Grill","14203 Edgewood Dr","Baxter","MN","56425","+1 218-297-0397","Mo-Su 10:45-22:00",null,null,"https://locations.chipotle.com/mn/baxter/14203-edgewood-dr"],
 ["costco-1122","costco",-94.24714,46.3493,"Baxter","13650 Elder Dr","Baxter","MN","56425-8818","+1 218-855-5740","Mo-Fr 10:00-20:30; Sa 09:30-19:00; Su 10:00-18:00",null,null,"https://www.costco.com/warehouse-locations/baxter-mn-1122.html"],
+["culvers-0202","culvers",-94.24393,46.37211,null,null,"Baxter","MN","56425",null,"Mo-Su 10:00-22:00","Mo-Su 10:00-23:00",1,"https://www.culvers.com/restaurants/baxter"],
 ["firehouse_subs-cat9HDXmWZg5O71jycrJD3","firehouse_subs",-94.24327,46.37058,"Northwoods Crossing","15094 Dellwood Drive, Suite 102","Baxter","MN","56425","+1 218-828-0629","Mo-Su 10:00-21:00",null,null,"https://www.firehousesubs.com/store-locator/store/cat9HDXmWZg5O71jycrJD3"],
 ["five_guys-14203-edgewood-dr-n","five_guys",-94.24521,46.35832,"Baxter, MN","14203 Edgewood Dr. N","Baxter","MN","56425",null,"Mo-Su 10:00-23:00",null,null,"https://restaurants.fiveguys.com/14203-edgewood-dr-n"],
+["hardees-1503050","hardees",-94.2072,46.35845,null,"119 Washington St","Brainerd","MN","56401","+1 218-829-1343","Mo-Sa 06:00-22:00; Su 07:00-22:00",null,null,"https://locations.hardees.com/mn/brainerd/119-washington-st/"],
 ["jimmy_johns-2024084021-FoodEstablishment","jimmy_johns",-94.24362,46.35834,null,"14244 Dellwood Dr","Baxter","MN","56425","+1 218-454-1871","Mo-Su 10:30-21:00",null,null,"https://locations.jimmyjohns.com/mn/baxter/sandwiches-3520.html"],
 ["jimmy_johns-2024085175-FoodEstablishment","jimmy_johns",-94.18687,46.36023,null,"201 NE Washington St","Brainerd","MN","56401","+1 218-270-2550","Mo-Su 11:00-22:00",null,null,"https://locations.jimmyjohns.com/mn/brainerd/sandwiches-0989.html"],
 ["mcdonalds-17495","mcdonalds",-94.1818,46.36051,null,"505 NE Washington St","Brainerd","MN","56401","+1 218-829-6925","Mo-Su 05:30-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/17495.html"],
@@ -11,4 +13,6 @@
 ["seven_eleven-47459_SHOP","seven_eleven",-94.17169,46.46316,null,"11027 Crystal Lake Road N","Merrifield","MN","56465",null,null,null,null,"https://www.7-eleven.com/locations/mn/merrifield/11027-crystal-lake-road-n-47459"],
 ["seven_eleven-47506_SHOP","seven_eleven",-94.18297,46.3602,null,"421 NE Washington St.","Brainerd","MN","56425",null,null,null,null,"https://www.7-eleven.com/locations/mn/brainerd/421-ne-washington-st.-47506"],
 ["seven_eleven-47507_SHOP","seven_eleven",-94.28453,46.34487,null,"5610 Fairview","Baxter","MN","56425",null,null,null,null,"https://www.7-eleven.com/locations/mn/baxter/5610-fairview-47507"],
+["speedway-46391","speedway",-94.20016,46.34562,null,"1223 S 6th Street","Brainerd","MN","56401","+1 218-829-0568","24/7",null,null,null],
+["speedway-46581","speedway",-94.24524,46.36835,null,"14963 Edgewood Drive","Baxter","MN","56425","+1 218-829-9213","24/7",null,null,null],
 ["wendys-2065526947","wendys",-94.21824,46.35723,null,"510 W. Washington","Brainerd","MN","56401-2928","+1 218-330-9141","Mo-Su 10:00-24:00","Mo-Su 10:00-24:00",null,"https://locations.wendys.com/united-states/mn/brainerd/510-w-washington/kids-meals.html"]]}

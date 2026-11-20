@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["caseys-1160_fuel","caseys",-97.78292,42.35118,"PLAINVIEW","410 E Park Ave","Plainview","NE","68769","+1 402-356-6272","24/7",null,null,"https://www.caseys.com/general-store/ne-plainview/410-e-park-ave/1160"],
+["caseys-3270_fuel","caseys",-97.52433,42.1968,"PIERCE","309 E Willow St","Pierce","NE","68767","+1 402-356-3194","Mo-Su 00:00-24:00",null,null,"https://www.caseys.com/general-store/ne-pierce/309-e-willow-st/3270"]]}

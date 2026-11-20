@@ -1,4 +1,7 @@
 {"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-8946","arbys",-85.42908,41.79521,null,"209 S. Centerville Road","Sturgis","MI","49091","+1 269-625-9600","Mo-Su 10:00-22:00","Mo-Su 10:00-21:30",null,"https://www.arbys.com/locations/us/mi/sturgis/209-s.-centerville-road/store-8946/"],
+["culvers-0530","culvers",-85.42773,41.79014,null,null,"Sturgis","MI","49091",null,"Mo-Su 10:00-24:00","Mo-Su 10:00-24:00",1,"https://www.culvers.com/restaurants/sturgis-mi"],
+["culvers-0876","culvers",-85.00015,41.66195,null,null,"Angola","IN","46703",null,"Mo-Su 10:00-24:00","Mo-Su 10:00-24:00",1,"https://www.culvers.com/restaurants/angola-in-wayne"],
+["hardees-1505888","hardees",-85.05031,41.63381,null,"3443 W Maumee St","Angola","IN","46703-3400","+1 260-665-3319","Mo-Su 06:00-23:00",null,null,"https://locations.hardees.com/in/angola/3443-w-maumee-st/"],
 ["jimmy_johns-2024082890-FoodEstablishment","jimmy_johns",-85.4291,41.78711,null,"1139 S Centerville Rd Ste D","Sturgis","MI","49091","+1 269-238-9771","Mo-Su 10:00-22:00",null,null,"https://locations.jimmyjohns.com/mi/sturgis/sandwiches-4402.html"],
 ["jimmy_johns-2024084066-FoodEstablishment","jimmy_johns",-85.00149,41.65526,null,"1801 N Wayne St","Angola","IN","46703","+1 260-668-6550","Mo-Su 10:30-21:00",null,null,"https://locations.jimmyjohns.com/in/angola/sandwiches-3986.html"],
 ["mcdonalds-12368","mcdonalds",-85.41714,41.63836,null,"613 Detroit St","Lagrange","IN","46761","+1 260-463-8958","Mo-Sa 05:00-23:00; Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/12368.html"],
@@ -11,5 +14,7 @@
 ["popeyes-restaurant_884967","popeyes",-85.42897,41.79307,null,"501 S Centerville Rd","Sturgis","MI","49091","+1 269-257-9165","Mo-Su 10:30-21:00",null,1,"https://www.popeyes.com/store-locator/store/restaurant_884967"],
 ["seven_eleven-40506_SHOP","seven_eleven",-85.32858,41.74696,null,"5000 E 750 N","Howe","IN","46746","+1 260-322-2738","24/7",null,null,"https://www.7-eleven.com/locations/in/howe/5000-e-750-n-40506"],
 ["seven_eleven-40509_SHOP","seven_eleven",-85.32935,41.74506,null,"7065 N 475 E","Howe","IN","46746","+1 260-562-2676","24/7",null,null,"https://www.7-eleven.com/locations/in/howe/7065-n-475-e-40509"],
+["speedway-43917","speedway",-85.04466,41.63448,null,"3075 W Maumee St Suite A","Angola","IN","46703","+1 260-624-2056","24/7",null,null,null],
+["speedway-44409","speedway",-85.428,41.7919,null,"600 S Centerville Rd","Sturgis","MI","49091","+1 269-651-2226","24/7",null,null,null],
 ["wendys-2065526805","wendys",-85.00037,41.6721,null,"3001 N. Wayne","Angola","IN","46703-7301","+1 260-668-1063","Mo-Su 09:00-23:00","Mo-Su 09:00-23:00",null,"https://locations.wendys.com/united-states/in/angola/3001-n-wayne/kids-meals.html"],
 ["wendys-2065531787","wendys",-85.42894,41.7922,null,"601 S Centerville","Sturgis","MI","49091-9429","+1 269-651-6657","Mo-Su 06:30-24:00","Mo-Su 06:30-24:00",null,"https://locations.wendys.com/united-states/mi/sturgis/601-s-centerville/kids-meals.html"]]}
