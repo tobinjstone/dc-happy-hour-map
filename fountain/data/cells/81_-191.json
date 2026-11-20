@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-11278","mcdonalds",-95.0371,40.72671,null,"1202 S 16th St","Clarinda","IA","51632-2919","+1 712-542-5617","Mo-Th 05:00-23:00; Fr-Sa 05:00-24:00; Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/11278.html"],
+["mcdonalds-6110","mcdonalds",-95.38555,40.76195,null,"504 S Fremont","Shenandoah","IA","51601-1508","+1 712-246-5415",null,null,1,"https://www.mcdonalds.com/us/en-us/location/6110.html"]]}

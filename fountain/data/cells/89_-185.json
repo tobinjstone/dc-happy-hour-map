@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-23689","mcdonalds",-92.37361,44.94042,null,"780 Baldwin Plaza Dr","Baldwin","WI","54002","+1 715-684-5355","Mo-Su 05:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/23689.html"],
+["mcdonalds-32980","mcdonalds",-92.47787,44.73167,null,"159 West Main Street","Ellsworth","WI","54011","+1 715-273-4500","Mo-Su 05:15-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/32980.html"]]}

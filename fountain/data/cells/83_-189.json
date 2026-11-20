@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-10772","burger_king",-94.10313,41.83002,null,"1319 141st St","Perry","IA","50220-8128","+1 515-726-3409","Mo-Su 06:00-22:00","Mo-Su 06:00-23:00",1,"https://www.bk.com/store-locator/store/restaurant_6115"],
+["mcdonalds-11833","mcdonalds",-94.10748,41.83107,null,"325 1st St","Perry","IA","50220-1933","+1 515-465-9370","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/11833.html"]]}

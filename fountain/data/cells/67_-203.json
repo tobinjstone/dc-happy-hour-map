@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["seven_eleven-42483_SHOP","seven_eleven",-101.38243,33.67388,null,"900 Highway 82","Ralls","TX","79357","+1 806-253-0118",null,null,null,"https://www.7-eleven.com/locations/tx/ralls/900-highway-82-42483"],
+["seven_eleven-42484_SHOP","seven_eleven",-101.2473,33.65965,null,"829 W Main St","Crosbyton","TX","79322","+1 806-675-0161",null,null,null,"https://www.7-eleven.com/locations/tx/crosbyton/829-w-main-st-42484"]]}

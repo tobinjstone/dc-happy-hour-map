@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-12812","mcdonalds",-96.21233,43.6413,null,"1001 S Kniss","Luverne","MN","56156","+1 507-283-8114","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/12812.html"],
+["mcdonalds-13849","mcdonalds",-96.30688,43.99433,null,"609 8th Ave SE","Pipestone","MN","56164","+1 507-825-3222",null,null,1,"https://www.mcdonalds.com/us/en-us/location/13849.html"]]}

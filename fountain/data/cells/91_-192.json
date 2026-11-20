@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-13485","mcdonalds",-95.91891,45.59178,null,"1124 Atlantic Ave","Morris","MN","56267","+1 320-589-3239","Mo-Th 06:00-23:00; Fr-Sa 06:00-24:00; Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/13485.html"],
+["qdoba-600-east-4th-st","qdoba",-95.89824,45.59011,null,"600 East 4th St","Morris","MN","56267",null,"Mo-Fr 10:30-19:00",null,null,"https://locations.qdoba.com/us/mn/morris/600-east-4th-st"]]}

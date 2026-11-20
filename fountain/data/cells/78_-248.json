@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["dennys-246703","dennys",-123.80622,39.45222,null,"901 N Main St","Fort Bragg","CA","95437","+1 707-964-8287","Mo-Su 06:00-24:00",null,null,"https://locations.dennys.com/ca/fort-bragg/246703"],
+["mcdonalds-18667","mcdonalds",-123.80691,39.42398,null,"1190 S Main St","Fort Bragg","CA","95437","+1 707-964-3122","Mo-Su 06:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/18667.html"]]}

@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-7104","burger_king",-79.12063,42.56093,null,"639 Rt 5 & 20","Irving","NY","14081-9722","+1 716-242-2737","Mo-Su 06:00-22:00","Mo-Su 00:00-02:00,06:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_4066"],
+["mcdonalds-30659","mcdonalds",-79.12196,42.5606,null,"687 Route 5","Irving","NY","14081","+1 716-934-0470",null,null,1,"https://www.mcdonalds.com/us/en-us/location/30659.html"]]}

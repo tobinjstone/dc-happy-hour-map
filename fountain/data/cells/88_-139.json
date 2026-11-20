@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-1588","mcdonalds",-69.10506,44.11572,null,"60 Camden St","Rockland","ME","04841","+1 207-594-2311","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/1588.html"],
+["mcdonalds-2501","mcdonalds",-69.02033,44.42311,null,"282 Main St","Belfast","ME","04915","+1 207-930-3670","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/2501.html"],
+["mcdonalds-35296","mcdonalds",-69.14273,44.09305,null,"158 New County Road","Thomaston","ME","04861","+1 207-596-7800","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/35296.html"]]}

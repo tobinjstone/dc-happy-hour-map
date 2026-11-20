@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["jimmy_johns-2024083511-FoodEstablishment","jimmy_johns",-92.74877,41.74309,null,"812 6th Ave","Grinnell","IA","50112","+1 641-236-0199","Mo-Su 10:30-21:00",null,null,"https://locations.jimmyjohns.com/ia/grinnell/sandwiches-2103.html"],
+["mcdonalds-23426","mcdonalds",-92.72694,41.74099,null,"706 West St","Grinnell","IA","50112","+1 641-236-0920","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/23426.html"],
+["mcdonalds-32871","mcdonalds",-92.99822,41.68054,null,"4400 South 22nd Ave E","Newton","IA","50208","+1 641-792-5050",null,null,1,"https://www.mcdonalds.com/us/en-us/location/32871.html"]]}

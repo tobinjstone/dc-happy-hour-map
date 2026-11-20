@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-4168","burger_king",-70.5195,44.21525,null,"165 Main Street","South Paris","ME","04281-1621","+1 207-743-2022","Mo-Su 06:00-23:00","Mo-Su 06:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_2325"],
+["mcdonalds-3137","mcdonalds",-70.51701,44.21685,null,"118 Main St","South Paris","ME","04281","+1 207-743-7454","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/3137.html"],
+["mcdonalds-34606","mcdonalds",-70.70008,44.04482,null,"5 Lumberyard Drive","Bridgton","ME","04009","+1 207-647-9636","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/34606.html"]]}

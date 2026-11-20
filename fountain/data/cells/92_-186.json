@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-34406","mcdonalds",-92.92735,46.01173,null,"203 Morris Ave","Hinckley","MN","55037","+1 320-384-0071","Mo-Su 05:00-22:00",null,1,"https://www.mcdonalds.com/us/en-us/location/34406.html"],
+["mcdonalds-37237","mcdonalds",-92.74894,46.43504,null,"500 Park Place Drive","Moose Lake","MN","55767","+1 218-485-5785","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/37237.html"]]}

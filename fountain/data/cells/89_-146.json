@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-10982","mcdonalds",-72.59109,44.57432,null,"105 Morrisville Plz","Morrisville","VT","05661","+1 802-888-4110","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/10982.html"],
+["mcdonalds-24998","mcdonalds",-72.79662,44.91311,null,"41 Jayview Dr","Enosburg Falls","VT","05450","+1 802-933-6633","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/24998.html"]]}

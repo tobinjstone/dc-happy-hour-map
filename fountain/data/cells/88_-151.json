@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-7133","mcdonalds",-75.46559,44.33561,null,"118 E Main St","Gouverneur","NY","13642","+1 315-287-1366",null,null,1,"https://www.mcdonalds.com/us/en-us/location/7133.html"],
+["seven_eleven-40494_SHOP","seven_eleven",-75.47709,44.33045,null,"238 W. Main St.","Gouverneur","NY","13642","+1 315-287-0148","24/7",null,null,"https://www.7-eleven.com/locations/ny/gouverneur/238-w.-main-st.-40494"]]}

@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-7087","arbys",-116.06785,35.26926,null,"72431 Baker Blvd, P O Box 40","Baker","CA","92309","+1 760-733-4006","Mo-Su 10:00-22:00","Mo-Su 10:00-21:30",null,"https://www.arbys.com/locations/us/ca/baker/72431-baker-blvd/store-7087/"],
+["dennys-248058","dennys",-116.06836,35.26896,null,"72415 Baker Blvd","Baker","CA","92309","+1 760-733-1055","Mo-Su 05:00-24:00",null,null,"https://locations.dennys.com/ca/baker/248058"]]}

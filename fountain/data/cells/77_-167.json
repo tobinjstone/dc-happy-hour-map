@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-19948","mcdonalds",-83.41729,38.93431,null,"2811 Measley Ridge Rd","Peebles","OH","45660","+1 937-587-5767","Mo-Sa 05:00-23:00; Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/19948.html"],
+["mcdonalds-30674","mcdonalds",-83.3266,38.59181,null,"67 Commercial Dr","Vanceburg","KY","41179","+1 606-796-0800","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/30674.html"]]}

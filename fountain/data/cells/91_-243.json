@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["dennys-246807","dennys",-121.20643,45.61007,null,"1710 W 6th St","The Dalles","OR","97058","+1 541-296-2655","Mo-Su 00:00-24:00",null,null,"https://locations.dennys.com/or/the-dalles/246807"],
+["mcdonalds-16884","mcdonalds",-121.13862,45.60432,null,"341 Lone Pine Dr","The Dalles","OR","97058","+1 541-298-5700","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/16884.html"],
+["mcdonalds-4688","mcdonalds",-121.20111,45.60734,null,"1315 W 6th","The Dalles","OR","97058-3517","+1 541-298-5747","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/4688.html"]]}

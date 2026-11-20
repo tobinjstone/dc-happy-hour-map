@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-18745","mcdonalds",-91.11507,42.47089,null,"1510 9th Street SE","Dyersville","IA","52040","+1 563-875-7600","Mo-Su 05:30-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/18745.html"],
+["mcdonalds-33002","mcdonalds",-91.26623,42.10438,null,"160 Chamber Dr","Anamosa","IA","52205","+1 319-462-3589","Mo-Su 05:30-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/33002.html"]]}

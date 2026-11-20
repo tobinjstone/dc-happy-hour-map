@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["mcdonalds-12315","mcdonalds",-93.26231,42.5211,null,"412 N Oak St","Iowa Falls","IA","50126","+1 641-648-3244",null,null,1,"https://www.mcdonalds.com/us/en-us/location/12315.html"],
+["mcdonalds-30670","mcdonalds",-93.20187,42.7416,null,"411 Central Avenue E","Hampton","IA","50441","+1 641-456-4122","Mo-Su 05:30-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/30670.html"]]}

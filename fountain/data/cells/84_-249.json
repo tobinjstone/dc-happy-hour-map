@@ -1,0 +1,2 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-26143","burger_king",-124.28761,42.05367,null,"835 Chetco Avenue","Brookings","OR","97415","+1 541-412-9338","Mo-Su 06:00-22:00","Mo-Su 06:00-24:00",1,"https://www.bk.com/store-locator/store/restaurant_87814"],
+["mcdonalds-11794","mcdonalds",-124.28712,42.05333,null,"815 Chetco Ave","Brookings","OR","97415-0250","+1 541-469-9572","Mo-Su 06:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/11794.html"]]}

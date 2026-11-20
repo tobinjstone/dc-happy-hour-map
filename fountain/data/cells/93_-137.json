@@ -1,0 +1,3 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-5965","arbys",-68.0118,46.69826,null,"789 Main St","Presque Isle","ME","04769-2201","+1 207-764-5172","Mo-Su 10:00-22:00","Mo-Su 10:00-21:30",null,"https://www.arbys.com/locations/us/me/presque-isle/789-main-st/store-5965/"],
+["mcdonalds-1555","mcdonalds",-68.01283,46.6874,null,"656 Main St","Presque Isle","ME","04769","+1 207-764-1383","Mo-Su 05:00-24:00",null,1,"https://www.mcdonalds.com/us/en-us/location/1555.html"],
+["mcdonalds-2133","mcdonalds",-68.0032,46.86926,null,"127 Bennett Drive","Caribou","ME","04736","+1 207-498-2181","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/2133.html"]]}

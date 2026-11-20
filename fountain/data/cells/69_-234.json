@@ -1,0 +1,4 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["burger_king-23811","burger_king",-116.99223,34.8829,null,"621 Montara Road","Barstow","CA","92311","+1 760-565-8361","Mo-Su 08:00-20:00",null,0,"https://www.bk.com/store-locator/store/restaurant_64144"],
+["mcdonalds-1560","mcdonalds",-116.9991,34.89122,null,"1611 E Main St","Barstow","CA","92311-3239","+1 760-957-7125",null,null,1,"https://www.mcdonalds.com/us/en-us/location/1560.html"],
+["panda_express-3547","panda_express",-116.99334,34.88259,"Montara Road & Armory Road","501 Montara Road","Barstow","CA","92311","+1 760-733-6063",null,null,null,"https://www.pandaexpress.com/locations/ca/barstow/3547"],
+["popeyes-restaurant_83343","popeyes",-116.99969,34.89178,null,"1601 E Main St","Barstow","CA","92311","+1 760-256-7861","Mo-Su 09:00-22:00",null,1,"https://www.popeyes.com/store-locator/store/restaurant_83343"]]}

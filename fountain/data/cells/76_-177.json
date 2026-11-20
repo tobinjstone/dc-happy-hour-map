@@ -1,0 +1,4 @@
+{"columns":["id","chain","lng","lat","branch","address","city","state","postcode","phone","hours","drive_hours","drive_through","website"],"rows":[["arbys-10074","arbys",-88.18911,38.08098,null,"1746 Falcon Ave","Carmi","IL","62821","+1 618-380-4670","Mo-Su 09:00-22:00","Mo-Su 09:00-21:30",null,"https://www.arbys.com/locations/us/il/carmi/1746-falcon-ave/store-10074/"],
+["mcdonalds-11009","mcdonalds",-88.37711,38.37937,null,"1212 W Main","Fairfield","IL","62837-2326","+1 618-842-5674",null,null,1,"https://www.mcdonalds.com/us/en-us/location/11009.html"],
+["mcdonalds-18236","mcdonalds",-88.05976,38.37735,null,"40 W Main St","Albion","IL","62806","+1 618-445-4041","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/18236.html"],
+["mcdonalds-5091","mcdonalds",-88.17797,38.07955,null,"1300 W Main St / Rt 4 Box 15","Carmi","IL","62821-1376","+1 618-382-8054","Mo-Su 05:00-23:00",null,1,"https://www.mcdonalds.com/us/en-us/location/5091.html"]]}
